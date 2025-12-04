@@ -1,2 +1,0 @@
-from .pretrain_dataset import PretrainDataset
-from .pretrain_dataset_yfcc import PretrainDatasetYFCC

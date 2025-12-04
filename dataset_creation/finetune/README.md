@@ -9,8 +9,3 @@ Used when creating many embeddings in parallel. Allows for the preprocessing of 
 ## ```finetune_dataset.py```
 
 Contains functions used in generating the dataset on which PIGEON is trained (prediction head training).
-
-## ```yfcc_dataset.py```
-
-Dataset used to train PIGEOTTO (prediction head training).
-
