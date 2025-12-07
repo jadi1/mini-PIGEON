@@ -1,0 +1,3662 @@
+GID_1,Country,Status
+AFG.1_1,Afghanistan,NO
+AFG.2_1,Afghanistan,NO
+AFG.3_1,Afghanistan,NO
+AFG.4_1,Afghanistan,NO
+AFG.5_1,Afghanistan,NO
+AFG.6_1,Afghanistan,NO
+AFG.7_1,Afghanistan,NO
+AFG.8_1,Afghanistan,NO
+AFG.9_1,Afghanistan,NO
+AFG.10_1,Afghanistan,NO
+AFG.11_1,Afghanistan,NO
+AFG.12_1,Afghanistan,NO
+AFG.13_1,Afghanistan,NO
+AFG.14_1,Afghanistan,NO
+AFG.15_1,Afghanistan,NO
+AFG.16_1,Afghanistan,NO
+AFG.17_1,Afghanistan,NO
+AFG.18_1,Afghanistan,NO
+AFG.19_1,Afghanistan,NO
+AFG.20_1,Afghanistan,NO
+AFG.21_1,Afghanistan,NO
+AFG.22_1,Afghanistan,NO
+AFG.23_1,Afghanistan,NO
+AFG.24_1,Afghanistan,NO
+AFG.25_1,Afghanistan,NO
+AFG.26_1,Afghanistan,NO
+AFG.27_1,Afghanistan,NO
+AFG.28_1,Afghanistan,NO
+AFG.29_1,Afghanistan,NO
+AFG.30_1,Afghanistan,NO
+AFG.31_1,Afghanistan,NO
+AFG.32_1,Afghanistan,NO
+AFG.33_1,Afghanistan,NO
+AFG.34_1,Afghanistan,NO
+AGO.1_1,Angola,NO
+AGO.2_1,Angola,NO
+AGO.3_1,Angola,NO
+AGO.4_1,Angola,NO
+AGO.5_1,Angola,NO
+AGO.6_1,Angola,NO
+AGO.7_1,Angola,NO
+AGO.8_1,Angola,NO
+AGO.9_1,Angola,NO
+AGO.10_1,Angola,NO
+AGO.11_1,Angola,NO
+AGO.12_1,Angola,NO
+AGO.13_1,Angola,NO
+AGO.14_1,Angola,NO
+AGO.15_1,Angola,NO
+AGO.16_1,Angola,NO
+AGO.17_1,Angola,NO
+AGO.18_1,Angola,NO
+AIA.1_1,Anguilla,NO
+AIA.15_1,Anguilla,NO
+AIA.2_1,Anguilla,NO
+AIA.3_1,Anguilla,NO
+AIA.4_1,Anguilla,NO
+AIA.5_1,Anguilla,NO
+AIA.6_1,Anguilla,NO
+AIA.16_1,Anguilla,NO
+AIA.7_1,Anguilla,NO
+AIA.8_1,Anguilla,NO
+AIA.17_1,Anguilla,NO
+AIA.18_1,Anguilla,NO
+AIA.9_1,Anguilla,NO
+AIA.10_1,Anguilla,NO
+AIA.11_1,Anguilla,NO
+AIA.12_1,Anguilla,NO
+AIA.13_1,Anguilla,NO
+AIA.14_1,Anguilla,NO
+ALA.1_2,Åland,NO
+ALA.2_2,Åland,NO
+ALA.3_2,Åland,OK
+ALB.1_1,Albania,NO
+ALB.2_1,Albania,NO
+ALB.3_1,Albania,NO
+ALB.4_1,Albania,NO
+ALB.5_1,Albania,OK
+ALB.6_1,Albania,OK
+ALB.7_1,Albania,NO
+ALB.8_1,Albania,NO
+ALB.9_1,Albania,OK
+ALB.10_1,Albania,NO
+ALB.11_1,Albania,NO
+ALB.12_1,Albania,NO
+AND.1_1,Andorra,OK
+AND.2_1,Andorra,OK
+AND.3_1,Andorra,OK
+AND.4_1,Andorra,OK
+AND.5_1,Andorra,OK
+AND.6_1,Andorra,NO
+AND.7_1,Andorra,OK
+ARE.1_1,United Arab Emirates,NO
+ARE.2_1,United Arab Emirates,OK
+ARE.3_1,United Arab Emirates,NO
+ARE.4_1,United Arab Emirates,OK
+ARE.5_1,United Arab Emirates,NO
+ARE.6_1,United Arab Emirates,OK
+ARE.7_1,United Arab Emirates,OK
+ARG.1_1,Argentina,NO
+ARG.2_1,Argentina,NO
+ARG.3_1,Argentina,NO
+ARG.4_1,Argentina,NO
+ARG.5_1,Argentina,OK
+ARG.6_1,Argentina,NO
+ARG.7_1,Argentina,NO
+ARG.8_1,Argentina,NO
+ARG.9_1,Argentina,OK
+ARG.10_1,Argentina,NO
+ARG.11_1,Argentina,NO
+ARG.12_1,Argentina,NO
+ARG.13_1,Argentina,NO
+ARG.14_1,Argentina,NO
+ARG.15_1,Argentina,NO
+ARG.16_1,Argentina,NO
+ARG.17_1,Argentina,NO
+ARG.18_1,Argentina,NO
+ARG.19_1,Argentina,NO
+ARG.20_1,Argentina,NO
+ARG.21_1,Argentina,NO
+ARG.22_1,Argentina,NO
+ARG.23_1,Argentina,NO
+ARG.24_1,Argentina,NO
+ARM.1_1,Armenia,NO
+ARM.2_1,Armenia,NO
+ARM.3_1,Armenia,NO
+ARM.4_1,Armenia,NO
+ARM.5_1,Armenia,NO
+ARM.6_1,Armenia,NO
+ARM.7_1,Armenia,NO
+ARM.8_1,Armenia,NO
+ARM.9_1,Armenia,NO
+ARM.10_1,Armenia,NO
+ARM.11_1,Armenia,NO
+ASM.1_1,American Samoa,OK
+ASM.2_1,American Samoa,OK
+ASM.3_1,American Samoa,NO
+ASM.4_1,American Samoa,OK
+ATF.1_1,French Southern Territories,NO
+ATF.2_1,French Southern Territories,NO
+ATF.3_1,French Southern Territories,NO
+ATF.4_1,French Southern Territories,NO
+ATG.1_1,Antigua and Barbuda,NO
+ATG.2_1,Antigua and Barbuda,NO
+ATG.3_1,Antigua and Barbuda,NO
+ATG.4_1,Antigua and Barbuda,NO
+ATG.5_1,Antigua and Barbuda,NO
+ATG.6_1,Antigua and Barbuda,NO
+ATG.7_1,Antigua and Barbuda,NO
+ATG.8_1,Antigua and Barbuda,NO
+AUS.1_1,Australia,NO
+AUS.2_1,Australia,OK
+AUS.3_1,Australia,NO
+AUS.4_1,Australia,NO
+AUS.5_1,Australia,NO
+AUS.6_1,Australia,NO
+AUS.7_1,Australia,NO
+AUS.8_1,Australia,NO
+AUS.9_1,Australia,NO
+AUS.10_1,Australia,NO
+AUS.11_1,Australia,NO
+AUT.1_1,Austria,OK
+AUT.2_1,Austria,OK
+AUT.3_1,Austria,OK
+AUT.4_1,Austria,OK
+AUT.5_1,Austria,OK
+AUT.6_1,Austria,OK
+AUT.7_1,Austria,NO
+AUT.8_1,Austria,OK
+AUT.9_1,Austria,OK
+AZE.1_1,Azerbaijan,NO
+AZE.2_1,Azerbaijan,NO
+AZE.3_1,Azerbaijan,NO
+AZE.4_1,Azerbaijan,NO
+AZE.5_1,Azerbaijan,NO
+AZE.6_1,Azerbaijan,NO
+AZE.7_1,Azerbaijan,NO
+AZE.8_1,Azerbaijan,NO
+AZE.9_1,Azerbaijan,NO
+AZE.10_1,Azerbaijan,NO
+BDI.1_1,Burundi,NO
+BDI.2_1,Burundi,NO
+BDI.3_1,Burundi,NO
+BDI.4_1,Burundi,NO
+BDI.5_1,Burundi,NO
+BDI.6_1,Burundi,NO
+BDI.7_1,Burundi,NO
+BDI.8_1,Burundi,NO
+BDI.9_1,Burundi,NO
+BDI.10_1,Burundi,NO
+BDI.11_1,Burundi,NO
+BDI.12_1,Burundi,NO
+BDI.13_1,Burundi,NO
+BDI.14_1,Burundi,NO
+BDI.15_1,Burundi,NO
+BDI.16_1,Burundi,NO
+BDI.17_1,Burundi,NO
+BEL.1_1,Belgium,OK
+BEL.2_1,Belgium,OK
+BEL.3_1,Belgium,OK
+BEN.1_1,Benin,NO
+BEN.2_1,Benin,NO
+BEN.3_1,Benin,NO
+BEN.4_1,Benin,NO
+BEN.5_1,Benin,NO
+BEN.6_1,Benin,NO
+BEN.7_1,Benin,NO
+BEN.8_1,Benin,NO
+BEN.9_1,Benin,NO
+BEN.10_1,Benin,NO
+BEN.11_1,Benin,NO
+BEN.12_1,Benin,NO
+BES.1_1,"Bonaire, Sint Eustatius and Saba",NO
+BES.2_1,"Bonaire, Sint Eustatius and Saba",NO
+BES.3_1,"Bonaire, Sint Eustatius and Saba",NO
+BFA.1_1,Burkina Faso,NO
+BFA.2_1,Burkina Faso,NO
+BFA.7_1,Burkina Faso,NO
+BFA.3_1,Burkina Faso,NO
+BFA.4_1,Burkina Faso,NO
+BFA.5_1,Burkina Faso,NO
+BFA.6_1,Burkina Faso,NO
+BFA.8_1,Burkina Faso,NO
+BFA.9_1,Burkina Faso,NO
+BFA.10_1,Burkina Faso,NO
+BFA.11_1,Burkina Faso,NO
+BFA.12_1,Burkina Faso,NO
+BFA.13_1,Burkina Faso,NO
+BGD.1_1,Bangladesh,NO
+BGD.2_1,Bangladesh,OK
+BGD.3_1,Bangladesh,OK
+BGD.4_1,Bangladesh,NO
+BGD.8_1,Bangladesh,OK
+BGD.5_1,Bangladesh,OK
+BGD.6_1,Bangladesh,OK
+BGD.7_1,Bangladesh,NO
+BGR.1_1,Bulgaria,OK
+BGR.2_1,Bulgaria,OK
+BGR.3_1,Bulgaria,NO
+BGR.4_1,Bulgaria,OK
+BGR.5_1,Bulgaria,OK
+BGR.6_1,Bulgaria,OK
+BGR.7_1,Bulgaria,OK
+BGR.8_1,Bulgaria,OK
+BGR.9_1,Bulgaria,OK
+BGR.10_1,Bulgaria,NO
+BGR.11_1,Bulgaria,OK
+BGR.12_1,Bulgaria,OK
+BGR.13_1,Bulgaria,OK
+BGR.14_1,Bulgaria,OK
+BGR.15_1,Bulgaria,NO
+BGR.16_1,Bulgaria,OK
+BGR.17_1,Bulgaria,NO
+BGR.18_1,Bulgaria,OK
+BGR.19_1,Bulgaria,NO
+BGR.20_1,Bulgaria,NO
+BGR.21_1,Bulgaria,NO
+BGR.22_1,Bulgaria,OK
+BGR.23_1,Bulgaria,OK
+BGR.24_1,Bulgaria,OK
+BGR.25_1,Bulgaria,NO
+BGR.26_1,Bulgaria,OK
+BGR.27_1,Bulgaria,OK
+BGR.28_1,Bulgaria,NO
+BHR.1_1,Bahrain,NO
+BHR.3_1,Bahrain,NO
+BHR.4_1,Bahrain,NO
+BHR.5_1,Bahrain,NO
+BHS.1_1,Bahamas,NO
+BHS.2_1,Bahamas,NO
+BHS.3_1,Bahamas,NO
+BHS.4_1,Bahamas,NO
+BHS.5_1,Bahamas,NO
+BHS.6_1,Bahamas,NO
+BHS.7_1,Bahamas,NO
+BHS.8_1,Bahamas,NO
+BHS.9_1,Bahamas,NO
+BHS.10_1,Bahamas,NO
+BHS.11_1,Bahamas,NO
+BHS.12_1,Bahamas,NO
+BHS.13_1,Bahamas,NO
+BHS.14_1,Bahamas,NO
+BHS.15_1,Bahamas,NO
+BHS.16_1,Bahamas,NO
+BHS.17_1,Bahamas,NO
+BHS.18_1,Bahamas,NO
+BHS.19_1,Bahamas,NO
+BHS.20_1,Bahamas,NO
+BHS.21_1,Bahamas,NO
+BHS.22_1,Bahamas,NO
+BHS.23_1,Bahamas,NO
+BHS.24_1,Bahamas,NO
+BHS.25_1,Bahamas,NO
+BHS.26_1,Bahamas,NO
+BHS.27_1,Bahamas,NO
+BHS.28_1,Bahamas,NO
+BHS.29_1,Bahamas,NO
+BHS.30_1,Bahamas,NO
+BHS.31_1,Bahamas,NO
+BHS.32_1,Bahamas,NO
+BIH.1_1,Bosnia and Herzegovina,OK
+BIH.2_1,Bosnia and Herzegovina,NO
+BIH.3_1,Bosnia and Herzegovina,NO
+BLM.1_1,Saint-Barthélemy,NO
+BLM.2_1,Saint-Barthélemy,NO
+BLR.1_1,Belarus,NO
+BLR.2_1,Belarus,NO
+BLR.3_1,Belarus,NO
+BLR.5_1,Belarus,NO
+BLR.7_1,Belarus,NO
+BLR.4_1,Belarus,NO
+BLR.6_1,Belarus,NO
+BLZ.1_1,Belize,NO
+BLZ.2_1,Belize,NO
+BLZ.3_1,Belize,NO
+BLZ.4_1,Belize,NO
+BLZ.5_1,Belize,NO
+BLZ.6_1,Belize,NO
+BMU.1_1,Bermuda,OK
+BMU.2_1,Bermuda,OK
+BMU.3_1,Bermuda,OK
+BMU.4_1,Bermuda,OK
+BMU.5_1,Bermuda,NO
+BMU.6_1,Bermuda,OK
+BMU.7_1,Bermuda,OK
+BMU.8_1,Bermuda,OK
+BMU.9_1,Bermuda,OK
+BMU.10_1,Bermuda,OK
+BMU.11_1,Bermuda,OK
+BOL.3_1,Bolivia,NO
+BOL.1_1,Bolivia,NO
+BOL.2_1,Bolivia,NO
+BOL.4_1,Bolivia,NO
+BOL.5_1,Bolivia,NO
+BOL.6_1,Bolivia,NO
+BOL.7_1,Bolivia,NO
+BOL.8_1,Bolivia,NO
+BOL.9_1,Bolivia,NO
+BRA.1_1,Brazil,NO
+BRA.2_1,Brazil,NO
+BRA.3_1,Brazil,NO
+BRA.4_1,Brazil,NO
+BRA.5_1,Brazil,NO
+BRA.6_1,Brazil,OK
+BRA.7_1,Brazil,OK
+BRA.8_1,Brazil,NO
+BRA.9_1,Brazil,OK
+BRA.10_1,Brazil,NO
+BRA.12_1,Brazil,NO
+BRA.11_1,Brazil,NO
+BRA.13_1,Brazil,OK
+BRA.14_1,Brazil,NO
+BRA.15_1,Brazil,OK
+BRA.16_1,Brazil,NO
+BRA.17_1,Brazil,OK
+BRA.18_1,Brazil,NO
+BRA.19_1,Brazil,NO
+BRA.20_1,Brazil,NO
+BRA.21_1,Brazil,NO
+BRA.22_1,Brazil,NO
+BRA.23_1,Brazil,NO
+BRA.24_1,Brazil,NO
+BRA.25_1,Brazil,NO
+BRA.26_1,Brazil,NO
+BRA.27_1,Brazil,NO
+BRB.1_1,Barbados,NO
+BRB.2_1,Barbados,NO
+BRB.3_1,Barbados,NO
+BRB.4_1,Barbados,NO
+BRB.5_1,Barbados,NO
+BRB.6_1,Barbados,NO
+BRB.7_1,Barbados,NO
+BRB.8_1,Barbados,NO
+BRB.9_1,Barbados,NO
+BRB.10_1,Barbados,NO
+BRB.11_1,Barbados,NO
+BRN.1_1,Brunei,NO
+BRN.2_1,Brunei,NO
+BRN.3_1,Brunei,NO
+BRN.4_1,Brunei,NO
+BTN.1_1,Bhutan,NO
+BTN.2_1,Bhutan,NO
+BTN.3_1,Bhutan,NO
+BTN.4_1,Bhutan,NO
+BTN.5_1,Bhutan,NO
+BTN.6_1,Bhutan,NO
+BTN.7_1,Bhutan,NO
+BTN.8_1,Bhutan,NO
+BTN.9_1,Bhutan,NO
+BTN.10_1,Bhutan,NO
+BTN.11_1,Bhutan,NO
+BTN.12_1,Bhutan,NO
+BTN.13_1,Bhutan,NO
+BTN.14_1,Bhutan,NO
+BTN.19_1,Bhutan,NO
+BTN.15_1,Bhutan,NO
+BTN.16_1,Bhutan,NO
+BTN.17_1,Bhutan,NO
+BTN.18_1,Bhutan,NO
+BTN.20_1,Bhutan,NO
+BWA.1_1,Botswana,NO
+BWA.2_1,Botswana,NO
+BWA.3_1,Botswana,OK
+BWA.4_1,Botswana,OK
+BWA.5_1,Botswana,NO
+BWA.6_1,Botswana,NO
+BWA.7_1,Botswana,NO
+BWA.8_1,Botswana,NO
+BWA.9_1,Botswana,OK
+BWA.10_1,Botswana,OK
+BWA.11_1,Botswana,NO
+BWA.12_1,Botswana,NO
+BWA.13_1,Botswana,NO
+BWA.14_1,Botswana,OK
+BWA.15_1,Botswana,NO
+BWA.16_1,Botswana,OK
+CAF.1_1,Central African Republic,NO
+CAF.2_1,Central African Republic,NO
+CAF.3_1,Central African Republic,NO
+CAF.4_1,Central African Republic,NO
+CAF.5_1,Central African Republic,NO
+CAF.6_1,Central African Republic,NO
+CAF.7_1,Central African Republic,NO
+CAF.8_1,Central African Republic,NO
+CAF.9_1,Central African Republic,NO
+CAF.10_1,Central African Republic,NO
+CAF.11_1,Central African Republic,NO
+CAF.12_1,Central African Republic,NO
+CAF.13_1,Central African Republic,NO
+CAF.15_1,Central African Republic,NO
+CAF.14_1,Central African Republic,NO
+CAF.16_1,Central African Republic,NO
+CAF.17_1,Central African Republic,NO
+CAN.1_1,Canada,NO
+CAN.2_1,Canada,NO
+CAN.3_1,Canada,NO
+CAN.4_1,Canada,NO
+CAN.5_1,Canada,NO
+CAN.6_1,Canada,NO
+CAN.7_1,Canada,NO
+CAN.8_1,Canada,NO
+CAN.9_1,Canada,NO
+CAN.10_1,Canada,NO
+CAN.11_1,Canada,NO
+CAN.12_1,Canada,NO
+CAN.13_1,Canada,NO
+CHE.1_1,Switzerland,OK
+CHE.2_1,Switzerland,OK
+CHE.3_1,Switzerland,OK
+CHE.4_1,Switzerland,OK
+CHE.5_1,Switzerland,OK
+CHE.6_1,Switzerland,OK
+CHE.7_1,Switzerland,OK
+CHE.8_1,Switzerland,OK
+CHE.9_1,Switzerland,OK
+CHE.10_1,Switzerland,NO
+CHE.11_1,Switzerland,OK
+CHE.12_1,Switzerland,OK
+CHE.13_1,Switzerland,OK
+CHE.14_1,Switzerland,OK
+CHE.15_1,Switzerland,OK
+CHE.16_1,Switzerland,OK
+CHE.17_1,Switzerland,OK
+CHE.18_1,Switzerland,OK
+CHE.19_1,Switzerland,OK
+CHE.20_1,Switzerland,OK
+CHE.21_1,Switzerland,OK
+CHE.22_1,Switzerland,OK
+CHE.23_1,Switzerland,OK
+CHE.24_1,Switzerland,OK
+CHE.25_1,Switzerland,OK
+CHE.26_1,Switzerland,OK
+CHL.2_1,Chile,NO
+CHL.3_1,Chile,NO
+CHL.4_1,Chile,NO
+CHL.5_1,Chile,NO
+CHL.1_1,Chile,NO
+CHL.6_1,Chile,NO
+CHL.7_1,Chile,NO
+CHL.8_1,Chile,NO
+CHL.9_1,Chile,NO
+CHL.10_1,Chile,NO
+CHL.11_1,Chile,NO
+CHL.12_1,Chile,NO
+CHL.13_1,Chile,OK
+CHL.14_1,Chile,NO
+CHL.15_1,Chile,NO
+CHL.16_1,Chile,NO
+CHN.1_1,China,NO
+CHN.2_1,China,NO
+CHN.3_1,China,NO
+CHN.4_1,China,NO
+CHN.5_1,China,NO
+CHN.6_1,China,NO
+CHN.7_1,China,NO
+CHN.8_1,China,NO
+CHN.9_1,China,NO
+CHN.10_1,China,NO
+CHN.11_1,China,NO
+CHN.12_1,China,NO
+CHN.HKG,China,OK
+CHN.13_1,China,NO
+CHN.14_1,China,NO
+CHN.15_1,China,NO
+CHN.16_1,China,NO
+CHN.17_1,China,NO
+CHN.18_1,China,NO
+CHN.MAC,China,NO
+CHN.19_1,China,NO
+CHN.20_1,China,NO
+CHN.21_1,China,NO
+CHN.22_1,China,NO
+CHN.23_1,China,NO
+CHN.24_1,China,NO
+CHN.25_1,China,NO
+CHN.26_1,China,NO
+CHN.27_1,China,NO
+CHN.28_1,China,NO
+Z02.28_1,China,NO
+Z03.28_1,China,NO
+CHN.29_1,China,NO
+Z03.29_1,China,NO
+Z08.29_1,China,NO
+CHN.30_1,China,NO
+CHN.31_1,China,NO
+CIV.1_1,Côte d'Ivoire,NO
+CIV.2_1,Côte d'Ivoire,NO
+CIV.3_1,Côte d'Ivoire,NO
+CIV.4_1,Côte d'Ivoire,NO
+CIV.5_1,Côte d'Ivoire,NO
+CIV.6_1,Côte d'Ivoire,NO
+CIV.7_1,Côte d'Ivoire,NO
+CIV.8_1,Côte d'Ivoire,NO
+CIV.9_1,Côte d'Ivoire,NO
+CIV.10_1,Côte d'Ivoire,NO
+CIV.11_1,Côte d'Ivoire,NO
+CIV.12_1,Côte d'Ivoire,NO
+CIV.13_1,Côte d'Ivoire,NO
+CIV.14_1,Côte d'Ivoire,NO
+CMR.1_1,Cameroon,NO
+CMR.2_1,Cameroon,NO
+CMR.3_1,Cameroon,NO
+CMR.4_1,Cameroon,NO
+CMR.5_1,Cameroon,NO
+CMR.7_1,Cameroon,NO
+CMR.6_1,Cameroon,NO
+CMR.8_1,Cameroon,NO
+CMR.10_1,Cameroon,NO
+CMR.9_1,Cameroon,NO
+COD.1_1,Democratic Republic of the Congo,NO
+COD.2_1,Democratic Republic of the Congo,NO
+COD.3_1,Democratic Republic of the Congo,NO
+COD.4_1,Democratic Republic of the Congo,NO
+COD.5_1,Democratic Republic of the Congo,NO
+COD.6_1,Democratic Republic of the Congo,NO
+COD.9_1,Democratic Republic of the Congo,NO
+COD.7_1,Democratic Republic of the Congo,NO
+COD.8_1,Democratic Republic of the Congo,NO
+COD.10_1,Democratic Republic of the Congo,NO
+COD.11_1,Democratic Republic of the Congo,NO
+COD.12_1,Democratic Republic of the Congo,NO
+COD.13_1,Democratic Republic of the Congo,NO
+COD.14_1,Democratic Republic of the Congo,NO
+COD.15_1,Democratic Republic of the Congo,NO
+COD.16_1,Democratic Republic of the Congo,NO
+COD.17_1,Democratic Republic of the Congo,NO
+COD.18_1,Democratic Republic of the Congo,NO
+COD.19_1,Democratic Republic of the Congo,OK
+COD.20_1,Democratic Republic of the Congo,NO
+COD.21_1,Democratic Republic of the Congo,NO
+COD.22_1,Democratic Republic of the Congo,NO
+COD.23_1,Democratic Republic of the Congo,NO
+COD.24_1,Democratic Republic of the Congo,NO
+COD.25_1,Democratic Republic of the Congo,NO
+COD.26_1,Democratic Republic of the Congo,NO
+COG.1_1,Republic of the Congo,NO
+COG.2_1,Republic of the Congo,NO
+COG.4_1,Republic of the Congo,NO
+COG.3_1,Republic of the Congo,NO
+COG.5_1,Republic of the Congo,NO
+COG.6_1,Republic of the Congo,NO
+COG.7_1,Republic of the Congo,NO
+COG.8_1,Republic of the Congo,NO
+COG.9_1,Republic of the Congo,NO
+COG.10_1,Republic of the Congo,NO
+COG.11_1,Republic of the Congo,NO
+COG.12_1,Republic of the Congo,NO
+COK.1_1,Cook Islands,NO
+COK.2_1,Cook Islands,NO
+COK.3_1,Cook Islands,NO
+COK.4_1,Cook Islands,NO
+COK.5_1,Cook Islands,NO
+COK.6_1,Cook Islands,NO
+COK.7_1,Cook Islands,NO
+COK.8_1,Cook Islands,NO
+COK.9_1,Cook Islands,NO
+COK.10_1,Cook Islands,NO
+COK.11_1,Cook Islands,NO
+COL.1_2,Colombia,NO
+COL.2_2,Colombia,NO
+COL.3_2,Colombia,NO
+COL.4_2,Colombia,NO
+COL.5_2,Colombia,OK
+COL.6_2,Colombia,OK
+COL.7_2,Colombia,NO
+COL.8_2,Colombia,OK
+COL.9_2,Colombia,NO
+COL.10_2,Colombia,NO
+COL.11_2,Colombia,NO
+COL.12_2,Colombia,NO
+COL.13_2,Colombia,NO
+COL.14_2,Colombia,NO
+COL.15_2,Colombia,OK
+COL.16_2,Colombia,NO
+COL.17_2,Colombia,NO
+COL.18_2,Colombia,NO
+COL.19_2,Colombia,NO
+COL.20_2,Colombia,OK
+COL.21_2,Colombia,NO
+COL.22_2,Colombia,OK
+COL.23_2,Colombia,NO
+COL.24_2,Colombia,NO
+COL.25_2,Colombia,OK
+COL.26_2,Colombia,OK
+COL.27_1,Colombia,OK
+COL.28_2,Colombia,NO
+COL.29_2,Colombia,NO
+COL.30_2,Colombia,NO
+COL.31_2,Colombia,OK
+COL.32_2,Colombia,NO
+COL.33_2,Colombia,NO
+COM.3_1,Comoros,NO
+COM.2_1,Comoros,NO
+COM.1_1,Comoros,NO
+CPV.1_1,Cabo Verde,NO
+CPV.2_1,Cabo Verde,NO
+CPV.3_1,Cabo Verde,NO
+CPV.4_1,Cabo Verde,NO
+CPV.5_1,Cabo Verde,NO
+CPV.6_1,Cabo Verde,NO
+CPV.7_1,Cabo Verde,NO
+CPV.8_1,Cabo Verde,NO
+CPV.9_1,Cabo Verde,NO
+CPV.10_1,Cabo Verde,NO
+CPV.11_1,Cabo Verde,NO
+CPV.12_1,Cabo Verde,NO
+CPV.13_1,Cabo Verde,NO
+CPV.14_1,Cabo Verde,NO
+CPV.15_1,Cabo Verde,NO
+CPV.16_1,Cabo Verde,NO
+CPV.17_1,Cabo Verde,NO
+CPV.18_1,Cabo Verde,NO
+CPV.19_1,Cabo Verde,NO
+CPV.20_1,Cabo Verde,NO
+CPV.21_1,Cabo Verde,NO
+CPV.22_1,Cabo Verde,NO
+CRI.1_1,Costa Rica,OK
+CRI.2_1,Costa Rica,NO
+CRI.3_1,Costa Rica,NO
+CRI.4_1,Costa Rica,NO
+CRI.5_1,Costa Rica,NO
+CRI.6_1,Costa Rica,NO
+CRI.7_1,Costa Rica,OK
+CUB.1_1,Cuba,NO
+CUB.2_1,Cuba,NO
+CUB.3_1,Cuba,NO
+CUB.4_1,Cuba,NO
+CUB.5_1,Cuba,NO
+CUB.6_1,Cuba,NO
+CUB.7_1,Cuba,NO
+CUB.8_1,Cuba,NO
+CUB.9_1,Cuba,NO
+CUB.10_1,Cuba,NO
+CUB.11_1,Cuba,NO
+CUB.12_1,Cuba,NO
+CUB.13_1,Cuba,NO
+CUB.14_1,Cuba,NO
+CUB.15_1,Cuba,NO
+CUB.16_1,Cuba,NO
+CYM.1_1,Cayman Islands,NO
+CYM.3_1,Cayman Islands,NO
+CYM.4_1,Cayman Islands,NO
+CYM.6_1,Cayman Islands,NO
+CYM.8_1,Cayman Islands,NO
+CYM.7_1,Cayman Islands,NO
+CYP.1_1,Cyprus,NO
+CYP.2_1,Cyprus,OK
+CYP.3_1,Cyprus,OK
+CYP.4_1,Cyprus,OK
+CYP.5_1,Cyprus,NO
+CZE.1_1,Czechia,OK
+CZE.2_1,Czechia,OK
+CZE.3_1,Czechia,OK
+CZE.4_1,Czechia,OK
+CZE.5_1,Czechia,OK
+CZE.6_1,Czechia,OK
+CZE.7_1,Czechia,OK
+CZE.8_1,Czechia,OK
+CZE.9_1,Czechia,OK
+CZE.10_1,Czechia,OK
+CZE.11_1,Czechia,OK
+CZE.12_1,Czechia,OK
+CZE.13_1,Czechia,OK
+CZE.14_1,Czechia,OK
+DEU.1_1,Germany,OK
+DEU.2_1,Germany,OK
+DEU.3_1,Germany,OK
+DEU.4_1,Germany,OK
+DEU.5_1,Germany,OK
+DEU.6_1,Germany,OK
+DEU.7_1,Germany,NO
+DEU.8_1,Germany,NO
+DEU.9_1,Germany,NO
+DEU.10_1,Germany,OK
+DEU.11_1,Germany,OK
+DEU.12_1,Germany,OK
+DEU.14_1,Germany,OK
+DEU.13_1,Germany,NO
+DEU.15_1,Germany,NO
+DEU.16_1,Germany,OK
+DJI.1_2,Djibouti,NO
+DJI.6_1,Djibouti,NO
+DJI.2_1,Djibouti,NO
+DJI.3_1,Djibouti,NO
+DJI.4_1,Djibouti,NO
+DJI.5_1,Djibouti,NO
+DMA.1_1,Dominica,NO
+DMA.2_1,Dominica,NO
+DMA.3_1,Dominica,NO
+DMA.4_1,Dominica,NO
+DMA.5_1,Dominica,NO
+DMA.6_1,Dominica,NO
+DMA.7_1,Dominica,NO
+DMA.8_1,Dominica,NO
+DMA.9_1,Dominica,NO
+DMA.10_1,Dominica,NO
+DNK.1_1,Denmark,OK
+DNK.2_1,Denmark,NO
+DNK.3_1,Denmark,NO
+DNK.4_1,Denmark,OK
+DNK.5_1,Denmark,OK
+DOM.1_1,Dominican Republic,NO
+DOM.2_1,Dominican Republic,NO
+DOM.3_1,Dominican Republic,NO
+DOM.4_1,Dominican Republic,NO
+DOM.5_1,Dominican Republic,OK
+DOM.6_1,Dominican Republic,NO
+DOM.7_1,Dominican Republic,NO
+DOM.8_1,Dominican Republic,NO
+DOM.9_1,Dominican Republic,NO
+DOM.10_1,Dominican Republic,NO
+DOM.11_1,Dominican Republic,NO
+DOM.12_1,Dominican Republic,NO
+DOM.13_1,Dominican Republic,NO
+DOM.14_1,Dominican Republic,NO
+DOM.15_1,Dominican Republic,NO
+DOM.16_1,Dominican Republic,NO
+DOM.17_1,Dominican Republic,NO
+DOM.18_1,Dominican Republic,NO
+DOM.19_1,Dominican Republic,NO
+DOM.20_1,Dominican Republic,NO
+DOM.21_1,Dominican Republic,NO
+DOM.22_1,Dominican Republic,NO
+DOM.23_1,Dominican Republic,NO
+DOM.24_1,Dominican Republic,NO
+DOM.25_1,Dominican Republic,NO
+DOM.26_1,Dominican Republic,NO
+DOM.27_1,Dominican Republic,NO
+DOM.28_1,Dominican Republic,NO
+DOM.30_1,Dominican Republic,NO
+DOM.29_1,Dominican Republic,NO
+DOM.31_1,Dominican Republic,OK
+DOM.32_1,Dominican Republic,NO
+DZA.1_1,Algeria,NO
+DZA.2_1,Algeria,NO
+DZA.3_1,Algeria,NO
+DZA.4_1,Algeria,NO
+DZA.5_1,Algeria,NO
+DZA.6_1,Algeria,NO
+DZA.7_1,Algeria,NO
+DZA.8_1,Algeria,NO
+DZA.9_1,Algeria,NO
+DZA.10_1,Algeria,NO
+DZA.11_1,Algeria,NO
+DZA.12_1,Algeria,NO
+DZA.13_1,Algeria,NO
+DZA.14_1,Algeria,NO
+DZA.15_1,Algeria,NO
+DZA.16_1,Algeria,NO
+DZA.17_1,Algeria,NO
+DZA.18_1,Algeria,NO
+DZA.19_1,Algeria,NO
+DZA.20_1,Algeria,NO
+DZA.21_1,Algeria,NO
+DZA.22_1,Algeria,NO
+DZA.23_1,Algeria,NO
+DZA.24_1,Algeria,NO
+DZA.25_1,Algeria,NO
+DZA.26_1,Algeria,NO
+DZA.27_1,Algeria,NO
+DZA.28_1,Algeria,NO
+DZA.29_1,Algeria,NO
+DZA.30_1,Algeria,NO
+DZA.31_1,Algeria,NO
+DZA.32_1,Algeria,NO
+DZA.33_1,Algeria,NO
+DZA.34_1,Algeria,NO
+DZA.35_1,Algeria,NO
+DZA.36_1,Algeria,NO
+DZA.37_1,Algeria,NO
+DZA.38_1,Algeria,NO
+DZA.39_1,Algeria,NO
+DZA.40_1,Algeria,NO
+DZA.41_1,Algeria,NO
+DZA.42_1,Algeria,NO
+DZA.43_1,Algeria,NO
+DZA.44_1,Algeria,NO
+DZA.45_1,Algeria,NO
+DZA.46_1,Algeria,NO
+DZA.47_1,Algeria,NO
+DZA.48_1,Algeria,NO
+ECU.1_1,Ecuador,NO
+ECU.2_1,Ecuador,NO
+ECU.3_1,Ecuador,NO
+ECU.4_1,Ecuador,NO
+ECU.5_1,Ecuador,NO
+ECU.6_1,Ecuador,NO
+ECU.7_1,Ecuador,NO
+ECU.8_1,Ecuador,NO
+ECU.9_1,Ecuador,OK
+ECU.10_1,Ecuador,NO
+ECU.11_1,Ecuador,NO
+ECU.12_1,Ecuador,NO
+ECU.13_1,Ecuador,NO
+ECU.14_1,Ecuador,NO
+ECU.15_1,Ecuador,NO
+ECU.16_1,Ecuador,OK
+ECU.17_1,Ecuador,NO
+ECU.18_1,Ecuador,NO
+ECU.19_1,Ecuador,OK
+ECU.20_1,Ecuador,NO
+ECU.21_1,Ecuador,NO
+ECU.22_1,Ecuador,NO
+ECU.23_1,Ecuador,OK
+ECU.24_1,Ecuador,NO
+EGY.1_1,Egypt,NO
+EGY.2_1,Egypt,NO
+EGY.3_1,Egypt,NO
+EGY.4_1,Egypt,NO
+EGY.5_1,Egypt,NO
+EGY.6_1,Egypt,NO
+EGY.7_1,Egypt,NO
+EGY.8_1,Egypt,NO
+EGY.9_1,Egypt,NO
+EGY.10_1,Egypt,NO
+EGY.11_1,Egypt,NO
+EGY.12_1,Egypt,NO
+EGY.13_1,Egypt,NO
+EGY.14_1,Egypt,NO
+EGY.15_1,Egypt,NO
+EGY.16_1,Egypt,NO
+EGY.17_1,Egypt,NO
+EGY.18_1,Egypt,NO
+EGY.19_1,Egypt,NO
+EGY.20_1,Egypt,NO
+EGY.21_1,Egypt,NO
+EGY.22_1,Egypt,NO
+EGY.23_1,Egypt,NO
+EGY.24_1,Egypt,NO
+EGY.25_1,Egypt,NO
+EGY.26_1,Egypt,NO
+EGY.27_1,Egypt,NO
+ERI.6_1,Eritrea,NO
+ERI.5_1,Eritrea,NO
+ERI.3_1,Eritrea,NO
+ERI.4_1,Eritrea,NO
+ERI.1_1,Eritrea,NO
+ERI.2_1,Eritrea,NO
+ESH.1_1,Western Sahara,NO
+ESH.2_1,Western Sahara,NO
+ESH.3_1,Western Sahara,NO
+ESH.4_1,Western Sahara,NO
+ESP.1_1,Spain,OK
+ESP.2_1,Spain,OK
+ESP.3_1,Spain,NO
+ESP.4_1,Spain,OK
+ESP.5_1,Spain,OK
+ESP.6_1,Spain,OK
+ESP.7_1,Spain,OK
+ESP.8_1,Spain,OK
+ESP.9_1,Spain,OK
+ESP.10_1,Spain,OK
+ESP.11_1,Spain,OK
+ESP.12_1,Spain,OK
+ESP.13_1,Spain,NO
+ESP.14_1,Spain,OK
+ESP.15_1,Spain,OK
+ESP.16_1,Spain,OK
+ESP.17_1,Spain,NO
+ESP.18_1,Spain,NO
+EST.1_1,Estonia,NO
+EST.2_1,Estonia,NO
+EST.3_1,Estonia,OK
+EST.4_1,Estonia,NO
+EST.5_1,Estonia,OK
+EST.7_1,Estonia,NO
+EST.6_1,Estonia,NO
+EST.8_1,Estonia,NO
+EST.9_1,Estonia,NO
+EST.10_1,Estonia,OK
+EST.11_1,Estonia,OK
+EST.12_1,Estonia,NO
+EST.13_1,Estonia,OK
+EST.14_1,Estonia,NO
+EST.15_1,Estonia,NO
+EST.16_1,Estonia,OK
+ETH.1_1,Ethiopia,NO
+ETH.2_1,Ethiopia,NO
+ETH.3_1,Ethiopia,NO
+ETH.4_1,Ethiopia,NO
+ETH.5_1,Ethiopia,NO
+ETH.6_1,Ethiopia,NO
+ETH.7_1,Ethiopia,NO
+ETH.8_1,Ethiopia,NO
+ETH.9_1,Ethiopia,NO
+ETH.10_1,Ethiopia,NO
+ETH.11_1,Ethiopia,NO
+FIN.1_1,Finland,OK
+FIN.2_1,Finland,NO
+FIN.3_1,Finland,NO
+FIN.4_1,Finland,NO
+FIN.5_1,Finland,NO
+FJI.1_1,Fiji,NO
+FJI.2_1,Fiji,NO
+FJI.3_1,Fiji,NO
+FJI.4_1,Fiji,NO
+FJI.5_1,Fiji,NO
+FRA.1_1,France,OK
+FRA.2_1,France,OK
+FRA.3_1,France,NO
+FRA.4_1,France,OK
+FRA.5_1,France,OK
+FRA.6_1,France,OK
+FRA.7_1,France,OK
+FRA.8_1,France,OK
+FRA.9_1,France,NO
+FRA.10_1,France,NO
+FRA.11_1,France,NO
+FRA.12_1,France,OK
+FRA.13_1,France,NO
+FRO.1_1,Faroe Islands,NO
+FRO.2_1,Faroe Islands,OK
+FRO.3_1,Faroe Islands,NO
+FRO.4_1,Faroe Islands,NO
+FRO.5_1,Faroe Islands,NO
+FRO.6_1,Faroe Islands,NO
+FSM.1_1,Micronesia,NO
+FSM.2_1,Micronesia,NO
+FSM.3_1,Micronesia,NO
+FSM.4_1,Micronesia,NO
+GAB.1_1,Gabon,NO
+GAB.2_1,Gabon,NO
+GAB.3_1,Gabon,NO
+GAB.4_1,Gabon,NO
+GAB.5_1,Gabon,NO
+GAB.6_1,Gabon,NO
+GAB.7_1,Gabon,NO
+GAB.8_1,Gabon,NO
+GAB.9_1,Gabon,NO
+GBR.2_1,United Kingdom,NO
+GBR.3_1,United Kingdom,NO
+GBR.4_1,United Kingdom,NO
+GBR.1_1,United Kingdom,NO
+,,NO
+GEO.1_1,Georgia,NO
+GEO.2_1,Georgia,NO
+GEO.3_1,Georgia,NO
+GEO.4_1,Georgia,NO
+GEO.5_1,Georgia,NO
+GEO.6_1,Georgia,NO
+GEO.7_1,Georgia,NO
+GEO.8_1,Georgia,NO
+GEO.9_1,Georgia,NO
+GEO.10_1,Georgia,NO
+GEO.11_1,Georgia,NO
+GEO.12_1,Georgia,NO
+GGY.1_1,Guernsey,NO
+GGY.3_1,Guernsey,NO
+GGY.4_1,Guernsey,NO
+GGY.7_1,Guernsey,NO
+GGY.8_1,Guernsey,NO
+GGY.9_1,Guernsey,NO
+GGY.10_1,Guernsey,NO
+GGY.11_1,Guernsey,NO
+GGY.12_1,Guernsey,NO
+GGY.13_1,Guernsey,NO
+GGY.14_1,Guernsey,NO
+GGY.15_1,Guernsey,NO
+GHA1_2,Ghana,NO
+GHA2_2,Ghana,NO
+GHA3_2,Ghana,NO
+GHA4_2,Ghana,NO
+GHA5_2,Ghana,NO
+GHA6_2,Ghana,NO
+GHA7_2,Ghana,OK
+GHA8_2,Ghana,NO
+GHA9_2,Ghana,NO
+GHA10_2,Ghana,OK
+GHA11_2,Ghana,NO
+GHA12_2,Ghana,NO
+GHA13_2,Ghana,NO
+GHA14_2,Ghana,NO
+GHA15_2,Ghana,NO
+GHA16_2,Ghana,NO
+GIN.1_1,Guinea,NO
+GIN.2_1,Guinea,NO
+GIN.3_1,Guinea,NO
+GIN.4_1,Guinea,NO
+GIN.5_1,Guinea,NO
+GIN.6_1,Guinea,NO
+GIN.7_1,Guinea,NO
+GIN.8_1,Guinea,NO
+GLP.1_1,Guadeloupe,NO
+GLP.2_1,Guadeloupe,NO
+GMB.1_1,Gambia,NO
+GMB.2_1,Gambia,NO
+GMB.3_1,Gambia,NO
+GMB.4_1,Gambia,NO
+GMB.5_1,Gambia,NO
+GMB.6_1,Gambia,NO
+GNB.1_1,Guinea-Bissau,NO
+GNB.2_1,Guinea-Bissau,NO
+GNB.3_1,Guinea-Bissau,NO
+GNB.4_1,Guinea-Bissau,NO
+GNB.5_1,Guinea-Bissau,NO
+GNB.6_1,Guinea-Bissau,NO
+GNB.7_1,Guinea-Bissau,NO
+GNB.8_1,Guinea-Bissau,NO
+GNB.9_1,Guinea-Bissau,NO
+GNQ.1_1,Equatorial Guinea,NO
+GNQ.2_1,Equatorial Guinea,NO
+GNQ.3_1,Equatorial Guinea,NO
+GNQ.4_1,Equatorial Guinea,NO
+GNQ.5_1,Equatorial Guinea,NO
+GNQ.6_1,Equatorial Guinea,NO
+GNQ.7_1,Equatorial Guinea,NO
+GRC.1_1,Greece,NO
+GRC.2_1,Greece,NO
+GRC.3_1,Greece,NO
+GRC.4_1,Greece,NO
+GRC.5_1,Greece,NO
+GRC.6_1,Greece,NO
+GRC.7_1,Greece,OK
+GRC.8_1,Greece,NO
+GRD.1_1,Grenada,NO
+GRD.2_1,Grenada,NO
+GRD.3_1,Grenada,NO
+GRD.4_1,Grenada,NO
+GRD.5_1,Grenada,NO
+GRD.6_1,Grenada,NO
+GRD.7_1,Grenada,NO
+GRL.1_1,Greenland,OK
+GRL.2_1,Greenland,NO
+GRL.3_1,Greenland,NO
+GRL.4_1,Greenland,NO
+GRL.5_1,Greenland,NO
+GTM.1_1,Guatemala,NO
+GTM.2_1,Guatemala,NO
+GTM.3_1,Guatemala,NO
+GTM.4_1,Guatemala,OK
+GTM.5_1,Guatemala,NO
+GTM.6_1,Guatemala,NO
+GTM.7_1,Guatemala,OK
+GTM.8_1,Guatemala,NO
+GTM.9_1,Guatemala,NO
+GTM.10_1,Guatemala,NO
+GTM.11_1,Guatemala,NO
+GTM.12_1,Guatemala,NO
+GTM.13_1,Guatemala,OK
+GTM.14_1,Guatemala,NO
+GTM.15_1,Guatemala,NO
+GTM.16_1,Guatemala,NO
+GTM.17_1,Guatemala,NO
+GTM.18_1,Guatemala,NO
+GTM.19_1,Guatemala,NO
+GTM.20_1,Guatemala,OK
+GTM.21_1,Guatemala,NO
+GTM.22_1,Guatemala,NO
+GUF.1_1,French Guiana,NO
+GUF.2_1,French Guiana,NO
+GUM.1_1,Guam,OK
+GUM.2_1,Guam,NO
+GUM.3_1,Guam,OK
+GUM.4_1,Guam,OK
+GUM.5_1,Guam,OK
+GUM.6_1,Guam,NO
+GUM.7_1,Guam,OK
+GUM.8_1,Guam,NO
+GUM.9_1,Guam,OK
+GUM.10_1,Guam,NO
+GUM.11_1,Guam,OK
+GUM.12_1,Guam,OK
+GUM.13_1,Guam,NO
+GUM.14_1,Guam,NO
+GUM.15_1,Guam,NO
+GUM.16_1,Guam,OK
+GUM.17_1,Guam,OK
+GUM.18_1,Guam,NO
+GUM.19_1,Guam,OK
+GUY.1_1,Guyana,NO
+GUY.2_1,Guyana,NO
+GUY.3_1,Guyana,NO
+GUY.4_1,Guyana,NO
+GUY.5_1,Guyana,NO
+GUY.6_1,Guyana,NO
+GUY.7_1,Guyana,NO
+GUY.8_1,Guyana,NO
+GUY.9_1,Guyana,NO
+GUY.10_1,Guyana,NO
+HND.1_1,Honduras,NO
+HND.2_1,Honduras,NO
+HND.3_1,Honduras,NO
+HND.4_1,Honduras,NO
+HND.5_1,Honduras,NO
+HND.6_1,Honduras,NO
+HND.7_1,Honduras,NO
+HND.8_1,Honduras,NO
+HND.9_1,Honduras,NO
+HND.10_1,Honduras,NO
+HND.11_1,Honduras,NO
+HND.12_1,Honduras,NO
+HND.13_1,Honduras,NO
+HND.14_1,Honduras,NO
+HND.15_1,Honduras,NO
+HND.16_1,Honduras,NO
+HND.17_1,Honduras,NO
+HND.18_1,Honduras,NO
+HRV.1_1,Croatia,OK
+HRV.2_1,Croatia,OK
+HRV.3_1,Croatia,NO
+HRV.4_1,Croatia,OK
+HRV.5_1,Croatia,NO
+HRV.6_1,Croatia,NO
+HRV.7_1,Croatia,OK
+HRV.8_1,Croatia,OK
+HRV.9_1,Croatia,OK
+HRV.10_1,Croatia,OK
+HRV.11_1,Croatia,OK
+HRV.12_1,Croatia,OK
+HRV.13_1,Croatia,NO
+HRV.14_1,Croatia,NO
+HRV.15_1,Croatia,OK
+HRV.16_1,Croatia,NO
+HRV.17_1,Croatia,OK
+HRV.18_1,Croatia,OK
+HRV.19_1,Croatia,OK
+HRV.20_1,Croatia,NO
+HRV.21_1,Croatia,OK
+HTI.1_1,Haiti,NO
+HTI.2_1,Haiti,NO
+HTI.3_1,Haiti,NO
+HTI.4_1,Haiti,NO
+HTI.7_1,Haiti,NO
+HTI.5_1,Haiti,NO
+HTI.6_1,Haiti,NO
+HTI.8_1,Haiti,NO
+HTI.10_1,Haiti,NO
+HTI.9_1,Haiti,NO
+HUN.1_1,Hungary,NO
+HUN.2_1,Hungary,OK
+HUN.3_1,Hungary,OK
+HUN.4_1,Hungary,OK
+HUN.5_1,Hungary,OK
+HUN.6_1,Hungary,OK
+HUN.7_1,Hungary,NO
+HUN.8_1,Hungary,OK
+HUN.9_1,Hungary,OK
+HUN.10_1,Hungary,OK
+HUN.11_1,Hungary,OK
+HUN.12_1,Hungary,OK
+HUN.13_1,Hungary,OK
+HUN.14_1,Hungary,OK
+HUN.15_1,Hungary,NO
+HUN.16_1,Hungary,NO
+HUN.17_1,Hungary,OK
+HUN.18_1,Hungary,OK
+HUN.19_1,Hungary,OK
+HUN.20_1,Hungary,OK
+IDN.1_1,Indonesia,NO
+IDN.2_1,Indonesia,NO
+IDN.3_1,Indonesia,NO
+IDN.4_1,Indonesia,NO
+IDN.5_1,Indonesia,NO
+IDN.6_1,Indonesia,NO
+IDN.7_1,Indonesia,NO
+IDN.8_1,Indonesia,NO
+IDN.9_1,Indonesia,NO
+IDN.10_1,Indonesia,NO
+IDN.11_1,Indonesia,NO
+IDN.12_1,Indonesia,NO
+IDN.13_1,Indonesia,NO
+IDN.14_1,Indonesia,NO
+IDN.34_1,Indonesia,NO
+IDN.35_1,Indonesia,NO
+IDN.16_1,Indonesia,NO
+IDN.17_1,Indonesia,NO
+IDN.19_1,Indonesia,NO
+IDN.18_1,Indonesia,NO
+IDN.20_1,Indonesia,NO
+IDN.21_1,Indonesia,NO
+IDN.23_1,Indonesia,NO
+IDN.22_1,Indonesia,NO
+IDN.24_1,Indonesia,NO
+IDN.25_1,Indonesia,NO
+IDN.26_1,Indonesia,NO
+IDN.27_1,Indonesia,NO
+IDN.28_1,Indonesia,NO
+IDN.29_1,Indonesia,NO
+IDN.30_1,Indonesia,NO
+IDN.31_1,Indonesia,NO
+IDN.32_1,Indonesia,NO
+IDN.33_1,Indonesia,NO
+IMN.1_2,Isle of Man,OK
+IMN.2_2,Isle of Man,OK
+IMN.3_2,Isle of Man,OK
+IMN.4_2,Isle of Man,OK
+IMN.5_2,Isle of Man,OK
+IMN.6_2,Isle of Man,OK
+IMN.7_2,Isle of Man,OK
+IMN.8_2,Isle of Man,OK
+IMN.9_2,Isle of Man,OK
+IMN.10_2,Isle of Man,OK
+IMN.11_2,Isle of Man,OK
+IMN.12_2,Isle of Man,OK
+IMN.13_2,Isle of Man,NO
+IMN.14_2,Isle of Man,OK
+IMN.15_2,Isle of Man,OK
+IMN.16_2,Isle of Man,OK
+IMN.17_2,Isle of Man,OK
+IMN.18_2,Isle of Man,OK
+IMN.19_2,Isle of Man,OK
+IMN.20_2,Isle of Man,OK
+IMN.21_2,Isle of Man,OK
+IND.1_1,India,NO
+IND.2_1,India,NO
+IND.3_1,India,NO
+Z07.3_1,India,OK
+IND.4_1,India,OK
+IND.5_1,India,OK
+IND.6_1,India,OK
+IND.7_1,India,OK
+IND.8_1,India,OK
+IND.9_1,India,OK
+IND.10_1,India,NO
+IND.11_1,India,NO
+IND.12_1,India,OK
+IND.13_1,India,OK
+Z04.13_1,India,NO
+Z09.13_1,India,NO
+Z01.14_1,India,NO
+IND.15_1,India,NO
+IND.16_1,India,NO
+IND.17_1,India,NO
+IND.18_1,India,OK
+IND.19_1,India,OK
+IND.20_1,India,NO
+IND.21_1,India,NO
+IND.22_1,India,NO
+IND.23_1,India,NO
+IND.24_1,India,NO
+IND.25_1,India,OK
+IND.26_1,India,NO
+IND.27_1,India,OK
+IND.28_1,India,OK
+IND.29_1,India,OK
+IND.30_1,India,OK
+IND.31_1,India,NO
+IND.32_1,India,OK
+IND.33_1,India,OK
+IND.34_1,India,NO
+IND.35_1,India,OK
+Z05.35_1,India,NO
+Z09.35_1,India,NO
+IND.36_1,India,NO
+IRL.1_1,Ireland,OK
+IRL.2_1,Ireland,OK
+IRL.3_1,Ireland,NO
+IRL.5_1,Ireland,OK
+IRL.6_1,Ireland,OK
+IRL.7_1,Ireland,NO
+IRL.8_1,Ireland,OK
+IRL.9_1,Ireland,OK
+IRL.10_1,Ireland,OK
+IRL.11_1,Ireland,OK
+IRL.12_1,Ireland,NO
+IRL.13_1,Ireland,NO
+IRL.14_1,Ireland,OK
+IRL.15_1,Ireland,OK
+IRL.16_1,Ireland,NO
+IRL.17_1,Ireland,OK
+IRL.18_1,Ireland,OK
+IRL.19_1,Ireland,OK
+IRL.20_1,Ireland,OK
+IRL.21_1,Ireland,NO
+IRL.22_1,Ireland,OK
+IRL.23_1,Ireland,NO
+IRL.24_1,Ireland,OK
+IRL.25_1,Ireland,OK
+IRL.26_1,Ireland,OK
+IRL.4_1,Ireland,NO
+IRN.1_1,Iran,NO
+IRN.2_1,Iran,NO
+IRN.3_1,Iran,NO
+IRN.4_1,Iran,NO
+IRN.5_1,Iran,NO
+IRN.6_1,Iran,NO
+IRN.7_1,Iran,NO
+IRN.8_1,Iran,NO
+IRN.9_1,Iran,NO
+IRN.10_1,Iran,NO
+IRN.11_1,Iran,NO
+IRN.12_1,Iran,NO
+IRN.13_1,Iran,NO
+IRN.14_1,Iran,NO
+IRN.15_1,Iran,NO
+IRN.16_1,Iran,NO
+IRN.17_1,Iran,NO
+IRN.18_1,Iran,NO
+IRN.19_1,Iran,NO
+IRN.20_1,Iran,NO
+IRN.21_1,Iran,NO
+IRN.22_1,Iran,NO
+IRN.23_1,Iran,NO
+IRN.24_1,Iran,NO
+IRN.25_1,Iran,NO
+IRN.26_1,Iran,NO
+IRN.27_1,Iran,NO
+IRN.28_1,Iran,NO
+IRN.29_1,Iran,NO
+IRN.30_1,Iran,NO
+IRN.31_1,Iran,NO
+IRQ.1_1,Iraq,NO
+IRQ.2_1,Iraq,NO
+IRQ.3_1,Iraq,NO
+IRQ.4_1,Iraq,NO
+IRQ.5_1,Iraq,NO
+IRQ.6_1,Iraq,NO
+IRQ.7_1,Iraq,NO
+IRQ.8_1,Iraq,NO
+IRQ.9_1,Iraq,NO
+IRQ.10_1,Iraq,NO
+IRQ.11_1,Iraq,NO
+IRQ.12_1,Iraq,NO
+IRQ.13_1,Iraq,NO
+IRQ.14_1,Iraq,NO
+IRQ.15_1,Iraq,NO
+IRQ.16_1,Iraq,NO
+IRQ.17_1,Iraq,NO
+IRQ.18_1,Iraq,NO
+ISL.1_1,Iceland,NO
+ISL.3_1,Iceland,OK
+ISL.2_1,Iceland,OK
+ISL.4_1,Iceland,NO
+ISL.5_1,Iceland,NO
+ISL.6_1,Iceland,NO
+ISL.7_1,Iceland,OK
+ISL.8_1,Iceland,OK
+ISR.1_1,Israel,OK
+ISR.2_1,Israel,OK
+ISR.3_1,Israel,OK
+ISR.4_1,Israel,OK
+ISR.5_1,Israel,OK
+ISR.6_1,Israel,OK
+ISR.7_1,Israel,OK
+ITA.1_1,Italy,OK
+ITA.2_1,Italy,NO
+ITA.3_1,Italy,OK
+ITA.4_1,Italy,NO
+ITA.5_1,Italy,OK
+ITA.6_1,Italy,OK
+ITA.7_1,Italy,NO
+ITA.8_1,Italy,NO
+ITA.9_1,Italy,OK
+ITA.10_1,Italy,OK
+ITA.11_1,Italy,OK
+ITA.12_1,Italy,OK
+ITA.13_1,Italy,OK
+ITA.14_1,Italy,NO
+ITA.15_1,Italy,OK
+ITA.16_1,Italy,OK
+ITA.17_1,Italy,OK
+ITA.18_1,Italy,NO
+ITA.19_1,Italy,NO
+ITA.20_1,Italy,NO
+JAM.1_1,Jamaica,NO
+JAM.2_1,Jamaica,NO
+JAM.3_1,Jamaica,NO
+JAM.4_1,Jamaica,NO
+JAM.5_1,Jamaica,NO
+JAM.6_1,Jamaica,NO
+JAM.7_1,Jamaica,NO
+JAM.8_1,Jamaica,NO
+JAM.9_1,Jamaica,NO
+JAM.10_1,Jamaica,NO
+JAM.11_1,Jamaica,NO
+JAM.12_1,Jamaica,NO
+JAM.13_1,Jamaica,NO
+JAM.14_1,Jamaica,NO
+JEY.1_1,Jersey,OK
+JEY.2_1,Jersey,OK
+JEY.3_1,Jersey,OK
+JEY.4_1,Jersey,OK
+JEY.5_1,Jersey,OK
+JEY.6_1,Jersey,OK
+JEY.7_1,Jersey,OK
+JEY.8_1,Jersey,OK
+JEY.9_1,Jersey,OK
+JEY.10_1,Jersey,OK
+JEY.11_1,Jersey,OK
+JEY.12_1,Jersey,OK
+JOR.1_1,Jordan,NO
+JOR.2_1,Jordan,OK
+JOR.3_1,Jordan,NO
+JOR.4_1,Jordan,NO
+JOR.5_1,Jordan,NO
+JOR.6_1,Jordan,NO
+JOR.7_1,Jordan,NO
+JOR.8_1,Jordan,NO
+JOR.9_1,Jordan,OK
+JOR.10_1,Jordan,NO
+JOR.11_1,Jordan,NO
+JOR.12_1,Jordan,NO
+JPN.1_1,Japan,OK
+JPN.2_1,Japan,OK
+JPN.3_1,Japan,NO
+JPN.4_1,Japan,OK
+JPN.5_1,Japan,OK
+JPN.6_1,Japan,NO
+JPN.7_1,Japan,OK
+JPN.8_1,Japan,OK
+JPN.9_1,Japan,OK
+JPN.10_1,Japan,OK
+JPN.11_1,Japan,NO
+JPN.12_1,Japan,OK
+JPN.13_1,Japan,OK
+JPN.14_1,Japan,OK
+JPN.15_1,Japan,OK
+JPN.16_1,Japan,OK
+JPN.17_1,Japan,NO
+JPN.18_1,Japan,OK
+JPN.19_1,Japan,OK
+JPN.20_1,Japan,OK
+JPN.21_1,Japan,NO
+JPN.22_1,Japan,OK
+JPN.23_1,Japan,NO
+JPN.24_1,Japan,OK
+JPN.25_1,Japan,OK
+JPN.26_1,Japan,OK
+JPN.27_1,Japan,OK
+JPN.28_1,Japan,OK
+JPN.29_1,Japan,OK
+JPN.30_1,Japan,OK
+JPN.31_1,Japan,NO
+JPN.32_1,Japan,OK
+JPN.33_1,Japan,OK
+JPN.34_1,Japan,OK
+JPN.35_1,Japan,OK
+JPN.36_1,Japan,OK
+JPN.37_1,Japan,OK
+JPN.38_1,Japan,OK
+JPN.39_1,Japan,OK
+JPN.40_1,Japan,OK
+JPN.41_1,Japan,OK
+JPN.42_1,Japan,OK
+JPN.43_1,Japan,OK
+JPN.44_1,Japan,OK
+JPN.45_1,Japan,NO
+JPN.46_1,Japan,OK
+JPN.47_1,Japan,OK
+KAZ.1_1,Kazakhstan,NO
+KAZ.2_1,Kazakhstan,NO
+KAZ.3_1,Kazakhstan,NO
+KAZ.4_1,Kazakhstan,NO
+KAZ.5_1,Kazakhstan,NO
+KAZ.6_1,Kazakhstan,NO
+KAZ.7_1,Kazakhstan,NO
+KAZ.8_1,Kazakhstan,NO
+KAZ.9_1,Kazakhstan,NO
+KAZ.10_1,Kazakhstan,NO
+KAZ.11_1,Kazakhstan,NO
+KAZ.12_1,Kazakhstan,NO
+KAZ.13_1,Kazakhstan,NO
+KAZ.14_1,Kazakhstan,NO
+KEN.1_1,Kenya,NO
+KEN.2_1,Kenya,NO
+KEN.3_1,Kenya,NO
+KEN.4_1,Kenya,NO
+KEN.5_1,Kenya,NO
+KEN.6_1,Kenya,NO
+KEN.7_1,Kenya,NO
+KEN.8_1,Kenya,NO
+KEN.9_1,Kenya,NO
+KEN.10_1,Kenya,NO
+KEN.11_1,Kenya,OK
+KEN.12_1,Kenya,OK
+KEN.13_1,Kenya,OK
+KEN.14_1,Kenya,NO
+KEN.15_1,Kenya,OK
+KEN.16_1,Kenya,OK
+KEN.17_1,Kenya,NO
+KEN.18_1,Kenya,NO
+KEN.19_1,Kenya,NO
+KEN.20_1,Kenya,NO
+KEN.21_1,Kenya,NO
+KEN.22_1,Kenya,OK
+KEN.23_1,Kenya,NO
+KEN.24_1,Kenya,NO
+KEN.25_1,Kenya,NO
+KEN.26_1,Kenya,NO
+KEN.27_1,Kenya,OK
+KEN.28_1,Kenya,OK
+KEN.29_1,Kenya,OK
+KEN.30_1,Kenya,OK
+KEN.31_1,Kenya,NO
+KEN.32_1,Kenya,NO
+KEN.33_1,Kenya,NO
+KEN.34_1,Kenya,OK
+KEN.35_1,Kenya,NO
+KEN.36_1,Kenya,OK
+KEN.37_1,Kenya,NO
+KEN.38_1,Kenya,OK
+KEN.39_1,Kenya,NO
+KEN.40_1,Kenya,NO
+KEN.41_1,Kenya,NO
+KEN.42_1,Kenya,NO
+KEN.43_1,Kenya,NO
+KEN.44_1,Kenya,NO
+KEN.45_1,Kenya,OK
+KEN.46_1,Kenya,NO
+KEN.47_1,Kenya,NO
+KGZ.1_1,Kyrgyzstan,NO
+KGZ.2_1,Kyrgyzstan,OK
+KGZ.3_1,Kyrgyzstan,NO
+KGZ.4_1,Kyrgyzstan,NO
+KGZ.5_1,Kyrgyzstan,NO
+KGZ.7_1,Kyrgyzstan,NO
+KGZ.6_1,Kyrgyzstan,OK
+KGZ.8_1,Kyrgyzstan,NO
+KGZ.9_1,Kyrgyzstan,NO
+KHM.1_1,Cambodia,OK
+KHM.2_1,Cambodia,NO
+KHM.3_1,Cambodia,OK
+KHM.4_1,Cambodia,NO
+KHM.5_1,Cambodia,OK
+KHM.6_1,Cambodia,OK
+KHM.7_1,Cambodia,NO
+KHM.8_1,Cambodia,OK
+KHM.9_1,Cambodia,NO
+KHM.10_1,Cambodia,OK
+KHM.11_1,Cambodia,NO
+KHM.12_1,Cambodia,NO
+KHM.13_1,Cambodia,OK
+KHM.14_1,Cambodia,NO
+KHM.15_1,Cambodia,NO
+KHM.16_1,Cambodia,OK
+KHM.17_1,Cambodia,NO
+KHM.18_1,Cambodia,OK
+KHM.19_1,Cambodia,OK
+KHM.20_1,Cambodia,NO
+KHM.21_1,Cambodia,NO
+KHM.22_1,Cambodia,OK
+KHM.23_1,Cambodia,OK
+KHM.24_1,Cambodia,OK
+KHM.25_1,Cambodia,OK
+KNA.1_1,Saint Kitts and Nevis,NO
+KNA.2_1,Saint Kitts and Nevis,NO
+KNA.3_1,Saint Kitts and Nevis,NO
+KNA.4_1,Saint Kitts and Nevis,NO
+KNA.5_1,Saint Kitts and Nevis,NO
+KNA.6_1,Saint Kitts and Nevis,NO
+KNA.7_1,Saint Kitts and Nevis,NO
+KNA.8_1,Saint Kitts and Nevis,NO
+KNA.9_1,Saint Kitts and Nevis,NO
+KNA.10_1,Saint Kitts and Nevis,NO
+KNA.11_1,Saint Kitts and Nevis,NO
+KNA.12_1,Saint Kitts and Nevis,NO
+KNA.13_1,Saint Kitts and Nevis,NO
+KNA.14_1,Saint Kitts and Nevis,NO
+KOR.1_1,South Korea,OK
+KOR.2_1,South Korea,NO
+KOR.3_1,South Korea,NO
+KOR.4_1,South Korea,OK
+KOR.5_1,South Korea,OK
+KOR.6_1,South Korea,OK
+KOR.7_1,South Korea,NO
+KOR.8_1,South Korea,NO
+KOR.9_1,South Korea,NO
+KOR.10_1,South Korea,NO
+KOR.11_1,South Korea,NO
+KOR.12_1,South Korea,NO
+KOR.13_1,South Korea,NO
+KOR.14_1,South Korea,NO
+KOR.15_1,South Korea,NO
+KOR.16_1,South Korea,OK
+KOR.17_1,South Korea,OK
+KWT.1_1,Kuwait,NO
+KWT.2_1,Kuwait,NO
+KWT.3_1,Kuwait,NO
+KWT.4_1,Kuwait,NO
+KWT.5_1,Kuwait,NO
+KWT.6_1,Kuwait,NO
+LAO.1_1,Laos,NO
+LAO.2_1,Laos,NO
+LAO.3_1,Laos,NO
+LAO.4_1,Laos,OK
+LAO.5_1,Laos,NO
+LAO.6_1,Laos,NO
+LAO.7_1,Laos,NO
+LAO.8_1,Laos,NO
+LAO.9_1,Laos,NO
+LAO.10_1,Laos,NO
+LAO.11_1,Laos,NO
+LAO.12_1,Laos,NO
+LAO.14_1,Laos,NO
+LAO.13_1,Laos,NO
+LAO.15_1,Laos,NO
+LAO.16_1,Laos,NO
+LAO.17_1,Laos,NO
+LAO.18_1,Laos,NO
+LBN.1_1,Lebanon,NO
+LBN.2_1,Lebanon,NO
+LBN.3_1,Lebanon,OK
+LBN.4_1,Lebanon,NO
+LBN.5_1,Lebanon,OK
+LBN.6_1,Lebanon,NO
+LBN.7_1,Lebanon,OK
+LBN.8_1,Lebanon,OK
+LBR.1_1,Liberia,NO
+LBR.2_1,Liberia,NO
+LBR.3_1,Liberia,NO
+LBR.5_1,Liberia,NO
+LBR.4_1,Liberia,NO
+LBR.6_1,Liberia,NO
+LBR.7_1,Liberia,NO
+LBR.8_1,Liberia,NO
+LBR.9_1,Liberia,NO
+LBR.10_1,Liberia,NO
+LBR.11_1,Liberia,NO
+LBR.12_1,Liberia,NO
+LBR.14_1,Liberia,NO
+LBR.13_1,Liberia,NO
+LBR.15_1,Liberia,NO
+LBY.1_1,Libya,NO
+LBY.2_1,Libya,NO
+LBY.3_1,Libya,NO
+LBY.4_1,Libya,NO
+LBY.5_1,Libya,NO
+LBY.6_1,Libya,NO
+LBY.7_1,Libya,NO
+LBY.8_1,Libya,NO
+LBY.9_1,Libya,NO
+LBY.10_1,Libya,NO
+LBY.11_1,Libya,NO
+LBY.12_1,Libya,NO
+LBY.13_1,Libya,NO
+LBY.14_1,Libya,NO
+LBY.15_1,Libya,NO
+LBY.16_1,Libya,NO
+LBY.17_1,Libya,NO
+LBY.18_1,Libya,NO
+LBY.19_1,Libya,NO
+LBY.20_1,Libya,NO
+LBY.21_1,Libya,NO
+LBY.22_1,Libya,NO
+LCA.1_1,Saint Lucia,NO
+LCA.2_1,Saint Lucia,NO
+LCA.3_1,Saint Lucia,NO
+LCA.4_1,Saint Lucia,NO
+LCA.5_1,Saint Lucia,NO
+LCA.6_1,Saint Lucia,NO
+LCA.7_1,Saint Lucia,NO
+LCA.8_1,Saint Lucia,NO
+LCA.9_1,Saint Lucia,NO
+LCA.10_1,Saint Lucia,NO
+LIE.1_1,Liechtenstein,OK
+LIE.2_1,Liechtenstein,OK
+LIE.3_1,Liechtenstein,OK
+LIE.4_1,Liechtenstein,OK
+LIE.5_1,Liechtenstein,OK
+LIE.6_1,Liechtenstein,NO
+LIE.7_1,Liechtenstein,OK
+LIE.8_1,Liechtenstein,OK
+LIE.9_1,Liechtenstein,NO
+LIE.10_1,Liechtenstein,OK
+LIE.11_1,Liechtenstein,OK
+LKA.1_1,Sri Lanka,NO
+LKA.2_1,Sri Lanka,OK
+LKA.3_1,Sri Lanka,OK
+LKA.4_1,Sri Lanka,OK
+LKA.5_1,Sri Lanka,OK
+LKA.6_1,Sri Lanka,OK
+LKA.7_1,Sri Lanka,NO
+LKA.8_1,Sri Lanka,OK
+LKA.9_1,Sri Lanka,NO
+LKA.10_1,Sri Lanka,NO
+LKA.11_1,Sri Lanka,OK
+LKA.12_1,Sri Lanka,NO
+LKA.13_1,Sri Lanka,NO
+LKA.14_1,Sri Lanka,NO
+LKA.15_1,Sri Lanka,NO
+LKA.16_1,Sri Lanka,OK
+LKA.17_1,Sri Lanka,OK
+LKA.18_1,Sri Lanka,OK
+LKA.19_1,Sri Lanka,NO
+LKA.20_1,Sri Lanka,OK
+LKA.21_1,Sri Lanka,NO
+LKA.22_1,Sri Lanka,NO
+LKA.23_1,Sri Lanka,OK
+LKA.24_1,Sri Lanka,NO
+LKA.25_1,Sri Lanka,OK
+LSO.1_1,Lesotho,NO
+LSO.2_1,Lesotho,NO
+LSO.3_1,Lesotho,OK
+LSO.4_1,Lesotho,NO
+LSO.5_1,Lesotho,OK
+LSO.6_1,Lesotho,NO
+LSO.7_1,Lesotho,NO
+LSO.8_1,Lesotho,NO
+LSO.9_1,Lesotho,NO
+LSO.10_1,Lesotho,NO
+LTU.1_1,Lithuania,OK
+LTU.2_1,Lithuania,OK
+LTU.3_1,Lithuania,OK
+LTU.4_1,Lithuania,NO
+LTU.5_1,Lithuania,OK
+LTU.6_1,Lithuania,OK
+LTU.7_1,Lithuania,NO
+LTU.8_1,Lithuania,OK
+LTU.9_1,Lithuania,NO
+LTU.10_1,Lithuania,OK
+LUX.1_1,Luxembourg,OK
+LUX.2_1,Luxembourg,OK
+LUX.3_1,Luxembourg,OK
+LVA.1_1,Latvia,OK
+LVA.2_1,Latvia,NO
+LVA.3_1,Latvia,OK
+LVA.4_1,Latvia,OK
+LVA.5_1,Latvia,NO
+MAR.1_1,Morocco,NO
+MAR.2_1,Morocco,NO
+MAR.3_1,Morocco,NO
+MAR.4_1,Morocco,NO
+MAR.5_1,Morocco,NO
+MAR.6_1,Morocco,NO
+MAR.7_1,Morocco,NO
+MAR.8_1,Morocco,NO
+MAR.9_1,Morocco,NO
+MAR.10_1,Morocco,NO
+MAR.11_1,Morocco,NO
+MAR.12_1,Morocco,NO
+MAR.13_1,Morocco,NO
+MAR.14_1,Morocco,NO
+MAR.15_1,Morocco,NO
+MDA.1_1,Moldova,NO
+MDA.2_1,Moldova,NO
+MDA.3_1,Moldova,NO
+MDA.4_1,Moldova,NO
+MDA.5_1,Moldova,NO
+MDA.6_1,Moldova,NO
+MDA.7_1,Moldova,NO
+MDA.8_1,Moldova,NO
+MDA.9_1,Moldova,NO
+MDA.10_1,Moldova,NO
+MDA.11_1,Moldova,NO
+MDA.12_1,Moldova,NO
+MDA.13_1,Moldova,NO
+MDA.14_1,Moldova,NO
+MDA.15_1,Moldova,NO
+MDA.16_1,Moldova,NO
+MDA.17_1,Moldova,NO
+MDA.18_1,Moldova,NO
+MDA.19_1,Moldova,NO
+MDA.20_1,Moldova,NO
+MDA.21_1,Moldova,NO
+MDA.22_1,Moldova,NO
+MDA.23_1,Moldova,NO
+MDA.24_1,Moldova,NO
+MDA.25_1,Moldova,OK
+MDA.26_1,Moldova,NO
+MDA.27_1,Moldova,NO
+MDA.28_1,Moldova,NO
+MDA.29_1,Moldova,NO
+MDA.30_1,Moldova,NO
+MDA.31_1,Moldova,NO
+MDA.32_1,Moldova,NO
+MDA.33_1,Moldova,NO
+MDA.34_1,Moldova,NO
+MDA.35_1,Moldova,NO
+MDA.36_1,Moldova,NO
+MDA.37_1,Moldova,NO
+MDG.1_1,Madagascar,NO
+MDG.2_1,Madagascar,NO
+MDG.3_1,Madagascar,NO
+MDG.4_1,Madagascar,NO
+MDG.5_1,Madagascar,NO
+MDG.6_1,Madagascar,NO
+MEX.1_1,México,OK
+MEX.3_1,México,NO
+MEX.2_1,México,NO
+MEX.4_1,México,NO
+MEX.5_1,México,NO
+MEX.6_1,México,NO
+MEX.7_1,México,NO
+MEX.8_1,México,NO
+MEX.9_1,México,OK
+MEX.10_1,México,NO
+MEX.11_1,México,OK
+MEX.12_1,México,NO
+MEX.13_1,México,OK
+MEX.14_1,México,NO
+MEX.15_1,México,OK
+MEX.16_1,México,NO
+MEX.17_1,México,OK
+MEX.18_1,México,NO
+MEX.19_1,México,NO
+MEX.20_1,México,NO
+MEX.21_1,México,OK
+MEX.22_1,México,OK
+MEX.23_1,México,NO
+MEX.24_1,México,NO
+MEX.25_1,México,OK
+MEX.26_1,México,NO
+MEX.27_1,México,NO
+MEX.28_1,México,NO
+MEX.29_1,México,OK
+MEX.30_1,México,NO
+MEX.31_1,México,NO
+MEX.32_1,México,NO
+MHL.1_1,Marshall Islands,NO
+MHL.2_1,Marshall Islands,NO
+MHL.3_1,Marshall Islands,NO
+MHL.4_1,Marshall Islands,NO
+MHL.5_1,Marshall Islands,NO
+MHL.6_1,Marshall Islands,NO
+MHL.7_1,Marshall Islands,NO
+MHL.8_1,Marshall Islands,NO
+MHL.9_1,Marshall Islands,NO
+MHL.10_1,Marshall Islands,NO
+MHL.11_1,Marshall Islands,NO
+MHL.12_1,Marshall Islands,NO
+MHL.13_1,Marshall Islands,NO
+MHL.14_1,Marshall Islands,NO
+MHL.15_1,Marshall Islands,NO
+MHL.16_1,Marshall Islands,NO
+MHL.17_1,Marshall Islands,NO
+MHL.18_1,Marshall Islands,NO
+MHL.20_1,Marshall Islands,NO
+MHL.21_1,Marshall Islands,NO
+MHL.22_1,Marshall Islands,NO
+MHL.23_1,Marshall Islands,NO
+MHL.19_1,Marshall Islands,NO
+MKD.1_1,North Macedonia,OK
+MKD.2_1,North Macedonia,NO
+MKD.3_1,North Macedonia,NO
+MKD.4_1,North Macedonia,NO
+MKD.5_1,North Macedonia,NO
+MKD.6_1,North Macedonia,NO
+MKD.7_1,North Macedonia,NO
+MKD.8_1,North Macedonia,NO
+MKD.9_1,North Macedonia,OK
+MKD.10_1,North Macedonia,OK
+MKD.11_1,North Macedonia,NO
+MKD.12_1,North Macedonia,OK
+MKD.13_1,North Macedonia,NO
+MKD.14_1,North Macedonia,NO
+MKD.15_1,North Macedonia,NO
+MKD.16_1,North Macedonia,NO
+MKD.17_1,North Macedonia,NO
+MKD.18_1,North Macedonia,NO
+MKD.19_1,North Macedonia,NO
+MKD.20_1,North Macedonia,NO
+MKD.21_1,North Macedonia,NO
+MKD.23_1,North Macedonia,OK
+MKD.24_1,North Macedonia,NO
+MKD.25_1,North Macedonia,NO
+MKD.26_1,North Macedonia,NO
+MKD.27_1,North Macedonia,NO
+MKD.28_1,North Macedonia,NO
+MKD.29_1,North Macedonia,NO
+MKD.30_1,North Macedonia,OK
+MKD.31_1,North Macedonia,OK
+MKD.32_1,North Macedonia,NO
+MKD.33_1,North Macedonia,NO
+MKD.34_1,North Macedonia,NO
+MKD.35_1,North Macedonia,NO
+MKD.36_1,North Macedonia,NO
+MKD.37_1,North Macedonia,NO
+MKD.38_1,North Macedonia,NO
+MKD.39_1,North Macedonia,NO
+MKD.40_1,North Macedonia,NO
+MKD.41_1,North Macedonia,NO
+MKD.42_1,North Macedonia,NO
+MKD.43_1,North Macedonia,NO
+MKD.44_1,North Macedonia,NO
+MKD.45_1,North Macedonia,NO
+MKD.46_1,North Macedonia,NO
+MKD.47_1,North Macedonia,NO
+MKD.48_1,North Macedonia,NO
+MKD.49_1,North Macedonia,NO
+MKD.50_1,North Macedonia,NO
+MKD.51_1,North Macedonia,NO
+MKD.52_1,North Macedonia,NO
+MKD.54_1,North Macedonia,NO
+MKD.55_1,North Macedonia,NO
+MKD.56_1,North Macedonia,NO
+MKD.57_1,North Macedonia,NO
+MKD.58_1,North Macedonia,NO
+MKD.59_1,North Macedonia,OK
+MKD.60_1,North Macedonia,NO
+MKD.61_1,North Macedonia,NO
+MKD.62_1,North Macedonia,NO
+MKD.63_1,North Macedonia,NO
+MKD.64_1,North Macedonia,NO
+MKD.65_1,North Macedonia,NO
+MKD.66_1,North Macedonia,NO
+MKD.67_1,North Macedonia,NO
+MKD.68_1,North Macedonia,NO
+MKD.69_1,North Macedonia,NO
+MKD.70_1,North Macedonia,NO
+MKD.71_1,North Macedonia,OK
+MKD.72_1,North Macedonia,NO
+MKD.73_1,North Macedonia,NO
+MKD.74_1,North Macedonia,NO
+MKD.75_1,North Macedonia,NO
+MKD.76_1,North Macedonia,NO
+MKD.77_1,North Macedonia,OK
+MKD.78_1,North Macedonia,NO
+MKD.79_1,North Macedonia,NO
+MKD.81_1,North Macedonia,NO
+MKD.83_1,North Macedonia,NO
+MKD.84_1,North Macedonia,NO
+MKD.85_1,North Macedonia,NO
+MLI.1_1,Mali,NO
+MLI.2_1,Mali,NO
+MLI.3_1,Mali,NO
+MLI.4_1,Mali,NO
+MLI.5_1,Mali,NO
+MLI.6_1,Mali,NO
+MLI.7_1,Mali,NO
+MLI.8_1,Mali,NO
+MLI.9_1,Mali,NO
+MLT.1_1,Malta,OK
+MLT.2_1,Malta,OK
+MLT.3_1,Malta,OK
+MLT.4_1,Malta,OK
+MLT.5_1,Malta,OK
+MMR.1_1,Myanmar,NO
+MMR.2_1,Myanmar,NO
+MMR.3_1,Myanmar,NO
+MMR.4_1,Myanmar,NO
+MMR.5_1,Myanmar,NO
+MMR.6_1,Myanmar,NO
+MMR.7_1,Myanmar,NO
+MMR.8_1,Myanmar,NO
+MMR.9_1,Myanmar,NO
+MMR.10_1,Myanmar,NO
+MMR.11_1,Myanmar,NO
+MMR.12_1,Myanmar,NO
+MMR.13_1,Myanmar,NO
+MMR.14_1,Myanmar,NO
+MMR.15_1,Myanmar,NO
+MNE.1_1,Montenegro,NO
+MNE.2_1,Montenegro,NO
+MNE.3_1,Montenegro,NO
+MNE.4_1,Montenegro,NO
+MNE.5_1,Montenegro,OK
+MNE.6_1,Montenegro,NO
+MNE.7_1,Montenegro,NO
+MNE.8_1,Montenegro,OK
+MNE.9_1,Montenegro,OK
+MNE.10_1,Montenegro,NO
+MNE.11_1,Montenegro,NO
+MNE.12_1,Montenegro,NO
+MNE.13_1,Montenegro,NO
+MNE.14_1,Montenegro,NO
+MNE.15_1,Montenegro,NO
+MNE.16_1,Montenegro,OK
+MNE.17_1,Montenegro,NO
+MNE.18_1,Montenegro,NO
+MNE.19_1,Montenegro,NO
+MNE.20_1,Montenegro,OK
+MNE.21_1,Montenegro,NO
+MNG.1_1,Mongolia,NO
+MNG.2_1,Mongolia,NO
+MNG.3_1,Mongolia,NO
+MNG.4_1,Mongolia,NO
+MNG.5_1,Mongolia,NO
+MNG.6_1,Mongolia,NO
+MNG.7_1,Mongolia,NO
+MNG.8_1,Mongolia,NO
+MNG.9_1,Mongolia,NO
+MNG.10_1,Mongolia,NO
+MNG.11_1,Mongolia,OK
+MNG.12_1,Mongolia,NO
+MNG.13_1,Mongolia,NO
+MNG.14_1,Mongolia,NO
+MNG.15_1,Mongolia,NO
+MNG.16_1,Mongolia,OK
+MNG.17_1,Mongolia,NO
+MNG.18_1,Mongolia,NO
+MNG.19_1,Mongolia,NO
+MNG.20_1,Mongolia,NO
+MNG.21_1,Mongolia,OK
+MNG.22_1,Mongolia,NO
+MNP.1_1,Northern Mariana Islands,NO
+MNP.2_1,Northern Mariana Islands,NO
+MNP.3_1,Northern Mariana Islands,OK
+MNP.4_1,Northern Mariana Islands,NO
+MOZ.1_1,Mozambique,NO
+MOZ.2_1,Mozambique,NO
+MOZ.3_1,Mozambique,NO
+MOZ.4_1,Mozambique,NO
+MOZ.6_1,Mozambique,NO
+MOZ.5_1,Mozambique,NO
+MOZ.7_1,Mozambique,NO
+MOZ.8_1,Mozambique,NO
+MOZ.9_1,Mozambique,NO
+MOZ.10_1,Mozambique,NO
+MOZ.11_1,Mozambique,NO
+MRT.1_1,Mauritania,NO
+MRT.2_1,Mauritania,NO
+MRT.3_1,Mauritania,NO
+MRT.4_1,Mauritania,NO
+MRT.5_1,Mauritania,NO
+MRT.6_1,Mauritania,NO
+MRT.7_1,Mauritania,NO
+MRT.8_1,Mauritania,NO
+MRT.9_1,Mauritania,NO
+MRT.10_1,Mauritania,NO
+MRT.11_1,Mauritania,NO
+MRT.12_1,Mauritania,NO
+MRT.13_1,Mauritania,NO
+MSR.1_1,Montserrat,NO
+MSR.2_1,Montserrat,NO
+MSR.3_1,Montserrat,NO
+MTQ.1_1,Martinique,NO
+MTQ.2_1,Martinique,NO
+MTQ.3_1,Martinique,NO
+MTQ.4_1,Martinique,NO
+MUS.1_1,Mauritius,NO
+MUS.2_1,Mauritius,NO
+MUS.3_1,Mauritius,NO
+MUS.4_1,Mauritius,NO
+MUS.5_1,Mauritius,NO
+MUS.6_1,Mauritius,NO
+MUS.7_1,Mauritius,NO
+MUS.8_1,Mauritius,NO
+MUS.9_1,Mauritius,NO
+MUS.10_1,Mauritius,NO
+MUS.11_1,Mauritius,NO
+MUS.12_1,Mauritius,NO
+MWI.1_1,Malawi,NO
+MWI.2_1,Malawi,NO
+MWI.3_1,Malawi,NO
+MWI.4_1,Malawi,NO
+MWI.5_1,Malawi,NO
+MWI.6_1,Malawi,NO
+MWI.7_1,Malawi,NO
+MWI.8_1,Malawi,NO
+MWI.9_1,Malawi,NO
+MWI.10_1,Malawi,NO
+MWI.11_1,Malawi,NO
+MWI.12_1,Malawi,NO
+MWI.13_1,Malawi,NO
+MWI.14_1,Malawi,NO
+MWI.15_1,Malawi,NO
+MWI.16_1,Malawi,NO
+MWI.17_1,Malawi,NO
+MWI.18_1,Malawi,NO
+MWI.19_1,Malawi,NO
+MWI.20_1,Malawi,NO
+MWI.21_1,Malawi,NO
+MWI.22_1,Malawi,NO
+MWI.23_1,Malawi,NO
+MWI.24_1,Malawi,NO
+MWI.25_1,Malawi,NO
+MWI.26_1,Malawi,NO
+MWI.27_1,Malawi,NO
+MWI.28_1,Malawi,NO
+MYS.1_1,Malaysia,NO
+MYS.2_1,Malaysia,OK
+MYS.3_1,Malaysia,NO
+MYS.4_1,Malaysia,OK
+MYS.5_1,Malaysia,NO
+MYS.6_1,Malaysia,NO
+MYS.7_1,Malaysia,NO
+MYS.8_1,Malaysia,NO
+MYS.9_1,Malaysia,OK
+MYS.10_1,Malaysia,OK
+MYS.11_1,Malaysia,OK
+MYS.12_1,Malaysia,OK
+MYS.13_1,Malaysia,NO
+MYS.14_1,Malaysia,NO
+MYS.15_1,Malaysia,OK
+MYS.16_1,Malaysia,NO
+MYT.1_1,Mayotte,NO
+MYT.2_1,Mayotte,NO
+MYT.3_1,Mayotte,NO
+MYT.4_1,Mayotte,NO
+MYT.5_1,Mayotte,NO
+MYT.6_1,Mayotte,NO
+MYT.7_1,Mayotte,NO
+MYT.8_1,Mayotte,NO
+MYT.9_1,Mayotte,NO
+MYT.10_1,Mayotte,NO
+MYT.11_1,Mayotte,NO
+MYT.12_1,Mayotte,NO
+MYT.13_1,Mayotte,NO
+MYT.14_1,Mayotte,NO
+MYT.15_1,Mayotte,NO
+MYT.16_1,Mayotte,NO
+MYT.17_1,Mayotte,NO
+NAM.1_1,Namibia,NO
+NAM.2_1,Namibia,NO
+NAM.3_1,Namibia,NO
+NAM.4_1,Namibia,NO
+NAM.5_1,Namibia,NO
+NAM.6_1,Namibia,NO
+NAM.7_1,Namibia,NO
+NAM.8_1,Namibia,NO
+NAM.9_1,Namibia,NO
+NAM.10_1,Namibia,NO
+NAM.11_1,Namibia,NO
+NAM.12_1,Namibia,NO
+NAM.13_1,Namibia,NO
+NCL.1_1,New Caledonia,NO
+NCL.2_1,New Caledonia,NO
+NCL.3_1,New Caledonia,NO
+NER.1_1,Niger,NO
+NER.2_1,Niger,NO
+NER.3_1,Niger,NO
+NER.4_1,Niger,NO
+NER.5_1,Niger,NO
+NER.6_1,Niger,NO
+NER.7_1,Niger,NO
+NER.8_1,Niger,NO
+NGA.1_1,Nigeria,OK
+NGA.2_1,Nigeria,NO
+NGA.3_1,Nigeria,NO
+NGA.4_1,Nigeria,NO
+NGA.5_1,Nigeria,NO
+NGA.6_1,Nigeria,NO
+NGA.7_1,Nigeria,NO
+NGA.8_1,Nigeria,NO
+NGA.9_1,Nigeria,NO
+NGA.10_1,Nigeria,NO
+NGA.11_1,Nigeria,NO
+NGA.12_1,Nigeria,OK
+NGA.13_1,Nigeria,NO
+NGA.14_1,Nigeria,NO
+NGA.15_1,Nigeria,OK
+NGA.16_1,Nigeria,NO
+NGA.17_1,Nigeria,OK
+NGA.18_1,Nigeria,NO
+NGA.19_1,Nigeria,NO
+NGA.20_1,Nigeria,NO
+NGA.21_1,Nigeria,NO
+NGA.22_1,Nigeria,NO
+NGA.23_1,Nigeria,NO
+NGA.24_1,Nigeria,NO
+NGA.25_1,Nigeria,OK
+NGA.26_1,Nigeria,NO
+NGA.27_1,Nigeria,NO
+NGA.28_1,Nigeria,OK
+NGA.29_1,Nigeria,NO
+NGA.30_1,Nigeria,OK
+NGA.31_1,Nigeria,NO
+NGA.32_1,Nigeria,OK
+NGA.33_1,Nigeria,NO
+NGA.34_1,Nigeria,NO
+NGA.35_1,Nigeria,NO
+NGA.36_1,Nigeria,NO
+NGA.37_1,Nigeria,NO
+NIC.1_1,Nicaragua,NO
+NIC.2_1,Nicaragua,NO
+NIC.3_1,Nicaragua,NO
+NIC.4_1,Nicaragua,NO
+NIC.5_1,Nicaragua,NO
+NIC.6_1,Nicaragua,NO
+NIC.7_1,Nicaragua,NO
+NIC.8_1,Nicaragua,NO
+NIC.9_1,Nicaragua,NO
+NIC.10_1,Nicaragua,NO
+NIC.11_1,Nicaragua,NO
+NIC.12_1,Nicaragua,NO
+NIC.13_1,Nicaragua,NO
+NIC.14_1,Nicaragua,NO
+NIC.15_1,Nicaragua,NO
+NIC.16_1,Nicaragua,NO
+NIC.17_1,Nicaragua,NO
+NIC.18_1,Nicaragua,NO
+NLD.1_1,Netherlands,OK
+NLD.2_1,Netherlands,OK
+NLD.3_1,Netherlands,OK
+NLD.4_1,Netherlands,OK
+NLD.5_1,Netherlands,OK
+NLD.6_1,Netherlands,NO
+NLD.7_1,Netherlands,OK
+NLD.8_1,Netherlands,OK
+NLD.9_1,Netherlands,OK
+NLD.10_1,Netherlands,OK
+NLD.11_1,Netherlands,OK
+NLD.12_1,Netherlands,OK
+NLD.13_1,Netherlands,NO
+NLD.14_1,Netherlands,OK
+NOR.1_1,Norway,OK
+NOR.2_1,Norway,NO
+NOR.3_1,Norway,NO
+NOR.4_1,Norway,OK
+NOR.5_1,Norway,NO
+NOR.6_1,Norway,OK
+NOR.7_1,Norway,OK
+NOR.8_1,Norway,OK
+NOR.9_1,Norway,NO
+NOR.10_1,Norway,NO
+NOR.11_1,Norway,NO
+NOR.12_1,Norway,NO
+NOR.13_1,Norway,NO
+NOR.14_1,Norway,OK
+NOR.15_1,Norway,NO
+NOR.16_1,Norway,NO
+NOR.17_1,Norway,NO
+NOR.18_1,Norway,NO
+NOR.19_1,Norway,NO
+NPL.1_1,Nepal,OK
+NPL.2_1,Nepal,OK
+NPL.3_1,Nepal,OK
+NPL.4_1,Nepal,OK
+NPL.5_1,Nepal,NO
+NRU.1_1,Nauru,NO
+NRU.2_1,Nauru,NO
+NRU.3_1,Nauru,NO
+NRU.4_1,Nauru,NO
+NRU.5_1,Nauru,NO
+NRU.6_1,Nauru,NO
+NRU.7_1,Nauru,NO
+NRU.8_1,Nauru,NO
+NRU.9_1,Nauru,NO
+NRU.10_1,Nauru,NO
+NRU.11_1,Nauru,NO
+NRU.12_1,Nauru,NO
+NRU.13_1,Nauru,NO
+NRU.14_1,Nauru,NO
+NZL.1_1,New Zealand,NO
+NZL.2_1,New Zealand,OK
+NZL.3_1,New Zealand,NO
+NZL.4_1,New Zealand,NO
+NZL.5_1,New Zealand,NO
+NZL.6_1,New Zealand,NO
+NZL.7_1,New Zealand,NO
+NZL.8_1,New Zealand,NO
+NZL.9_1,New Zealand,OK
+NZL.10_1,New Zealand,NO
+NZL.11_1,New Zealand,NO
+NZL.12_1,New Zealand,OK
+NZL.13_1,New Zealand,NO
+NZL.14_1,New Zealand,NO
+NZL.15_1,New Zealand,NO
+NZL.16_1,New Zealand,NO
+NZL.17_1,New Zealand,NO
+NZL.18_1,New Zealand,NO
+NZL.19_1,New Zealand,NO
+OMN.1_1,Oman,NO
+OMN.2_1,Oman,NO
+OMN.3_1,Oman,NO
+OMN.4_1,Oman,NO
+OMN.5_1,Oman,OK
+OMN.6_1,Oman,NO
+OMN.7_1,Oman,NO
+OMN.8_1,Oman,OK
+OMN.9_1,Oman,NO
+OMN.10_1,Oman,NO
+OMN.11_1,Oman,NO
+Z06.1_1,Pakistan,NO
+PAK.2_1,Pakistan,NO
+PAK.3_1,Pakistan,NO
+Z06.6_1,Pakistan,NO
+PAK.4_1,Pakistan,NO
+PAK.5_1,Pakistan,NO
+PAK.7_1,Pakistan,NO
+PAK.8_1,Pakistan,NO
+PAN.1_1,Panama,NO
+PAN.2_1,Panama,NO
+PAN.3_1,Panama,NO
+PAN.4_1,Panama,NO
+PAN.5_1,Panama,NO
+PAN.6_1,Panama,NO
+PAN.7_1,Panama,OK
+PAN.8_1,Panama,NO
+PAN.9_1,Panama,NO
+PAN.10_1,Panama,NO
+PAN.12_1,Panama,NO
+PAN.11_1,Panama,NO
+PAN.13_1,Panama,NO
+PER.1_1,Peru,NO
+PER.2_1,Peru,NO
+PER.3_1,Peru,NO
+PER.4_1,Peru,NO
+PER.5_1,Peru,NO
+PER.6_1,Peru,OK
+PER.7_1,Peru,OK
+PER.8_1,Peru,NO
+PER.9_1,Peru,NO
+PER.10_1,Peru,NO
+PER.11_1,Peru,NO
+PER.12_1,Peru,NO
+PER.13_1,Peru,NO
+PER.14_1,Peru,NO
+PER.16_1,Peru,NO
+PER.15_1,Peru,NO
+PER.17_1,Peru,NO
+PER.18_1,Peru,NO
+PER.19_1,Peru,NO
+PER.20_1,Peru,NO
+PER.21_1,Peru,NO
+PER.22_1,Peru,OK
+PER.23_1,Peru,NO
+PER.24_1,Peru,NO
+PER.25_1,Peru,NO
+PER.26_1,Peru,NO
+PHL.1_1,Philippines,OK
+PHL.2_1,Philippines,NO
+PHL.3_1,Philippines,NO
+PHL.4_1,Philippines,OK
+PHL.5_1,Philippines,NO
+PHL.6_1,Philippines,NO
+PHL.7_1,Philippines,OK
+PHL.8_1,Philippines,NO
+PHL.9_1,Philippines,NO
+PHL.10_1,Philippines,OK
+PHL.11_1,Philippines,NO
+PHL.12_1,Philippines,NO
+PHL.13_1,Philippines,OK
+PHL.14_1,Philippines,NO
+PHL.15_1,Philippines,NO
+PHL.16_1,Philippines,NO
+PHL.17_1,Philippines,OK
+PHL.18_1,Philippines,NO
+PHL.19_1,Philippines,NO
+PHL.20_1,Philippines,NO
+PHL.21_1,Philippines,OK
+PHL.22_1,Philippines,NO
+PHL.23_1,Philippines,NO
+PHL.24_1,Philippines,OK
+PHL.25_1,Philippines,NO
+PHL.26_1,Philippines,NO
+PHL.27_1,Philippines,OK
+PHL.28_1,Philippines,NO
+PHL.29_1,Philippines,NO
+PHL.30_1,Philippines,NO
+PHL.31_1,Philippines,OK
+PHL.32_1,Philippines,NO
+PHL.33_1,Philippines,NO
+PHL.34_1,Philippines,NO
+PHL.35_1,Philippines,NO
+PHL.36_1,Philippines,NO
+PHL.37_1,Philippines,OK
+PHL.38_1,Philippines,NO
+PHL.39_1,Philippines,OK
+PHL.40_1,Philippines,OK
+PHL.41_1,Philippines,OK
+PHL.42_1,Philippines,NO
+PHL.43_1,Philippines,NO
+PHL.44_1,Philippines,NO
+PHL.45_1,Philippines,NO
+PHL.46_1,Philippines,NO
+PHL.47_1,Philippines,OK
+PHL.48_1,Philippines,NO
+PHL.49_1,Philippines,NO
+PHL.50_1,Philippines,NO
+PHL.51_1,Philippines,NO
+PHL.52_1,Philippines,NO
+PHL.53_1,Philippines,NO
+PHL.54_1,Philippines,NO
+PHL.55_1,Philippines,OK
+PHL.56_1,Philippines,NO
+PHL.57_1,Philippines,NO
+PHL.58_1,Philippines,NO
+PHL.59_1,Philippines,NO
+PHL.60_1,Philippines,OK
+PHL.61_1,Philippines,NO
+PHL.62_1,Philippines,NO
+PHL.63_1,Philippines,NO
+PHL.64_1,Philippines,NO
+PHL.65_1,Philippines,NO
+PHL.66_1,Philippines,NO
+PHL.67_1,Philippines,NO
+PHL.68_1,Philippines,OK
+PHL.69_1,Philippines,NO
+PHL.70_1,Philippines,NO
+PHL.71_1,Philippines,NO
+PHL.72_1,Philippines,NO
+PHL.73_1,Philippines,NO
+PHL.74_1,Philippines,NO
+PHL.75_1,Philippines,NO
+PHL.76_1,Philippines,OK
+PHL.77_1,Philippines,NO
+PHL.78_1,Philippines,NO
+PHL.79_1,Philippines,NO
+PHL.80_1,Philippines,NO
+PHL.81_1,Philippines,NO
+PLW.1_1,Palau,NO
+PLW.2_1,Palau,NO
+PLW.3_1,Palau,NO
+PLW.4_1,Palau,NO
+PLW.5_1,Palau,NO
+PLW.6_1,Palau,NO
+PLW.7_1,Palau,NO
+PLW.8_1,Palau,NO
+PLW.9_1,Palau,NO
+PLW.10_1,Palau,NO
+PLW.11_1,Palau,NO
+PLW.12_1,Palau,NO
+PLW.13_1,Palau,NO
+PLW.14_1,Palau,NO
+PLW.15_1,Palau,NO
+PLW.16_1,Palau,NO
+PNG.1_1,Papua New Guinea,NO
+PNG.2_1,Papua New Guinea,NO
+PNG.3_1,Papua New Guinea,NO
+PNG.4_1,Papua New Guinea,NO
+PNG.5_1,Papua New Guinea,NO
+PNG.6_1,Papua New Guinea,NO
+PNG.7_1,Papua New Guinea,NO
+PNG.8_1,Papua New Guinea,NO
+PNG.9_1,Papua New Guinea,NO
+PNG.10_1,Papua New Guinea,NO
+PNG.11_1,Papua New Guinea,NO
+PNG.12_1,Papua New Guinea,NO
+PNG.13_1,Papua New Guinea,NO
+PNG.14_1,Papua New Guinea,NO
+PNG.15_1,Papua New Guinea,NO
+PNG.16_1,Papua New Guinea,NO
+PNG.17_1,Papua New Guinea,NO
+PNG.18_1,Papua New Guinea,NO
+PNG.19_1,Papua New Guinea,NO
+PNG.20_1,Papua New Guinea,NO
+PNG.22_1,Papua New Guinea,NO
+PNG.21_1,Papua New Guinea,NO
+POL.1_1,Poland,OK
+POL.2_1,Poland,OK
+POL.3_1,Poland,OK
+POL.4_1,Poland,OK
+POL.5_1,Poland,OK
+POL.6_1,Poland,OK
+POL.7_1,Poland,OK
+POL.8_1,Poland,OK
+POL.9_1,Poland,OK
+POL.10_1,Poland,OK
+POL.11_1,Poland,OK
+POL.12_1,Poland,OK
+POL.13_1,Poland,OK
+POL.14_1,Poland,OK
+POL.15_1,Poland,OK
+POL.16_1,Poland,NO
+PRI.1_1,Puerto Rico,NO
+PRI.2_1,Puerto Rico,NO
+PRI.3_1,Puerto Rico,OK
+PRI.4_1,Puerto Rico,OK
+PRI.5_1,Puerto Rico,NO
+PRI.6_1,Puerto Rico,OK
+PRI.7_1,Puerto Rico,OK
+PRI.8_1,Puerto Rico,NO
+PRI.9_1,Puerto Rico,OK
+PRI.10_1,Puerto Rico,NO
+PRI.11_1,Puerto Rico,OK
+PRI.12_1,Puerto Rico,OK
+PRI.13_1,Puerto Rico,OK
+PRI.14_1,Puerto Rico,NO
+PRI.15_1,Puerto Rico,OK
+PRI.16_1,Puerto Rico,OK
+PRI.17_1,Puerto Rico,OK
+PRI.18_1,Puerto Rico,OK
+PRI.19_1,Puerto Rico,NO
+PRI.20_1,Puerto Rico,NO
+PRI.21_1,Puerto Rico,OK
+PRI.22_1,Puerto Rico,NO
+PRI.23_1,Puerto Rico,OK
+PRI.24_1,Puerto Rico,OK
+PRI.25_1,Puerto Rico,NO
+PRI.26_1,Puerto Rico,OK
+PRI.27_1,Puerto Rico,OK
+PRI.28_1,Puerto Rico,OK
+PRI.29_1,Puerto Rico,NO
+PRI.30_1,Puerto Rico,OK
+PRI.31_1,Puerto Rico,OK
+PRI.32_1,Puerto Rico,OK
+PRI.33_1,Puerto Rico,OK
+PRI.34_1,Puerto Rico,NO
+PRI.35_1,Puerto Rico,OK
+PRI.36_1,Puerto Rico,OK
+PRI.37_1,Puerto Rico,NO
+PRI.38_1,Puerto Rico,NO
+PRI.39_1,Puerto Rico,NO
+PRI.40_1,Puerto Rico,OK
+PRI.41_1,Puerto Rico,NO
+PRI.42_1,Puerto Rico,NO
+PRI.43_1,Puerto Rico,NO
+PRI.44_1,Puerto Rico,OK
+PRI.45_1,Puerto Rico,NO
+PRI.46_1,Puerto Rico,OK
+PRI.47_1,Puerto Rico,OK
+PRI.48_1,Puerto Rico,NO
+PRI.49_1,Puerto Rico,OK
+PRI.50_1,Puerto Rico,NO
+PRI.51_1,Puerto Rico,NO
+PRI.52_1,Puerto Rico,OK
+PRI.53_1,Puerto Rico,NO
+PRI.54_1,Puerto Rico,OK
+PRI.55_1,Puerto Rico,NO
+PRI.56_1,Puerto Rico,OK
+PRI.57_1,Puerto Rico,NO
+PRI.58_1,Puerto Rico,OK
+PRI.59_1,Puerto Rico,NO
+PRI.60_1,Puerto Rico,OK
+PRI.61_1,Puerto Rico,OK
+PRI.62_1,Puerto Rico,OK
+PRI.63_1,Puerto Rico,NO
+PRI.64_1,Puerto Rico,OK
+PRI.65_1,Puerto Rico,OK
+PRI.66_1,Puerto Rico,OK
+PRI.67_1,Puerto Rico,NO
+PRI.68_1,Puerto Rico,NO
+PRI.69_1,Puerto Rico,OK
+PRI.70_1,Puerto Rico,NO
+PRI.71_1,Puerto Rico,OK
+PRI.72_1,Puerto Rico,NO
+PRI.73_1,Puerto Rico,OK
+PRI.74_1,Puerto Rico,OK
+PRI.75_1,Puerto Rico,NO
+PRI.76_1,Puerto Rico,NO
+PRI.77_1,Puerto Rico,NO
+PRI.78_1,Puerto Rico,OK
+PRK.1_1,North Korea,NO
+PRK.2_1,North Korea,NO
+PRK.3_1,North Korea,NO
+PRK.4_1,North Korea,NO
+PRK.5_1,North Korea,NO
+PRK.6_1,North Korea,NO
+PRK.7_1,North Korea,NO
+PRK.8_1,North Korea,NO
+PRK.9_1,North Korea,NO
+PRK.10_1,North Korea,NO
+PRK.11_1,North Korea,NO
+PRK.12_1,North Korea,NO
+PRK.13_1,North Korea,NO
+PRK.14_1,North Korea,NO
+PRT.1_1,Portugal,NO
+PRT.2_1,Portugal,NO
+PRT.3_1,Portugal,OK
+PRT.4_1,Portugal,OK
+PRT.5_1,Portugal,OK
+PRT.6_1,Portugal,NO
+PRT.7_1,Portugal,OK
+PRT.8_1,Portugal,OK
+PRT.9_1,Portugal,NO
+PRT.10_1,Portugal,OK
+PRT.11_1,Portugal,NO
+PRT.12_1,Portugal,NO
+PRT.13_1,Portugal,OK
+PRT.14_1,Portugal,OK
+PRT.15_1,Portugal,OK
+PRT.16_1,Portugal,NO
+PRT.17_1,Portugal,NO
+PRT.18_1,Portugal,OK
+PRT.19_1,Portugal,OK
+PRT.20_1,Portugal,OK
+PRY.1_1,Paraguay,NO
+PRY.2_1,Paraguay,OK
+PRY.3_1,Paraguay,NO
+PRY.4_1,Paraguay,OK
+PRY.5_1,Paraguay,NO
+PRY.6_1,Paraguay,NO
+PRY.7_1,Paraguay,NO
+PRY.8_1,Paraguay,NO
+PRY.9_1,Paraguay,OK
+PRY.10_1,Paraguay,NO
+PRY.11_1,Paraguay,NO
+PRY.12_1,Paraguay,NO
+PRY.13_1,Paraguay,OK
+PRY.14_1,Paraguay,NO
+PRY.15_1,Paraguay,NO
+PRY.16_1,Paraguay,NO
+PRY.17_1,Paraguay,NO
+PRY.18_1,Paraguay,NO
+PSE.1_1,Palestine,NO
+PSE.2_1,Palestine,OK
+PYF.1_1,French Polynesia,NO
+PYF.2_1,French Polynesia,OK
+PYF.3_1,French Polynesia,NO
+PYF.4_1,French Polynesia,NO
+PYF.5_1,French Polynesia,NO
+QAT.1_1,Qatar,OK
+QAT.2_1,Qatar,OK
+QAT.3_1,Qatar,NO
+QAT.4_1,Qatar,NO
+QAT.5_1,Qatar,NO
+QAT.6_1,Qatar,OK
+QAT.7_1,Qatar,OK
+REU.1_1,Réunion,NO
+REU.2_1,Réunion,NO
+REU.3_1,Réunion,OK
+REU.4_1,Réunion,NO
+ROU.1_1,Romania,NO
+ROU.2_1,Romania,OK
+ROU.3_1,Romania,OK
+ROU.4_1,Romania,NO
+ROU.5_1,Romania,OK
+ROU.6_1,Romania,NO
+ROU.7_1,Romania,NO
+ROU.9_1,Romania,NO
+ROU.8_1,Romania,NO
+ROU.10_1,Romania,OK
+ROU.11_1,Romania,NO
+ROU.12_1,Romania,NO
+ROU.13_1,Romania,NO
+ROU.14_1,Romania,OK
+ROU.15_1,Romania,NO
+ROU.16_1,Romania,NO
+ROU.17_1,Romania,OK
+ROU.18_1,Romania,OK
+ROU.19_1,Romania,OK
+ROU.20_1,Romania,OK
+ROU.21_1,Romania,NO
+ROU.22_1,Romania,NO
+ROU.23_1,Romania,OK
+ROU.25_1,Romania,OK
+ROU.24_1,Romania,OK
+ROU.26_1,Romania,OK
+ROU.27_1,Romania,OK
+ROU.28_1,Romania,NO
+ROU.29_1,Romania,NO
+ROU.30_1,Romania,OK
+ROU.31_1,Romania,NO
+ROU.32_1,Romania,OK
+ROU.33_1,Romania,NO
+ROU.34_1,Romania,NO
+ROU.35_1,Romania,NO
+ROU.36_1,Romania,OK
+ROU.37_1,Romania,NO
+ROU.38_1,Romania,NO
+ROU.39_1,Romania,NO
+ROU.40_1,Romania,OK
+ROU.41_1,Romania,OK
+ROU.42_1,Romania,NO
+RUS.1_1,Russia,NO
+RUS.2_1,Russia,NO
+RUS.3_1,Russia,NO
+RUS.4_1,Russia,NO
+RUS.5_1,Russia,NO
+RUS.6_1,Russia,NO
+RUS.7_1,Russia,NO
+RUS.8_1,Russia,OK
+RUS.9_1,Russia,NO
+RUS.10_1,Russia,NO
+RUS.11_1,Russia,NO
+RUS.12_1,Russia,NO
+RUS.13_1,Russia,NO
+RUS.14_1,Russia,OK
+RUS.15_1,Russia,NO
+RUS.16_1,Russia,NO
+RUS.17_1,Russia,NO
+RUS.18_1,Russia,NO
+RUS.19_1,Russia,OK
+RUS.20_1,Russia,NO
+RUS.21_1,Russia,NO
+RUS.22_1,Russia,NO
+RUS.23_1,Russia,OK
+RUS.24_1,Russia,NO
+RUS.25_1,Russia,NO
+RUS.26_1,Russia,NO
+RUS.27_1,Russia,NO
+RUS.28_1,Russia,NO
+RUS.29_1,Russia,OK
+RUS.30_1,Russia,NO
+RUS.31_1,Russia,NO
+RUS.32_1,Russia,NO
+RUS.33_1,Russia,NO
+RUS.34_1,Russia,NO
+RUS.35_1,Russia,NO
+RUS.36_1,Russia,NO
+RUS.37_1,Russia,NO
+RUS.38_1,Russia,NO
+RUS.39_1,Russia,NO
+RUS.40_1,Russia,NO
+RUS.41_1,Russia,NO
+RUS.42_1,Russia,NO
+RUS.43_1,Russia,OK
+RUS.44_1,Russia,OK
+RUS.45_1,Russia,NO
+RUS.46_1,Russia,NO
+RUS.47_1,Russia,NO
+RUS.48_1,Russia,OK
+RUS.49_1,Russia,NO
+RUS.50_1,Russia,NO
+RUS.51_1,Russia,NO
+RUS.52_1,Russia,NO
+RUS.53_1,Russia,NO
+RUS.54_1,Russia,NO
+RUS.55_1,Russia,NO
+RUS.56_1,Russia,NO
+RUS.57_1,Russia,NO
+RUS.58_1,Russia,NO
+RUS.59_1,Russia,NO
+RUS.60_1,Russia,NO
+RUS.61_1,Russia,NO
+RUS.62_1,Russia,NO
+RUS.63_1,Russia,OK
+RUS.64_1,Russia,NO
+RUS.65_1,Russia,NO
+RUS.66_1,Russia,NO
+RUS.67_1,Russia,OK
+RUS.68_1,Russia,OK
+RUS.69_1,Russia,NO
+RUS.70_1,Russia,OK
+RUS.71_1,Russia,NO
+RUS.72_1,Russia,NO
+RUS.73_1,Russia,NO
+RUS.74_1,Russia,NO
+RUS.75_1,Russia,NO
+RUS.76_1,Russia,NO
+RUS.77_1,Russia,NO
+RUS.78_1,Russia,NO
+RUS.79_1,Russia,NO
+RUS.80_1,Russia,NO
+RUS.81_1,Russia,OK
+RUS.82_1,Russia,NO
+RUS.83_1,Russia,NO
+RWA.1_1,Rwanda,NO
+RWA.2_1,Rwanda,NO
+RWA.3_1,Rwanda,NO
+RWA.4_1,Rwanda,NO
+RWA.5_1,Rwanda,OK
+SAU.1_1,Saudi Arabia,NO
+SAU.2_1,Saudi Arabia,NO
+SAU.3_1,Saudi Arabia,NO
+SAU.4_1,Saudi Arabia,NO
+SAU.5_1,Saudi Arabia,NO
+SAU.6_1,Saudi Arabia,NO
+SAU.7_1,Saudi Arabia,NO
+SAU.8_1,Saudi Arabia,NO
+SAU.9_1,Saudi Arabia,NO
+SAU.10_1,Saudi Arabia,NO
+SAU.11_1,Saudi Arabia,NO
+SAU.12_1,Saudi Arabia,NO
+SAU.13_1,Saudi Arabia,NO
+SDN.1_1,Sudan,NO
+SDN.2_1,Sudan,NO
+SDN.3_1,Sudan,NO
+SDN.4_1,Sudan,NO
+SDN.5_1,Sudan,NO
+SDN.6_1,Sudan,NO
+SDN.7_1,Sudan,NO
+SDN.8_1,Sudan,NO
+SDN.9_1,Sudan,NO
+SDN.10_1,Sudan,NO
+SDN.11_1,Sudan,NO
+SDN.12_1,Sudan,NO
+SDN.13_1,Sudan,NO
+SDN.14_1,Sudan,NO
+SDN.15_1,Sudan,NO
+SDN.16_1,Sudan,NO
+SDN.17_1,Sudan,NO
+SDN.18_1,Sudan,NO
+SEN.1_1,Senegal,OK
+SEN.2_1,Senegal,OK
+SEN.3_1,Senegal,NO
+SEN.4_1,Senegal,NO
+SEN.5_1,Senegal,NO
+SEN.6_1,Senegal,NO
+SEN.7_1,Senegal,OK
+SEN.8_1,Senegal,NO
+SEN.9_1,Senegal,NO
+SEN.10_1,Senegal,NO
+SEN.11_1,Senegal,NO
+SEN.12_1,Senegal,NO
+SEN.13_1,Senegal,NO
+SEN.14_1,Senegal,NO
+SGP.1_1,Singapore,OK
+SGP.2_1,Singapore,OK
+SGP.3_1,Singapore,OK
+SGP.4_1,Singapore,OK
+SGP.5_1,Singapore,NO
+SHN.1_1,"Saint Helena, Ascension and Tris",NO
+SHN.2_1,"Saint Helena, Ascension and Tris",NO
+SHN.3_1,"Saint Helena, Ascension and Tris",NO
+SJM.1_1,Svalbard and Jan Mayen,NO
+SJM.2_1,Svalbard and Jan Mayen,NO
+SLB.1_1,Solomon Islands,NO
+SLB.2_1,Solomon Islands,NO
+SLB.3_1,Solomon Islands,NO
+SLB.4_1,Solomon Islands,NO
+SLB.5_1,Solomon Islands,NO
+SLB.6_1,Solomon Islands,NO
+SLB.7_1,Solomon Islands,NO
+SLB.8_1,Solomon Islands,NO
+SLB.9_1,Solomon Islands,NO
+SLB.10_1,Solomon Islands,NO
+SLE.1_1,Sierra Leone,NO
+SLE.2_1,Sierra Leone,NO
+SLE.3_1,Sierra Leone,NO
+SLE.4_1,Sierra Leone,NO
+SLV.1_1,El Salvador,NO
+SLV.2_1,El Salvador,NO
+SLV.3_1,El Salvador,NO
+SLV.4_1,El Salvador,NO
+SLV.5_1,El Salvador,NO
+SLV.6_1,El Salvador,NO
+SLV.7_1,El Salvador,NO
+SLV.8_1,El Salvador,NO
+SLV.9_1,El Salvador,NO
+SLV.10_1,El Salvador,NO
+SLV.11_1,El Salvador,NO
+SLV.12_1,El Salvador,NO
+SLV.13_1,El Salvador,NO
+SLV.14_1,El Salvador,NO
+SMR.1_1,San Marino,OK
+SMR.2_1,San Marino,OK
+SMR.3_1,San Marino,OK
+SMR.4_1,San Marino,OK
+SMR.5_1,San Marino,OK
+SMR.6_1,San Marino,OK
+SMR.7_1,San Marino,OK
+SMR.8_1,San Marino,OK
+SMR.9_1,San Marino,OK
+SOM.1_1,Somalia,NO
+SOM.2_1,Somalia,NO
+SOM.3_1,Somalia,NO
+SOM.4_1,Somalia,NO
+SOM.5_1,Somalia,NO
+SOM.6_1,Somalia,NO
+SOM.7_1,Somalia,NO
+SOM.8_1,Somalia,NO
+SOM.9_1,Somalia,NO
+SOM.10_1,Somalia,NO
+SOM.11_1,Somalia,NO
+SOM.12_1,Somalia,NO
+SOM.13_1,Somalia,NO
+SOM.14_1,Somalia,NO
+SOM.15_1,Somalia,NO
+SOM.16_1,Somalia,NO
+SOM.17_1,Somalia,NO
+SOM.18_1,Somalia,NO
+SPM.1_1,Saint Pierre and Miquelon,NO
+SPM.2_1,Saint Pierre and Miquelon,NO
+SRB.1_1,Serbia,NO
+SRB.2_1,Serbia,NO
+SRB.3_1,Serbia,NO
+SRB.4_1,Serbia,NO
+SRB.5_1,Serbia,OK
+SRB.6_1,Serbia,NO
+SRB.7_1,Serbia,OK
+SRB.8_1,Serbia,NO
+SRB.9_1,Serbia,NO
+SRB.10_1,Serbia,OK
+SRB.11_1,Serbia,NO
+SRB.12_1,Serbia,NO
+SRB.13_1,Serbia,OK
+SRB.14_1,Serbia,NO
+SRB.15_1,Serbia,NO
+SRB.16_1,Serbia,NO
+SRB.17_1,Serbia,OK
+SRB.18_1,Serbia,OK
+SRB.19_1,Serbia,NO
+SRB.20_1,Serbia,OK
+SRB.21_1,Serbia,NO
+SRB.22_1,Serbia,NO
+SRB.23_1,Serbia,NO
+SRB.24_1,Serbia,OK
+SRB.25_1,Serbia,NO
+SSD.1_1,South Sudan,NO
+SSD.2_1,South Sudan,NO
+SSD.3_1,South Sudan,NO
+SSD.4_1,South Sudan,NO
+SSD.5_1,South Sudan,NO
+SSD.6_1,South Sudan,NO
+SSD.7_1,South Sudan,NO
+SSD.8_1,South Sudan,NO
+SSD.9_1,South Sudan,NO
+SSD.10_1,South Sudan,NO
+STP.1_1,São Tomé and Príncipe,NO
+STP.2_1,São Tomé and Príncipe,NO
+SUR.1_1,Suriname,NO
+SUR.2_1,Suriname,NO
+SUR.3_1,Suriname,NO
+SUR.4_1,Suriname,NO
+SUR.5_1,Suriname,NO
+SUR.6_1,Suriname,NO
+SUR.7_1,Suriname,NO
+SUR.8_1,Suriname,NO
+SUR.9_1,Suriname,NO
+SUR.10_1,Suriname,NO
+SVK.1_1,Slovakia,OK
+SVK.2_1,Slovakia,OK
+SVK.3_1,Slovakia,NO
+SVK.4_1,Slovakia,OK
+SVK.5_1,Slovakia,OK
+SVK.6_1,Slovakia,OK
+SVK.7_1,Slovakia,OK
+SVK.8_1,Slovakia,OK
+SVN.1_1,Slovenia,OK
+SVN.2_1,Slovenia,OK
+SVN.3_1,Slovenia,OK
+SVN.4_1,Slovenia,OK
+SVN.5_1,Slovenia,OK
+SVN.6_1,Slovenia,OK
+SVN.7_1,Slovenia,OK
+SVN.8_1,Slovenia,OK
+SVN.9_1,Slovenia,OK
+SVN.10_1,Slovenia,OK
+SVN.11_1,Slovenia,OK
+SVN.12_1,Slovenia,OK
+SWE.1_1,Sweden,NO
+SWE.2_1,Sweden,OK
+SWE.3_1,Sweden,NO
+SWE.4_1,Sweden,NO
+SWE.5_1,Sweden,NO
+SWE.6_1,Sweden,OK
+SWE.7_1,Sweden,OK
+SWE.8_1,Sweden,NO
+SWE.9_1,Sweden,NO
+SWE.10_1,Sweden,NO
+SWE.11_1,Sweden,OK
+SWE.12_1,Sweden,NO
+SWE.13_1,Sweden,OK
+SWE.14_1,Sweden,NO
+SWE.15_1,Sweden,NO
+SWE.16_1,Sweden,OK
+SWE.17_1,Sweden,OK
+SWE.18_1,Sweden,NO
+SWE.19_1,Sweden,NO
+SWE.20_1,Sweden,OK
+SWE.21_1,Sweden,OK
+SWZ.1_1,Swaziland,NO
+SWZ.2_1,Swaziland,NO
+SWZ.3_1,Swaziland,NO
+SWZ.4_1,Swaziland,NO
+SYC.1_1,Seychelles,NO
+SYC.2_1,Seychelles,NO
+SYC.3_1,Seychelles,NO
+SYC.4_1,Seychelles,NO
+SYC.5_1,Seychelles,NO
+SYC.6_1,Seychelles,NO
+SYC.7_1,Seychelles,NO
+SYC.8_1,Seychelles,NO
+SYC.9_1,Seychelles,NO
+SYC.10_1,Seychelles,NO
+SYC.11_1,Seychelles,NO
+SYC.12_1,Seychelles,NO
+SYC.13_1,Seychelles,NO
+SYC.14_1,Seychelles,NO
+SYC.15_1,Seychelles,NO
+SYC.16_1,Seychelles,NO
+SYC.17_1,Seychelles,NO
+SYC.18_1,Seychelles,NO
+SYC.19_1,Seychelles,NO
+SYC.20_1,Seychelles,NO
+SYC.21_1,Seychelles,NO
+SYC.22_1,Seychelles,NO
+SYC.23_1,Seychelles,NO
+SYC.24_1,Seychelles,NO
+SYC.25_1,Seychelles,NO
+SYC.26_1,Seychelles,NO
+SYR.1_1,Syria,NO
+SYR.2_1,Syria,NO
+SYR.3_1,Syria,NO
+SYR.4_1,Syria,NO
+SYR.5_1,Syria,NO
+SYR.6_1,Syria,NO
+SYR.7_1,Syria,NO
+SYR.8_1,Syria,NO
+SYR.9_1,Syria,NO
+SYR.10_1,Syria,NO
+SYR.11_1,Syria,NO
+SYR.12_1,Syria,NO
+SYR.13_1,Syria,NO
+SYR.14_1,Syria,NO
+TCA.1_1,Turks and Caicos Islands,NO
+TCA.2_1,Turks and Caicos Islands,NO
+TCA.3_1,Turks and Caicos Islands,NO
+TCA.4_1,Turks and Caicos Islands,NO
+TCA.5_1,Turks and Caicos Islands,NO
+TCA.6_1,Turks and Caicos Islands,NO
+TCD.1_1,Chad,NO
+TCD.2_1,Chad,NO
+TCD.3_1,Chad,NO
+TCD.4_1,Chad,NO
+TCD.5_1,Chad,NO
+TCD.6_1,Chad,NO
+TCD.7_1,Chad,NO
+TCD.8_1,Chad,NO
+TCD.9_1,Chad,NO
+TCD.10_1,Chad,NO
+TCD.11_1,Chad,NO
+TCD.12_1,Chad,NO
+TCD.13_1,Chad,NO
+TCD.14_1,Chad,NO
+TCD.15_1,Chad,NO
+TCD.16_1,Chad,NO
+TCD.17_1,Chad,NO
+TCD.18_1,Chad,NO
+TCD.19_1,Chad,NO
+TCD.20_1,Chad,NO
+TCD.21_1,Chad,NO
+TCD.22_1,Chad,NO
+TCD.23_1,Chad,NO
+TGO.1_1,Togo,NO
+TGO.2_1,Togo,NO
+TGO.3_1,Togo,NO
+TGO.4_1,Togo,NO
+TGO.5_1,Togo,NO
+THA.1_1,Thailand,OK
+THA.2_1,Thailand,OK
+THA.3_1,Thailand,OK
+THA.4_1,Thailand,OK
+THA.5_1,Thailand,OK
+THA.6_1,Thailand,OK
+THA.7_1,Thailand,OK
+THA.8_1,Thailand,OK
+THA.9_1,Thailand,OK
+THA.10_1,Thailand,OK
+THA.11_1,Thailand,OK
+THA.12_1,Thailand,OK
+THA.13_1,Thailand,OK
+THA.14_1,Thailand,OK
+THA.15_1,Thailand,OK
+THA.16_1,Thailand,OK
+THA.17_1,Thailand,OK
+THA.18_1,Thailand,NO
+THA.19_1,Thailand,OK
+THA.20_1,Thailand,OK
+THA.21_1,Thailand,OK
+THA.22_1,Thailand,OK
+THA.23_1,Thailand,OK
+THA.24_1,Thailand,OK
+THA.25_1,Thailand,OK
+THA.26_1,Thailand,OK
+THA.27_1,Thailand,OK
+THA.28_1,Thailand,OK
+THA.29_1,Thailand,OK
+THA.30_1,Thailand,OK
+THA.31_1,Thailand,OK
+THA.32_1,Thailand,OK
+THA.33_1,Thailand,OK
+THA.34_1,Thailand,OK
+THA.35_1,Thailand,OK
+THA.36_1,Thailand,OK
+THA.37_1,Thailand,OK
+THA.38_1,Thailand,OK
+THA.39_1,Thailand,NO
+THA.40_1,Thailand,OK
+THA.41_1,Thailand,OK
+THA.42_1,Thailand,NO
+THA.43_1,Thailand,OK
+THA.44_1,Thailand,OK
+THA.45_1,Thailand,NO
+THA.46_1,Thailand,OK
+THA.47_1,Thailand,OK
+THA.48_1,Thailand,OK
+THA.49_1,Thailand,OK
+THA.50_1,Thailand,NO
+THA.51_1,Thailand,NO
+THA.52_1,Thailand,OK
+THA.53_1,Thailand,NO
+THA.54_1,Thailand,OK
+THA.55_1,Thailand,NO
+THA.56_1,Thailand,OK
+THA.57_1,Thailand,OK
+THA.58_1,Thailand,OK
+THA.59_1,Thailand,OK
+THA.60_1,Thailand,OK
+THA.61_1,Thailand,NO
+THA.62_1,Thailand,OK
+THA.63_1,Thailand,OK
+THA.64_1,Thailand,OK
+THA.65_1,Thailand,OK
+THA.66_1,Thailand,OK
+THA.67_1,Thailand,OK
+THA.68_1,Thailand,OK
+THA.69_1,Thailand,NO
+THA.70_1,Thailand,NO
+THA.71_1,Thailand,NO
+THA.72_1,Thailand,OK
+THA.73_1,Thailand,OK
+THA.74_1,Thailand,NO
+THA.75_1,Thailand,OK
+THA.76_1,Thailand,OK
+THA.77_1,Thailand,OK
+TJK.5_1,Tajikistan,NO
+TJK.1_1,Tajikistan,NO
+TJK.2_1,Tajikistan,NO
+TJK.3_1,Tajikistan,NO
+TJK.4_1,Tajikistan,NO
+TKL.1_1,Tokelau,NO
+TKL.2_1,Tokelau,NO
+TKL.3_1,Tokelau,NO
+TKM.1_1,Turkmenistan,NO
+TKM.2_1,Turkmenistan,NO
+TKM.3_1,Turkmenistan,NO
+TKM.6_1,Turkmenistan,NO
+TKM.4_1,Turkmenistan,NO
+TKM.5_1,Turkmenistan,NO
+TLS.1_1,Timor-Leste,NO
+TLS.2_1,Timor-Leste,NO
+TLS.3_1,Timor-Leste,NO
+TLS.4_1,Timor-Leste,NO
+TLS.5_1,Timor-Leste,NO
+TLS.6_1,Timor-Leste,OK
+TLS.7_1,Timor-Leste,NO
+TLS.8_1,Timor-Leste,NO
+TLS.9_1,Timor-Leste,NO
+TLS.10_1,Timor-Leste,NO
+TLS.11_1,Timor-Leste,NO
+TLS.12_1,Timor-Leste,NO
+TLS.13_1,Timor-Leste,NO
+TON.1_1,Tonga,NO
+TON.2_1,Tonga,NO
+TON.3_1,Tonga,NO
+TON.4_1,Tonga,NO
+TON.5_1,Tonga,NO
+TTO.1_1,Trinidad and Tobago,NO
+TTO.2_1,Trinidad and Tobago,NO
+TTO.3_1,Trinidad and Tobago,NO
+TTO.4_1,Trinidad and Tobago,NO
+TTO.5_1,Trinidad and Tobago,NO
+TTO.6_1,Trinidad and Tobago,NO
+TTO.7_1,Trinidad and Tobago,NO
+TTO.8_1,Trinidad and Tobago,NO
+TTO.9_1,Trinidad and Tobago,NO
+TTO.10_1,Trinidad and Tobago,NO
+TTO.11_1,Trinidad and Tobago,NO
+TTO.12_1,Trinidad and Tobago,NO
+TTO.13_1,Trinidad and Tobago,NO
+TTO.14_1,Trinidad and Tobago,NO
+TTO.15_1,Trinidad and Tobago,NO
+TUN.1_1,Tunisia,NO
+TUN.2_1,Tunisia,NO
+TUN.3_1,Tunisia,OK
+TUN.4_1,Tunisia,NO
+TUN.5_1,Tunisia,NO
+TUN.6_1,Tunisia,NO
+TUN.7_1,Tunisia,NO
+TUN.8_1,Tunisia,NO
+TUN.9_1,Tunisia,NO
+TUN.10_1,Tunisia,NO
+TUN.11_1,Tunisia,NO
+TUN.12_1,Tunisia,NO
+TUN.13_1,Tunisia,NO
+TUN.14_1,Tunisia,OK
+TUN.15_1,Tunisia,NO
+TUN.16_1,Tunisia,NO
+TUN.17_1,Tunisia,NO
+TUN.18_1,Tunisia,NO
+TUN.19_1,Tunisia,NO
+TUN.20_1,Tunisia,NO
+TUN.21_1,Tunisia,NO
+TUN.22_1,Tunisia,NO
+TUN.23_1,Tunisia,OK
+TUN.24_1,Tunisia,NO
+TUR.1_1,Turkey,NO
+TUR.2_1,Turkey,NO
+TUR.3_1,Turkey,NO
+TUR.4_1,Turkey,OK
+TUR.5_1,Turkey,NO
+TUR.6_1,Turkey,OK
+TUR.7_1,Turkey,OK
+TUR.8_1,Turkey,NO
+TUR.9_1,Turkey,NO
+TUR.10_1,Turkey,NO
+TUR.11_1,Turkey,NO
+TUR.12_1,Turkey,OK
+TUR.13_1,Turkey,NO
+TUR.14_1,Turkey,NO
+TUR.15_1,Turkey,OK
+TUR.16_1,Turkey,NO
+TUR.17_1,Turkey,NO
+TUR.18_1,Turkey,NO
+TUR.19_1,Turkey,NO
+TUR.20_1,Turkey,OK
+TUR.21_1,Turkey,OK
+TUR.22_1,Turkey,NO
+TUR.23_1,Turkey,NO
+TUR.24_1,Turkey,OK
+TUR.25_1,Turkey,OK
+TUR.26_1,Turkey,OK
+TUR.27_1,Turkey,OK
+TUR.28_1,Turkey,NO
+TUR.29_1,Turkey,OK
+TUR.30_1,Turkey,NO
+TUR.31_1,Turkey,NO
+TUR.32_1,Turkey,NO
+TUR.33_1,Turkey,NO
+TUR.34_1,Turkey,NO
+TUR.35_1,Turkey,NO
+TUR.36_1,Turkey,NO
+TUR.37_1,Turkey,OK
+TUR.38_1,Turkey,OK
+TUR.39_1,Turkey,NO
+TUR.40_1,Turkey,OK
+TUR.41_1,Turkey,NO
+TUR.42_1,Turkey,NO
+TUR.43_1,Turkey,NO
+TUR.44_1,Turkey,NO
+TUR.45_1,Turkey,OK
+TUR.46_1,Turkey,NO
+TUR.47_1,Turkey,NO
+TUR.48_1,Turkey,OK
+TUR.49_1,Turkey,NO
+TUR.50_1,Turkey,OK
+TUR.51_1,Turkey,NO
+TUR.52_1,Turkey,OK
+TUR.53_1,Turkey,NO
+TUR.54_1,Turkey,NO
+TUR.55_1,Turkey,NO
+TUR.56_1,Turkey,OK
+TUR.57_1,Turkey,NO
+TUR.58_1,Turkey,OK
+TUR.59_1,Turkey,NO
+TUR.60_1,Turkey,NO
+TUR.61_1,Turkey,NO
+TUR.62_1,Turkey,OK
+TUR.63_1,Turkey,OK
+TUR.64_1,Turkey,NO
+TUR.65_1,Turkey,OK
+TUR.66_1,Turkey,OK
+TUR.67_1,Turkey,NO
+TUR.68_1,Turkey,NO
+TUR.69_1,Turkey,NO
+TUR.70_1,Turkey,OK
+TUR.71_1,Turkey,NO
+TUR.72_1,Turkey,NO
+TUR.73_1,Turkey,OK
+TUR.74_1,Turkey,OK
+TUR.75_1,Turkey,OK
+TUR.76_1,Turkey,NO
+TUR.77_1,Turkey,OK
+TUR.78_1,Turkey,NO
+TUR.79_1,Turkey,OK
+TUR.80_1,Turkey,NO
+TUR.81_1,Turkey,OK
+TUV.1_1,Tuvalu,NO
+TUV.2_1,Tuvalu,NO
+TUV.3_1,Tuvalu,NO
+TUV.4_1,Tuvalu,NO
+TUV.5_1,Tuvalu,NO
+TUV.6_1,Tuvalu,NO
+TUV.7_1,Tuvalu,NO
+TUV.8_1,Tuvalu,NO
+TUV.9_1,Tuvalu,NO
+TWN.1_1,Taiwan,OK
+TWN.2_1,Taiwan,OK
+TWN.3_1,Taiwan,NO
+TWN.4_1,Taiwan,OK
+TWN.5_1,Taiwan,OK
+TWN.6_1,Taiwan,OK
+TWN.7_1,Taiwan,OK
+TZA.1_1,Tanzania,NO
+TZA.2_1,Tanzania,NO
+TZA.3_1,Tanzania,NO
+TZA.4_1,Tanzania,NO
+TZA.5_1,Tanzania,NO
+TZA.6_1,Tanzania,NO
+TZA.18_1,Tanzania,NO
+TZA.28_1,Tanzania,NO
+TZA.7_1,Tanzania,NO
+TZA.8_1,Tanzania,NO
+TZA.9_1,Tanzania,NO
+TZA.19_1,Tanzania,NO
+TZA.29_1,Tanzania,NO
+TZA.10_1,Tanzania,NO
+TZA.11_1,Tanzania,NO
+TZA.12_1,Tanzania,NO
+TZA.13_1,Tanzania,NO
+TZA.30_1,Tanzania,NO
+TZA.14_1,Tanzania,NO
+TZA.15_1,Tanzania,NO
+TZA.16_1,Tanzania,NO
+TZA.17_1,Tanzania,NO
+TZA.20_1,Tanzania,NO
+TZA.21_1,Tanzania,NO
+TZA.22_1,Tanzania,NO
+TZA.23_1,Tanzania,NO
+TZA.24_1,Tanzania,NO
+TZA.25_1,Tanzania,NO
+TZA.31_1,Tanzania,NO
+TZA.26_1,Tanzania,NO
+TZA.27_1,Tanzania,NO
+UGA.1_1,Uganda,NO
+UGA.2_1,Uganda,NO
+UGA.3_1,Uganda,NO
+UGA.4_1,Uganda,NO
+UGA.5_1,Uganda,NO
+UGA.6_1,Uganda,NO
+UGA.7_1,Uganda,NO
+UGA.8_1,Uganda,NO
+UGA.9_1,Uganda,NO
+UGA.10_1,Uganda,NO
+UGA.11_1,Uganda,NO
+UGA.12_1,Uganda,NO
+UGA.13_1,Uganda,NO
+UGA.14_1,Uganda,NO
+UGA.15_1,Uganda,NO
+UGA.16_1,Uganda,NO
+UGA.17_1,Uganda,NO
+UGA.18_1,Uganda,NO
+UGA.19_1,Uganda,NO
+UGA.20_1,Uganda,NO
+UGA.21_1,Uganda,OK
+UGA.22_1,Uganda,NO
+UGA.23_1,Uganda,NO
+UGA.24_1,Uganda,NO
+UGA.25_1,Uganda,NO
+UGA.26_1,Uganda,NO
+UGA.27_1,Uganda,NO
+UGA.28_1,Uganda,NO
+UGA.29_1,Uganda,NO
+UGA.30_1,Uganda,NO
+UGA.31_1,Uganda,NO
+UGA.32_1,Uganda,NO
+UGA.33_1,Uganda,NO
+UGA.34_1,Uganda,NO
+UGA.35_1,Uganda,NO
+UGA.36_1,Uganda,NO
+UGA.37_1,Uganda,NO
+UGA.38_1,Uganda,NO
+UGA.39_1,Uganda,NO
+UGA.40_1,Uganda,NO
+UGA.41_1,Uganda,NO
+UGA.42_1,Uganda,NO
+UGA.43_1,Uganda,NO
+UGA.44_1,Uganda,NO
+UGA.45_1,Uganda,NO
+UGA.46_1,Uganda,NO
+UGA.47_1,Uganda,NO
+UGA.48_1,Uganda,NO
+UGA.49_1,Uganda,NO
+UGA.50_1,Uganda,NO
+UGA.51_1,Uganda,NO
+UGA.52_1,Uganda,NO
+UGA.53_1,Uganda,NO
+UGA.54_1,Uganda,NO
+UGA.55_1,Uganda,NO
+UGA.56_1,Uganda,NO
+UGA.57_1,Uganda,NO
+UGA.58_1,Uganda,NO
+UKR.1_1,Ukraine,NO
+UKR.2_1,Ukraine,NO
+UKR.3_1,Ukraine,OK
+UKR.4_1,Ukraine,NO
+UKR.5_1,Ukraine,NO
+UKR.6_1,Ukraine,NO
+UKR.7_1,Ukraine,OK
+UKR.8_1,Ukraine,NO
+UKR.9_1,Ukraine,NO
+UKR.10_1,Ukraine,NO
+UKR.12_1,Ukraine,NO
+UKR.11_1,Ukraine,OK
+UKR.13_1,Ukraine,NO
+UKR.14_1,Ukraine,OK
+UKR.15_1,Ukraine,NO
+UKR.16_1,Ukraine,NO
+UKR.17_1,Ukraine,NO
+UKR.18_1,Ukraine,NO
+UKR.19_1,Ukraine,NO
+UKR.20_1,Ukraine,NO
+UKR.21_1,Ukraine,NO
+UKR.22_1,Ukraine,NO
+UKR.24_1,Ukraine,OK
+UKR.25_1,Ukraine,OK
+UKR.23_1,Ukraine,NO
+UKR.26_1,Ukraine,NO
+UKR.27_1,Ukraine,NO
+UMI.1_1,United States Minor Outlying Isl,NO
+UMI.2_1,United States Minor Outlying Isl,NO
+UMI.3_1,United States Minor Outlying Isl,NO
+UMI.4_1,United States Minor Outlying Isl,NO
+UMI.5_1,United States Minor Outlying Isl,NO
+UMI.6_1,United States Minor Outlying Isl,OK
+UMI.7_1,United States Minor Outlying Isl,NO
+UMI.8_1,United States Minor Outlying Isl,NO
+UMI.9_1,United States Minor Outlying Isl,NO
+URY.1_2,Uruguay,NO
+URY.2_2,Uruguay,OK
+URY.3_2,Uruguay,NO
+URY.4_2,Uruguay,NO
+URY.5_2,Uruguay,NO
+URY.6_2,Uruguay,NO
+URY.7_2,Uruguay,NO
+URY.8_2,Uruguay,NO
+URY.9_2,Uruguay,OK
+URY.10_2,Uruguay,OK
+URY.11_2,Uruguay,NO
+URY.12_2,Uruguay,NO
+URY.13_2,Uruguay,NO
+URY.14_2,Uruguay,NO
+URY.15_2,Uruguay,NO
+URY.16_2,Uruguay,OK
+URY.17_2,Uruguay,NO
+URY.18_2,Uruguay,OK
+URY.19_2,Uruguay,NO
+USA.1_1,United States,OK
+USA.2_1,United States,NO
+USA.3_1,United States,NO
+USA.4_1,United States,NO
+USA.5_1,United States,OK
+USA.6_1,United States,OK
+USA.7_1,United States,OK
+USA.8_1,United States,OK
+USA.9_1,United States,OK
+USA.10_1,United States,NO
+USA.11_1,United States,NO
+USA.12_1,United States,OK
+USA.13_1,United States,NO
+USA.14_1,United States,OK
+USA.15_1,United States,OK
+USA.16_1,United States,OK
+USA.17_1,United States,OK
+USA.18_1,United States,NO
+USA.19_1,United States,NO
+USA.20_1,United States,NO
+USA.21_1,United States,OK
+USA.22_1,United States,NO
+USA.23_1,United States,NO
+USA.24_1,United States,OK
+USA.25_1,United States,NO
+USA.26_1,United States,OK
+USA.27_1,United States,NO
+USA.28_1,United States,OK
+USA.29_1,United States,NO
+USA.30_1,United States,NO
+USA.31_1,United States,NO
+USA.32_1,United States,NO
+USA.33_1,United States,OK
+USA.34_1,United States,NO
+USA.35_1,United States,NO
+USA.36_1,United States,OK
+USA.37_1,United States,OK
+USA.38_1,United States,NO
+USA.39_1,United States,OK
+USA.40_1,United States,OK
+USA.41_1,United States,NO
+USA.42_1,United States,NO
+USA.43_1,United States,OK
+USA.44_1,United States,NO
+USA.45_1,United States,OK
+USA.46_1,United States,OK
+USA.47_1,United States,OK
+USA.48_1,United States,OK
+USA.49_1,United States,NO
+USA.50_1,United States,OK
+USA.51_1,United States,NO
+UZB.1_1,Uzbekistan,NO
+UZB.2_1,Uzbekistan,NO
+UZB.3_1,Uzbekistan,NO
+UZB.4_1,Uzbekistan,NO
+UZB.8_1,Uzbekistan,NO
+UZB.9_1,Uzbekistan,NO
+UZB.5_1,Uzbekistan,NO
+UZB.6_1,Uzbekistan,NO
+UZB.10_1,Uzbekistan,NO
+UZB.11_1,Uzbekistan,NO
+UZB.12_1,Uzbekistan,NO
+UZB.14_1,Uzbekistan,NO
+UZB.13_1,Uzbekistan,NO
+UZB.7_1,Uzbekistan,NO
+VCT.1_1,Saint Vincent and the Grenadines,NO
+VCT.2_1,Saint Vincent and the Grenadines,NO
+VCT.3_1,Saint Vincent and the Grenadines,NO
+VCT.4_1,Saint Vincent and the Grenadines,NO
+VCT.5_1,Saint Vincent and the Grenadines,NO
+VCT.6_1,Saint Vincent and the Grenadines,NO
+VEN.1_1,Venezuela,NO
+VEN.2_1,Venezuela,NO
+VEN.3_1,Venezuela,NO
+VEN.4_1,Venezuela,NO
+VEN.5_1,Venezuela,NO
+VEN.6_1,Venezuela,NO
+VEN.7_1,Venezuela,NO
+VEN.8_1,Venezuela,NO
+VEN.9_1,Venezuela,NO
+VEN.10_1,Venezuela,NO
+VEN.11_1,Venezuela,NO
+VEN.12_1,Venezuela,NO
+VEN.13_1,Venezuela,NO
+VEN.14_1,Venezuela,NO
+VEN.15_1,Venezuela,NO
+VEN.16_1,Venezuela,NO
+VEN.17_1,Venezuela,NO
+VEN.18_1,Venezuela,NO
+VEN.19_1,Venezuela,NO
+VEN.20_1,Venezuela,NO
+VEN.21_1,Venezuela,NO
+VEN.22_1,Venezuela,NO
+VEN.23_1,Venezuela,NO
+VEN.24_1,Venezuela,NO
+VEN.25_1,Venezuela,NO
+VGB.1_1,British Virgin Islands,NO
+VGB.2_1,British Virgin Islands,NO
+VGB.3_1,British Virgin Islands,NO
+VGB.4_1,British Virgin Islands,NO
+VGB.5_1,British Virgin Islands,NO
+VIR.1_1,"Virgin Islands, U.S.",OK
+VIR.2_1,"Virgin Islands, U.S.",NO
+VIR.3_1,"Virgin Islands, U.S.",NO
+VNM.1_1,Vietnam,NO
+VNM.7_1,Vietnam,OK
+VNM.3_1,Vietnam,NO
+VNM.4_1,Vietnam,NO
+VNM.2_1,Vietnam,NO
+VNM.5_1,Vietnam,OK
+VNM.6_1,Vietnam,OK
+VNM.8_1,Vietnam,NO
+VNM.9_1,Vietnam,OK
+VNM.10_1,Vietnam,OK
+VNM.11_1,Vietnam,NO
+VNM.13_1,Vietnam,NO
+VNM.12_1,Vietnam,OK
+VNM.14_1,Vietnam,NO
+VNM.19_1,Vietnam,NO
+VNM.15_1,Vietnam,NO
+VNM.16_1,Vietnam,NO
+VNM.20_1,Vietnam,NO
+VNM.17_1,Vietnam,OK
+VNM.18_1,Vietnam,OK
+VNM.21_1,Vietnam,NO
+VNM.26_1,Vietnam,NO
+VNM.28_1,Vietnam,OK
+VNM.27_1,Vietnam,OK
+VNM.29_1,Vietnam,NO
+VNM.22_1,Vietnam,OK
+VNM.23_1,Vietnam,NO
+VNM.24_1,Vietnam,OK
+VNM.25_1,Vietnam,OK
+VNM.30_1,Vietnam,NO
+VNM.31_1,Vietnam,OK
+VNM.32_1,Vietnam,NO
+VNM.33_1,Vietnam,OK
+VNM.34_1,Vietnam,NO
+VNM.36_1,Vietnam,OK
+VNM.37_1,Vietnam,OK
+VNM.35_1,Vietnam,OK
+VNM.38_1,Vietnam,NO
+VNM.39_1,Vietnam,OK
+VNM.40_1,Vietnam,OK
+VNM.41_1,Vietnam,NO
+VNM.42_1,Vietnam,OK
+VNM.43_1,Vietnam,OK
+VNM.44_1,Vietnam,OK
+VNM.45_1,Vietnam,NO
+VNM.46_1,Vietnam,NO
+VNM.47_1,Vietnam,NO
+VNM.48_1,Vietnam,NO
+VNM.49_1,Vietnam,NO
+VNM.50_1,Vietnam,NO
+VNM.51_1,Vietnam,OK
+VNM.52_1,Vietnam,NO
+VNM.53_1,Vietnam,NO
+VNM.55_1,Vietnam,OK
+VNM.56_1,Vietnam,OK
+VNM.57_1,Vietnam,NO
+VNM.54_1,Vietnam,OK
+VNM.58_1,Vietnam,OK
+VNM.59_1,Vietnam,OK
+VNM.60_1,Vietnam,NO
+VNM.61_1,Vietnam,OK
+VNM.62_1,Vietnam,OK
+VNM.63_1,Vietnam,NO
+VUT.1_1,Vanuatu,NO
+VUT.2_1,Vanuatu,NO
+VUT.3_1,Vanuatu,NO
+VUT.4_1,Vanuatu,NO
+VUT.5_1,Vanuatu,NO
+VUT.6_1,Vanuatu,NO
+WLF.1_1,Wallis and Futuna,NO
+WLF.2_1,Wallis and Futuna,NO
+WLF.3_1,Wallis and Futuna,NO
+WSM.1_1,Samoa,NO
+WSM.2_1,Samoa,NO
+WSM.3_1,Samoa,NO
+WSM.4_1,Samoa,NO
+WSM.5_1,Samoa,NO
+WSM.6_1,Samoa,NO
+WSM.7_1,Samoa,NO
+WSM.8_1,Samoa,NO
+WSM.9_1,Samoa,NO
+WSM.10_1,Samoa,NO
+WSM.11_1,Samoa,NO
+XAD.1_1,Akrotiri and Dhekelia,NO
+XAD.2_1,Akrotiri and Dhekelia,NO
+XKO.1_1,Kosovo,NO
+XKO.2_1,Kosovo,NO
+XKO.3_1,Kosovo,NO
+XKO.4_1,Kosovo,NO
+XKO.5_1,Kosovo,NO
+XKO.6_1,Kosovo,NO
+XKO.7_1,Kosovo,NO
+YEM.1_1,Yemen,NO
+YEM.2_1,Yemen,NO
+YEM.3_1,Yemen,NO
+YEM.4_1,Yemen,NO
+YEM.5_1,Yemen,NO
+YEM.6_1,Yemen,NO
+YEM.7_1,Yemen,NO
+YEM.8_1,Yemen,NO
+YEM.9_1,Yemen,NO
+YEM.10_1,Yemen,NO
+YEM.11_1,Yemen,NO
+YEM.12_1,Yemen,NO
+YEM.13_1,Yemen,NO
+YEM.14_1,Yemen,NO
+YEM.15_1,Yemen,NO
+YEM.16_1,Yemen,NO
+YEM.17_1,Yemen,NO
+YEM.18_1,Yemen,NO
+YEM.19_1,Yemen,NO
+YEM.20_1,Yemen,NO
+YEM.21_1,Yemen,NO
+ZAF.1_1,South Africa,NO
+ZAF.2_1,South Africa,NO
+ZAF.3_1,South Africa,OK
+ZAF.4_1,South Africa,NO
+ZAF.5_1,South Africa,NO
+ZAF.6_1,South Africa,NO
+ZAF.7_1,South Africa,NO
+ZAF.8_1,South Africa,NO
+ZAF.9_1,South Africa,NO
+ZMB.1_1,Zambia,NO
+ZMB.2_1,Zambia,NO
+ZMB.3_1,Zambia,NO
+ZMB.4_1,Zambia,NO
+ZMB.5_1,Zambia,NO
+ZMB.6_1,Zambia,NO
+ZMB.7_1,Zambia,NO
+ZMB.8_1,Zambia,NO
+ZMB.9_1,Zambia,NO
+ZMB.10_1,Zambia,NO
+ZNC.1_1,Northern Cyprus,NO
+ZNC.2_1,Northern Cyprus,NO
+ZNC.3_1,Northern Cyprus,NO
+ZNC.4_1,Northern Cyprus,NO
+ZNC.5_1,Northern Cyprus,NO
+ZWE.1_1,Zimbabwe,NO
+ZWE.2_1,Zimbabwe,NO
+ZWE.3_1,Zimbabwe,NO
+ZWE.4_1,Zimbabwe,NO
+ZWE.5_1,Zimbabwe,NO
+ZWE.6_1,Zimbabwe,NO
+ZWE.7_1,Zimbabwe,NO
+ZWE.8_1,Zimbabwe,NO
+ZWE.9_1,Zimbabwe,NO
+ZWE.10_1,Zimbabwe,NO
