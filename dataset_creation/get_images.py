@@ -105,4 +105,4 @@ def generate_images_from_coords(dataset_csv, start_idx, end_idx, api_key=os.gete
         dataset_df.to_csv(dataset_csv, index=False)
 
 # Example usage
-generate_images_from_coords("data/img_dataset.csv", 100, 1000)
+generate_images_from_coords("data/img_dataset.csv", 8000, 10000)

@@ -4,9 +4,7 @@ import argparse
 import logging
 from multiprocessing import set_start_method
 from training import finetune_model, finetune_on_embeddings, pretrain
-from dataset_creation.pretrain import PretrainDataset, PretrainDatasetYFCC
 from dataset_creation.finetune import generate_finetune_dataset
-from dataset_creation.benchmark import BenchmarkDataset
 from preprocessing import preprocess
 from evaluation import evaluate
 from datasets import DatasetDict, concatenate_datasets
@@ -80,11 +78,11 @@ argp.add_argument('-r', '--resume',
     default=False
 )
 
-argp.add_argument('--yfcc',
-    help='Set flag to train with YFCC instead of StreetView data.',
-    action='store_true',
-    default=False
-)
+# argp.add_argument('--yfcc',
+#     help='Set flag to train with YFCC instead of StreetView data.',
+#     action='store_true',
+#     default=False
+# )
 
 argp.add_argument('--landmarks',
     help='Set flag if landmark data was added to the training mix.',
@@ -103,17 +101,14 @@ def main():
     DATASET_PATH = 'data/hf_new_VIT' if args.sample is None else f'data/hf_dataset_{args.sample}'
 
     # Load dataset
-    if args.function == 'pretrain':
-        if args.yfcc:
-            dataset = PretrainDatasetYFCC.generate(PRETRAIN_METADATA_PATH_YFCC, args.auxiliary)
-        else:
-            dataset = PretrainDataset.generate(PRETRAIN_METADATA_PATH, args.auxiliary)
+    # if args.function == 'pretrain':
+    #     dataset = PretrainDataset.generate(PRETRAIN_METADATA_PATH, args.auxiliary)
 
-    elif args.load is None or len(args.load) == 0:
+    if args.load is None or len(args.load) == 0:
 
         # Generate HF dataset
-        metadata = METADATA_PATH_YFCC if args.yfcc else METADATA_PATH
-        images = IMAGE_PATH_YFCC if args.yfcc else IMAGE_PATH
+        metadata = METADATA_PATH
+        images = IMAGE_PATH
         if args.landmarks:
             metadata = METADATA_PATH_LANDMARKS
             images = IMAGE_PATH_LANDMARKS
@@ -132,8 +127,8 @@ def main():
                 embedder = VITEmbedding(args.named)
 
         # Preprocess
-        geocells = GEOCELL_PATH_YFCC if args.yfcc else GEOCELL_PATH
-        dataset_path = DATASET_PATH_YFCC if args.yfcc else DATASET_PATH
+        geocells = GEOCELL_PATH
+        dataset_path = DATASET_PATH
         if args.landmarks:
             dataset_path = DATASET_PATH_LANDMARKS
 
@@ -159,7 +154,8 @@ def main():
         dataset = DatasetDict.load_from_disk(args.load[0])
 
     else:
-        dataset = BenchmarkDataset(args.load[0])
+        filler = 0
+        # dataset = BenchmarkDataset(args.load[0])
 
     # Load or train model 
     if args.function == 'finetune':
@@ -181,9 +177,9 @@ def main():
         evaluate(args.name, dataset, yfcc=args.yfcc, base_model=args.base, refine=True,
                  landmarks=args.landmarks)
 
-    elif args.function == 'pretrain':
-        pretrain_args = PRETAIN_ARGS_YFCC if args.yfcc else PRETAIN_ARGS
-        pretrain(args.name, dataset, train_args=pretrain_args, resume=args.resume)
+    # elif args.function == 'pretrain':
+    #     pretrain_args = PRETRAIN_ARGS
+    #     pretrain(args.name, dataset, train_args=pretrain_args, resume=args.resume)
 
     else:
         raise NotImplementedError(f'Mode {args.function} is not implemented.')

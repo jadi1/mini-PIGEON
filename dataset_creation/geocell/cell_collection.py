@@ -1,4 +1,5 @@
 import concurrent.futures
+import os
 import numpy as np
 import pandas as pd
 import geopandas as gpd
@@ -10,7 +11,6 @@ from cell import Cell
 CRS = 'EPSG:4326'
 GEOCELL_COLUMNS = ['name', 'admin_1', 'country', 'size', 'num_polygons', 'geometry']
 OPTICS_PARAMS_GEOGUESSR = [(8, 0.05), (10, 0.025), (15, 0.015)]
-OPTICS_PARAMS_YFCC = [(300, 0.05), (400, 0.005), (1000, 0.0001)]
 
 class CellCollection(set):
     def __init__(self, cells: Iterable[Cell]):
@@ -125,7 +125,11 @@ class CellCollection(set):
             min_cell_size: (int): Minimum cell size.
             max_cell_size (int): Minimum cell size.
         """
-        with concurrent.futures.ThreadPoolExecutor() as executor:
+        max_workers = os.cpu_count()
+
+        with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
+            print("Countries to process:", [c for c in self.countries])
+            print("Total countries:", len(self.countries))
             futures = [executor.submit(self._balance_country, country, min_cell_size) for country in self.countries[::-1]]
             for _ in tqdm(concurrent.futures.as_completed(futures), total=len(futures), desc='Fusing cells within countries', unit='country'):
                 pass
@@ -149,7 +153,8 @@ class CellCollection(set):
             min_cell_size: (int): Minimum cell size.
             max_cell_size (int): Maximum cell size.
         """
-        for args in OPTICS_PARAMS_YFCC:
+        max_workers = os.cpu_count()  # ADD THIS
+        for args in OPTICS_PARAMS_GEOGUESSR:
             print('||| NEW OPTICS PARAMS ||| ', args)
             new_cells = []
 
@@ -162,7 +167,7 @@ class CellCollection(set):
                 pbar = tqdm(total=len(large_cells), desc=desc, dynamic_ncols=True, unit='cell')
 
                 # Parallalize the splitting of cells across cores
-                with concurrent.futures.ThreadPoolExecutor() as executor:
+                with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
                     futures = [executor.submit(cell._split_cell, self, args, min_cell_size, max_cell_size)for cell in large_cells]
                     for future in concurrent.futures.as_completed(futures):
                         nc = future.result()
@@ -181,67 +186,153 @@ class CellCollection(set):
 
             self.save('data/yfcc_geocell_collection_new.npy')
 
+    # def __fuse(self, min_cell_size: int):
+    #     """Fuses all contained cells.
+
+    #     Args:
+    #         min_cell_size (int): Minimum cell size.
+    #     """
+    #     exclude_list = CellCollection({})
+    #     while True:
+    #         consider_cells = self - exclude_list
+    #         cell_df = consider_cells.to_pandas()
+
+    #         # simplify geometry
+    #         cell_df['geometry'] = cell_df['geometry'].apply(lambda x: x.simplify(0.001, preserve_topology=True))
+    #         print("simplified")
+    #         cell_df['scaled'] = cell_df['geometry'].apply(lambda x: scale(x, xfact=1.01, yfact=1.01))
+    #         print("scaled")
+    #         cell_df = cell_df.set_geometry('scaled')
+    #         df_small = cell_df.loc[cell_df['size'] < min_cell_size].copy()
+    #         if len(df_small.index) == 0:
+    #             break
+                
+    #         # Sample one cell
+    #         center = df_small.sample(random_state=330).iloc[0]        
+    #         df_slice = df_small[df_small['name'] != center['name']].reset_index(drop=True)
+            
+    #         # Find sorrounding cells - prioritize small adjacent cells in same ADMIN 1 area
+    #         look_df = df_slice[df_slice['admin_1'] == center['admin_1']].reset_index(drop=True)
+    #         indices = look_df.sindex.query(center.scaled, predicate='intersects')
+    #         found_indices = look_df.iloc[indices]['name'].values
+    #         print("A")
+            
+    #         # Find sorrounding cells - prioritize big adjacent cells in same ADMIN 1 area
+    #         if len(found_indices) == 0:
+    #             look_df = cell_df[(cell_df['admin_1'] == center['admin_1']) & (cell_df['name'] != center['name'])].reset_index(drop=True)
+    #             indices = look_df.sindex.query(center.scaled, predicate='intersects')
+    #             found_indices = look_df.iloc[indices]['name'].values
+            
+    #         print("B")
+
+    #         # Find sorrounding cells - prioritize small adjacent cells in other ADMIN areas
+    #         if len(found_indices) == 0:
+    #             indices = df_slice.sindex.query(center.scaled, predicate='intersects')
+    #             found_indices = df_slice.iloc[indices]['name'].values
+                    
+    #         print("C")
+
+    #         # Find sorrounding cells - prioritize big adjacent cells in other ADMIN areas
+    #         if len(found_indices) == 0:
+    #             indices = cell_df[(cell_df['name'] != center['name'])].sindex.query(center.scaled, predicate='intersects')
+    #             found_indices = cell_df[(cell_df['name'] != center['name'])].iloc[indices]['name'].values
+
+    #         print("D")       
+    #         # Try again but enlarge 2 times as much
+    #         if len(found_indices) == 0:
+    #             new_shape = scale(center.scaled, xfact=2, yfact=2)
+    #             indices = cell_df[(cell_df['name'] != center['name'])].sindex.query(new_shape, predicate='intersects')
+    #             found_indices = cell_df[(cell_df['name'] != center['name'])].iloc[indices]['name'].values
+                        
+    #         if len(found_indices) == 0:
+    #             exclude_list.add(self.find(center['name']))
+    #             continue
+            
+    #         print("E")
+    #         sorrounds = cell_df[(cell_df['name'].isin(found_indices)) & (cell_df['name'] != center['name'])]
+    #         sorrounds = sorrounds.sort_values(by='size', ascending=False)
+            
+    #         # Get cells
+    #         c_cell = self.find(center['name'])
+    #         s_cell = self.find(sorrounds.iloc[0]['name'])
+            
+    #         print("F")
+    #         # Merge
+    #         c_cell.combine([s_cell])
     def __fuse(self, min_cell_size: int):
-        """Fuses all contained cells.
+        """Fuses all contained cells while skipping disconnected cells.
 
         Args:
             min_cell_size (int): Minimum cell size.
         """
         exclude_list = CellCollection({})
+        max_attempts = 5  # optional safeguard to prevent infinite loops
+        attempts = 0
+
         while True:
             consider_cells = self - exclude_list
             cell_df = consider_cells.to_pandas()
 
+            # simplify geometry to speed up processing
+            cell_df['geometry'] = cell_df['geometry'].apply(lambda x: x.simplify(0.001, preserve_topology=True))
+            print("simplified")
+
+            # scale slightly to detect intersections
             cell_df['scaled'] = cell_df['geometry'].apply(lambda x: scale(x, xfact=1.01, yfact=1.01))
+            print("scaled")
+
             cell_df = cell_df.set_geometry('scaled')
+
+            # select small cells that need to be fused
             df_small = cell_df.loc[cell_df['size'] < min_cell_size].copy()
             if len(df_small.index) == 0:
-                break
-                
-            # Sample one cell
-            center = df_small.sample(random_state=330).iloc[0]        
+                break  # all cells are big enough
+
+            # pick a random small cell
+            center = df_small.sample(random_state=330).iloc[0]
             df_slice = df_small[df_small['name'] != center['name']].reset_index(drop=True)
-            
-            # Find sorrounding cells - prioritize small adjacent cells in same ADMIN 1 area
+
+            # --- check for intersecting neighbors ---
             look_df = df_slice[df_slice['admin_1'] == center['admin_1']].reset_index(drop=True)
             indices = look_df.sindex.query(center.scaled, predicate='intersects')
             found_indices = look_df.iloc[indices]['name'].values
-            
-            # Find sorrounding cells - prioritize big adjacent cells in same ADMIN 1 area
+
+            # fallback if none found
             if len(found_indices) == 0:
                 look_df = cell_df[(cell_df['admin_1'] == center['admin_1']) & (cell_df['name'] != center['name'])].reset_index(drop=True)
                 indices = look_df.sindex.query(center.scaled, predicate='intersects')
                 found_indices = look_df.iloc[indices]['name'].values
-                
-            # Find sorrounding cells - prioritize small adjacent cells in other ADMIN areas
+
             if len(found_indices) == 0:
                 indices = df_slice.sindex.query(center.scaled, predicate='intersects')
                 found_indices = df_slice.iloc[indices]['name'].values
-                    
-            # Find sorrounding cells - prioritize big adjacent cells in other ADMIN areas
+
             if len(found_indices) == 0:
                 indices = cell_df[(cell_df['name'] != center['name'])].sindex.query(center.scaled, predicate='intersects')
                 found_indices = cell_df[(cell_df['name'] != center['name'])].iloc[indices]['name'].values
-                        
-            # Try again but enlarge 2 times as much
+
+            # --- NEW: skip fusion if no neighbors found ---
             if len(found_indices) == 0:
-                new_shape = scale(center.scaled, xfact=2, yfact=2)
-                indices = cell_df[(cell_df['name'] != center['name'])].sindex.query(new_shape, predicate='intersects')
-                found_indices = cell_df[(cell_df['name'] != center['name'])].iloc[indices]['name'].values
-                        
-            if len(found_indices) == 0:
+                print(f"Skipping cell {center['name']} (no neighbors)")
                 exclude_list.add(self.find(center['name']))
+                attempts += 1
+                if attempts > 1000:  # safety break
+                    print("Reached max attempts, stopping fuse loop")
+                    break
                 continue
-            
+
+            # sort surrounding cells by size (descending)
             sorrounds = cell_df[(cell_df['name'].isin(found_indices)) & (cell_df['name'] != center['name'])]
             sorrounds = sorrounds.sort_values(by='size', ascending=False)
-            
-            # Get cells
+
+            # get cell objects
             c_cell = self.find(center['name'])
             s_cell = self.find(sorrounds.iloc[0]['name'])
-            
-            # Merge
+
+            # merge
             c_cell.combine([s_cell])
+            attempts = 0  # reset attempts after a successful merge
+
     
     def __sub__(self, other):
         return CellCollection(super().__sub__(other))

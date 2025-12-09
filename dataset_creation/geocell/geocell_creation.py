@@ -221,7 +221,16 @@ class GeocellCreator:
         unassigned = gpd.GeoDataFrame(unassigned, geometry='centroid')
 
         # Find assignments
-        closest_match = assigned.sindex.nearest(unassigned.centroid)[1]
+        closest_match = []
+        for centroid in unassigned.centroid:
+            coords = (centroid.x, centroid.y)
+            nearest_result = assigned.sindex.nearest(coords)
+            # nearest_result is a tuple: (query_indices, tree_indices)
+            if isinstance(nearest_result, tuple) and len(nearest_result[1]) > 0:
+                closest_match.append(nearest_result[1][0])
+            else:
+                closest_match.append(0)  # Default fallback
+        # closest_match = assigned.sindex.nearest(unassigned.centroid)[1]
         assignments = assigned.iloc[closest_match]['index'].values
 
         # Add polygons to closest cells
@@ -241,13 +250,32 @@ class GeocellCreator:
         """
         missing = df[df[col].isnull()].copy().reset_index(drop=True)
         not_missing = df[df[col].isnull() == False].copy().reset_index(drop=True)
-        nearest = not_missing.sindex.nearest(missing.geometry, return_all=False)
-        values = not_missing.iloc[nearest[1, :]][col].values
-        df.loc[df[col].isnull(), col] = values
+        # Get the original indices where values are null BEFORE reset_index
+        null_mask = df[col].isnull()
+        null_indices = df[null_mask].index
+
+        # Use nearest in bulk (much faster)
+        bounds_array = missing.geometry.bounds.values
+
+        nearest = []
+        for i in range(len(bounds_array)):
+            bounds_tuple = tuple(bounds_array[i])
+            nearest_result = not_missing.sindex.nearest(bounds_tuple)
+            if isinstance(nearest_result, tuple) and len(nearest_result[1]) > 0:
+                nearest.append(nearest_result[1][0])
+            else:
+                # Handle case where no nearest neighbor is found
+                # You could use -1 or 0, or handle it differently
+                nearest.append(0)  # Default to first element if no match
+
+        values = not_missing.iloc[nearest][col].values
+
+        # Assign values using the original indices
+        df.loc[null_indices, col] = values
         return df
 
 
 if __name__ == '__main__':
-    df = pd.read_csv('data/data_yfcc_augmented_non_contaminated.csv')
-    geocell_creator = GeocellCreator(df, 'data/geocells_yfcc.csv')
+    df = pd.read_csv('data/coordinates10k_for_geocells.csv')
+    geocell_creator = GeocellCreator(df, 'data/geocells.csv')
     geocells = geocell_creator.generate()
