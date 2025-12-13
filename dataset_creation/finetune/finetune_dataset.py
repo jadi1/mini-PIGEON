@@ -2,7 +2,7 @@ from os import path
 import numpy as np
 import pandas as pd
 from datasets import Dataset, DatasetDict, Image
-from preprocessing import GeoAugmentor
+# from preprocessing import GeoAugmentor
 from config import METADATA_PATH, IMAGE_PATH
 
 CLIMATE_DICT = {
@@ -49,39 +49,84 @@ def create_dataset_split(df: pd.DataFrame, shuffle: bool=False,
     Returns:
         Dataset: HuggingFace dataset
     """
+    # rename columns to match existing implementation
+    if panorama:
+        df = df.rename(columns={
+            'img1': 'image',
+            'img2': 'image_2',
+            'img3': 'image_3',
+            'img4': 'image_4'
+        })
     image_col = 'image_path' if 'image_path' in df.columns else 'image'
     data_dict = {
-        'image': df[image_col].tolist(),
-        'lng': df['lng'].values,
-        'lat': df['lat'].values,
-        'elevation': df['elevation_reg'],
-        'population': df['population_reg'],
-        'temp_avg': df['temp_avg_reg'],
-        'temp_diff': df['temp_diff_reg'],
-        'prec_avg': df['prec_avg_reg'],
-        'prec_diff': df['prec_diff_reg'],
-        'index': df.index.values
+        'image': df[image_col].astype(str).tolist(),
+        'lng': df['lng'].astype(float).tolist(),
+        'lat': df['lat'].astype(float).tolist(),
+        'index': df.index.astype(int).tolist()
+        # 'image': df[image_col].tolist(),
+        # 'lng': df['lng'].values,
+        # 'lat': df['lat'].values,
+        # 'elevation': df['elevation_reg'],
+        # 'population': df['population_reg'],
+        # 'temp_avg': df['temp_avg_reg'],
+        # 'temp_diff': df['temp_diff_reg'],
+        # 'prec_avg': df['prec_avg_reg'],
+        # 'prec_diff': df['prec_diff_reg'],
+        # 'index': df.index.values
     }
 
-    if 'climate' in df.columns:
-        data_dict['labels_climate'] = df['climate'].values
+    # print(df[image_col].head(), df[image_col].dtype)
+    # df = df.dropna(subset=[image_col, 'lat', 'lng'])
 
-    if 'climate_zone' in df.columns:
-        data_dict['labels_climate'] = df['climate_zone'].values
 
-    if type(data_dict['labels_climate'][0]) == str:
-        data_dict['labels_climate'] = np.array([CLIMATE_DICT[x] for x in data_dict['labels_climate']])
 
-    if 'heading' in df.columns:
-        data_dict['heading'] = df['heading']
+    # if 'climate' in df.columns:
+    #     data_dict['labels_climate'] = df['climate'].values
 
-    if 'month' in df.columns:
-        data_dict['labels_month'] = df['month']
+    # if 'climate_zone' in df.columns:
+    #     data_dict['labels_climate'] = df['climate_zone'].values
+
+    # if type(data_dict['labels_climate'][0]) == str:
+    #     data_dict['labels_climate'] = np.array([CLIMATE_DICT[x] for x in data_dict['labels_climate']])
+
+    # if 'heading' in df.columns:
+    #     data_dict['heading'] = df['heading']
+
+    # if 'month' in df.columns:
+    #     data_dict['labels_month'] = df['month']
 
     if panorama:
         data_dict['image_2'] = df['image_2'].tolist()
         data_dict['image_3'] = df['image_3'].tolist()
         data_dict['image_4'] = df['image_4'].tolist()
+    # Remove any rows with None or NaN values
+    # valid_indices = [i for i, img in enumerate(data_dict['image']) if pd.notna(img) and img is not None]
+    # data_dict = {k: [v[i] for i in valid_indices] for k, v in data_dict.items()}
+
+    # # Find all non-string entries in the image column
+    # problematic_indices = [i for i, img in enumerate(data_dict['image']) if not isinstance(img, str)]
+
+    # # Check all columns for non-expected types
+    # for col_name, col_data in data_dict.items():
+    #     problematic = [i for i, val in enumerate(col_data) if isinstance(val, float)]
+    #     if problematic:
+    #         print(f"Column '{col_name}' has {len(problematic)} float entries:")
+    #         for idx in problematic[:5]:
+    #             print(f"  Index {idx}: {repr(col_data[idx])}")
+        
+    valid_indices = []
+    for i in range(len(data_dict['image'])):
+        has_nan = False
+        for col in ['image', 'image_2', 'image_3', 'image_4']:
+            if col in data_dict and not isinstance(data_dict[col][i], str):
+                has_nan = True
+                break
+        if not has_nan:
+            valid_indices.append(i)
+
+    # Filter all columns to only valid rows
+    data_dict = {k: [v[i] for i in valid_indices] for k, v in data_dict.items()}
+
 
     dataset = Dataset.from_dict(data_dict).cast_column('image', Image())
     if panorama:
@@ -132,9 +177,9 @@ def generate_finetune_dataset(sample: int=None, geo_augment: bool=True,
     if sample is not None:
         data_df = data_df.sample(int(sample)).copy()
 
-    if geo_augment and 'geo_area' not in data_df.columns:
-        augmentor = GeoAugmentor()
-        data_df = augmentor(data_df)
+    # if geo_augment and 'geo_area' not in data_df.columns:
+    #     augmentor = GeoAugmentor()
+    #     data_df = augmentor(data_df)
 
     splits = []
     for split in ['train', 'val', 'test']:

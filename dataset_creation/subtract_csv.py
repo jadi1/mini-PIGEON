@@ -1,21 +1,33 @@
 import pandas as pd
 
-# df1 = pd.read_csv("dataset_creation/adm1_sample_counts2_unusedsofar.csv")
-# df2 = pd.read_csv("dataset_creation/adm1_sample_counts.csv")
+df1 = pd.read_csv("dataset_creation/adm1_sample_counts2.csv")
 
-# df1['Differences'] = df1['Samples'] - df2['Samples']
+print(df1['Samples'].sum())
+# 11655 total samples
 
-# # Save back if needed
-# df1.to_csv("data_subtracted.csv", index=False)
+# new df 
+df1['Minimum'] = 26
 
-# Load CSV
-df = pd.read_csv("data_subtracted.csv")
+# find difference
+df1['Differences'] = df1['Minimum'] - df1['Samples']
+
+df1['Differences'] = df1['Differences'].clip(lower=0) # clip all negative values at 0
+
+positive_sum = df1['Differences'].sum()
+
+print(positive_sum)
+print(11655+positive_sum)
+# Save back if needed
+df1.to_csv("data_subtracted_clipped.csv", index=False)
+
+# # # Load CSV
+# # df = pd.read_csv("data_subtracted.csv")
 
 
-df['Differences'] = df['Differences'].clip(lower=0) # clip all negative values at 0
+# # df['Differences'] = df['Differences'].clip(lower=0) # clip all negative values at 0
 
-positive_sum = df['Differences'].sum()
+# # positive_sum = df['Differences'].sum()
 
-df.to_csv("data_subtracted_clipped.csv", index=False)
+# # df.to_csv("data_subtracted_clipped.csv", index=False)
 
-print("Sum of positive values:", positive_sum)
+# # print("Sum of positive values:", positive_sum)

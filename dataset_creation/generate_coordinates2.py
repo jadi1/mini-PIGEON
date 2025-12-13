@@ -48,5 +48,5 @@ for i in range(0, len(regions)):
             if has_streetview_data:
                 coordinates.loc[len(coordinates)] = [region, point.y, point.x]          
                 break
-    coordinates.to_csv("data/coordinates_data_added",index=False)
+    coordinates.to_csv("data/coordinates_data_finaldex=False)
     print(f"Generating {samples} samples for {region} took {k} tries")

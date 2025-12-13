@@ -1,9 +1,9 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split, ShuffleSplit
+from sklearn.model_selection import train_test_split
 
-input_csv = "data/coordinates10k.csv"
-output_csv = "data/coordinates10k_with_split.csv"
-region_col = "ADM1_Region"
+input_csv = "data/img_dataset.csv"
+output_csv = "data/metadata.csv"
+region_col = "region"
 RANDOM_SEED = 42
 
 df = pd.read_csv(input_csv)
@@ -15,18 +15,25 @@ train_df, temp_df = train_test_split(
     random_state=RANDOM_SEED,
 )
 
-val_size = 0.5 # half of remaining 2k samples
-
-ss = ShuffleSplit(
-    n_splits=1,
-    test_size=0.5,        # 1k val, 1k test
-    random_state=RANDOM_SEED
+val_df, test_df = train_test_split(
+    temp_df,
+    test_size=0.5,
+    stratify=temp_df[region_col],
+    random_state=RANDOM_SEED,
 )
 
-val_idx, test_idx = next(ss.split(temp_df))
+# val_size = 0.5 # half of remaining 2k samples
 
-val_df = temp_df.iloc[val_idx]
-test_df = temp_df.iloc[test_idx]
+# ss = ShuffleSplit(
+#     n_splits=1,
+#     test_size=0.5,        # 1k val, 1k test
+#     random_state=RANDOM_SEED
+# )
+
+# val_idx, test_idx = next(ss.split(temp_df))
+
+# val_df = temp_df.iloc[val_idx]
+# test_df = temp_df.iloc[test_idx]
 
 train_df = train_df.copy()
 val_df = val_df.copy()

@@ -63,7 +63,7 @@ def random_heading():
 # read the coordinates csv and generate 4 images per coordinate
 def generate_images_from_coords(dataset_csv, start_idx, end_idx, api_key=os.getenv("MAPS_API_KEY")):
     # read csv
-    coordinates = pd.read_csv("data/coordinates10k.csv")
+    coordinates = pd.read_csv("data/coordinates_data_added.csv")
     
     # load existing dataset csv if it exists
     if os.path.exists(dataset_csv):
@@ -105,4 +105,4 @@ def generate_images_from_coords(dataset_csv, start_idx, end_idx, api_key=os.gete
         dataset_df.to_csv(dataset_csv, index=False)
 
 # Example usage
-generate_images_from_coords("data/img_dataset.csv", 8000, 10000)
+generate_images_from_coords("data/img_dataset.csv", 1000, 1655)
