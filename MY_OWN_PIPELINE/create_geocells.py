@@ -19,10 +19,10 @@ def create_hierarchical_geocells(csv_path, k1, k2, save_path = "data/geocells.pt
     df = pd.read_csv(csv_path)
     
     # Filter only training points
-    df = df[df['selection'] == 'train'].reset_index(drop=True)
+    train_df = df[df['selection'] == 'train']
     
-    latitudes = df['lat'].values
-    longitudes = df['lng'].values
+    latitudes = train_df['lat'].values
+    longitudes = train_df['lng'].values
 
     print(f"Generating {k1} geocells with {k2} location clusters each using K-Means...")
     coords = np.stack([latitudes, longitudes], axis=1)
@@ -37,20 +37,24 @@ def create_hierarchical_geocells(csv_path, k1, k2, save_path = "data/geocells.pt
     geocell_to_sublabels = {}
 
     for g in range(k1):
-        mask = geocell_labels == g
-        points_in_g = coords[mask]
+        geocell_mask = (geocell_labels == g)
+        indices_in_g = np.where(geocell_mask)[0]
+        points_in_g = coords[geocell_mask]
 
         if points_in_g.shape[0] == 0:
             continue
 
         # decide how many subclusters to make in this cell, can't exceed the number of points in this cell
-        k_sub = min(k2, points_in_g.shape[0])
+        k_sub = min(k2, len(points_in_g))
         if k_sub == 0:
             continue # Skip if no points for sub-clustering
-        if k_sub == 1: # KMeans requires n_clusters > 1 unless n_samples = 1
+        if k_sub == 1:
              # If there's only one point, it forms its own cluster
             location_clusters[g] = torch.tensor([points_in_g[0]], dtype=torch.float)
-            geocell_to_sublabels[g] = np.array([0]) # Assign to first (only) subcluster
+            geocell_to_sublabels[g] =  {
+                'sublabels': np.array([0]),
+                'indices': indices_in_g # original dataset indices
+            }
             continue
 
         # Cluster within geocell
@@ -59,10 +63,11 @@ def create_hierarchical_geocells(csv_path, k1, k2, save_path = "data/geocells.pt
 
         # Store subcluster centroids
         location_clusters[g] = torch.tensor(kmeans2.cluster_centers_, dtype=torch.float)
-        geocell_to_sublabels[g] = sublabels
-
-    print(f"Created {len(location_clusters)} geocells with location clusters")
-    
+        geocell_to_sublabels[g] = {
+            'sublabels': sublabels,
+            'indices': indices_in_g  # original indices
+        }
+ 
     # Save everything to file
     with open(save_path, "wb") as f:
         pickle.dump({
@@ -74,3 +79,8 @@ def create_hierarchical_geocells(csv_path, k1, k2, save_path = "data/geocells.pt
 
 create_hierarchical_geocells("data/metadata.csv", k1=900, k2=5)
 # roughly 900 geocell clusters, and 5 subclusters within each, so about 4-5 points per subcluster
+
+df = pd.read_csv("data/metadata_with_geocells.csv", index_col=0)
+df['numeric_idx'] = range(len(df))  # add numeric index to full df
+
+df.to_csv("data/metadata_with_geocells2.csv")
