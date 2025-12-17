@@ -14,37 +14,35 @@ def crop_to_square(image_path, output_path, size=224):
         size: Target square size (default 224)
     """
     try:
-        img = Image.open(image_path)
+        with Image.open(image_path) as img:
+            width, height = img.size
         
-        # Get dimensions
-        width, height = img.size
-        
-        # Determine crop size (smallest dimension)
-        crop_size = min(width, height)
-        
-        # Calculate crop coordinates to center the crop
-        left = (width - crop_size) // 2
-        top = (height - crop_size) // 2
-        right = left + crop_size
-        bottom = top + crop_size
-        
-        # Crop to square
-        img_cropped = img.crop((left, top, right, bottom))
-        
-        # Resize to target size
-        img_resized = img_cropped.resize((size, size), Image.Resampling.LANCZOS)
-        
-        # Ensure output directory exists
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
-        
-        # Save image
-        img_resized.save(output_path, quality=95)
-        return True
+            # Determine crop size (smallest dimension)
+            crop_size = min(width, height)
+            
+            # Calculate crop coordinates to center the crop
+            left = (width - crop_size) // 2
+            top = (height - crop_size) // 2
+            right = left + crop_size
+            bottom = top + crop_size
+            
+            # Crop to square
+            img_cropped = img.crop((left, top, right, bottom))
+            
+            # Resize to target size
+            img_resized = img_cropped.resize((size, size), Image.Resampling.LANCZOS)
+            
+            # Ensure output directory exists
+            os.makedirs(os.path.dirname(output_path), exist_ok=True)
+            
+            # Save image
+            img_resized.save(output_path, quality=95)
+            return True
     except Exception as e:
         print(f"Error processing {image_path}: {e}")
         return False
 
-def main(input_dir="streetview_images", output_dir="new_streetview_images", size=224):
+def main(input_dir="streetview_images", output_dir="cropped_streetview_images", size=224):
     """
     Process all images in input directory and save cropped versions to output directory.
     Preserves the directory structure.
@@ -86,6 +84,17 @@ def main(input_dir="streetview_images", output_dir="new_streetview_images", size
         output_img_path = output_path / relative_path
         
         # Process image
+        # Skip if already processed
+        if output_img_path.exists():
+            try:
+                with Image.open(output_img_path) as img:
+                    if img.size == (size, size):
+                        print("already cropped")
+                        continue  # already cropped correctly
+            except Exception:
+                pass  # corrupted output → reprocess
+
+        # Process image
         if crop_to_square(str(img_file), str(output_img_path), size):
             success_count += 1
         else:
@@ -99,7 +108,7 @@ def main(input_dir="streetview_images", output_dir="new_streetview_images", size
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Crop street view images to 224x224 squares")
     parser.add_argument("--input", default="data/streetview_images", help="Input directory (default: streetview_images)")
-    parser.add_argument("--output", default="data/new_streetview_images", help="Output directory (default: new_streetview_images)")
+    parser.add_argument("--output", default="data/cropped_streetview_images", help="Output directory (default: cropped_streetview_images)")
     parser.add_argument("--size", type=int, default=224, help="Target square size (default: 224)")
     
     args = parser.parse_args()

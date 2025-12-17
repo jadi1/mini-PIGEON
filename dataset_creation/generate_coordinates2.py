@@ -7,7 +7,7 @@ df = pd.read_csv("data_subtracted_clipped.csv")
 regions = gpd.read_file("data/gadm/countries_adm1_geometries.gpkg") # in equal area coords, not lat/lng
 regions = regions.to_crs("EPSG:4326") # convert to lat/lng coords
 
-coordinates = pd.DataFrame(columns=['ADM1_Region', 'Latitude', 'Longitude'])
+coordinates = pd.read_csv("data/coordinates_data_final.csv") # load existing df
 
 # for each adm1 region
 for i in range(0, len(regions)):
@@ -24,21 +24,28 @@ for i in range(0, len(regions)):
     else:
         continue # otherwise, move on to next region
 
+    already_done = coordinates[coordinates["ADM1_Region"] == region].shape[0]
+    remaining = samples - already_done
+
+    if remaining <= 0:
+        print(f"{region} already complete, skipping")
+        continue
+
     geom = row.geometry # geometry for this region
 
     # k counts total number of tries
     k = 0
-    for i in range(samples):
+    for j in range(remaining):
         while True:
             k += 1
 
             # check if random point gets streetview data
             point = random_point_in_polygon(geom)
-            lat, lng = point.y, point.x
-
+            
             # if point is invalid, just try again
             if point is None:
                 continue
+            lat, lng = point.y, point.x
 
             # otherwise, check if the point has streetview data
             print(lat, lng)
@@ -48,5 +55,5 @@ for i in range(0, len(regions)):
             if has_streetview_data:
                 coordinates.loc[len(coordinates)] = [region, point.y, point.x]          
                 break
-    coordinates.to_csv("data/coordinates_data_finaldex=False)
+    coordinates.to_csv("data/coordinates_data_final.csv", index=False)
     print(f"Generating {samples} samples for {region} took {k} tries")

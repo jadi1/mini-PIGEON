@@ -106,7 +106,3 @@ def generate_images_from_coords(dataset_csv, start_idx, end_idx, api_key=os.gete
 
 # Example usage
 generate_images_from_coords("data/img_dataset.csv", 10890, 12743) 
-
-# my api key, up to 4678. nico's for the rest?
-# nico's up to 6225
-# mine again up to 8000 -> 10000

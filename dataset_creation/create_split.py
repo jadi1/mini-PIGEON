@@ -22,19 +22,6 @@ val_df, test_df = train_test_split(
     random_state=RANDOM_SEED,
 )
 
-# val_size = 0.5 # half of remaining 2k samples
-
-# ss = ShuffleSplit(
-#     n_splits=1,
-#     test_size=0.5,        # 1k val, 1k test
-#     random_state=RANDOM_SEED
-# )
-
-# val_idx, test_idx = next(ss.split(temp_df))
-
-# val_df = temp_df.iloc[val_idx]
-# test_df = temp_df.iloc[test_idx]
-
 train_df = train_df.copy()
 val_df = val_df.copy()
 test_df = test_df.copy()

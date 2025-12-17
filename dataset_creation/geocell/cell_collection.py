@@ -144,7 +144,7 @@ class CellCollection(set):
             min_cell_size (int): Minimum cell size.
         """
         cells = CellCollection([x for x in self if x.country == country and x.empty == False])
-        cells.__fuse(min_cell_size=min_cell_size)
+        # cells.__fuse(min_cell_size=min_cell_size) // no fusing, only splitting?
 
     def _split_geocells(self, min_cell_size: int, max_cell_size: int):
         """Split large geocells into cells smaller or equal to max_cell_size.
