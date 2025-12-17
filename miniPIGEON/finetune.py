@@ -1,35 +1,34 @@
-import os
-import matplotlib.pyplot as plt
+import pickle
 import torch
-from torch import nn
+from transformers import TrainingArguments, \
+                         AutoModelForImageClassification
+from model import PigeonModel
+from datasets import DatasetDict, load_from_disk
+import os
+import numpy as np
+import matplotlib.pyplot as plt
 from torch.utils.data import DataLoader
-from torch.utils.tensorboard import SummaryWriter
 from datasets import DatasetDict, Dataset
 from transformers import TrainingArguments, AutoModel 
-from typing import Any, Callable
+from typing import Any
 from tqdm import tqdm
 
 
-# def evaluate_model(model: nn.Module, dataset: Dataset, metrics: Callable,
-#                    train_args: TrainingArguments, refiner: ProtoRefiner=None,
-#                    yfcc: bool=False, writer: SummaryWriter=None, step: int=0) -> float:
-#     """Evaluates model on evaluation data
+TRAIN_ARGS = TrainingArguments(
+    output_dir="saved_models",
+    per_device_train_batch_size=32,
+    per_device_eval_batch_size=32,
+    num_train_epochs=1000, # set large, but train until convergence
+    evaluation_strategy="epoch",
+    eval_steps=5,
+    save_strategy='epoch',
+    save_steps=2,
+    learning_rate=3e-4, # a little higher, since only training on precomputed embeddings
+    logging_steps=1,
+    load_best_model_at_end=True,
+    seed=330
+)
 
-#     Args:
-#         model (nn.Module): model to use for evaluation
-#         dataset (Dataset): validation dataset
-#         metrics (Callable): function returning a dict of metrics given predictions
-#                             and labels
-#         train_args (TrainingArguments): training arguments
-#         refiner (ProtoRefiner, optional): guess refinement model. Defaults to None.
-#         yfcc (bool, optional): whether yfcc input data was used.
-#         writer (SummaryWriter, optional): TensorBoard writer. Defaults to None.
-#         step (int, optional): number of evaluation step. Defaults to 0.
-
-#     Returns:
-#         float: evaluation loss
-#     """
-    
 
 def plot_losses(train_losses, val_losses):
     plt.figure(figsize=(8,6))
@@ -44,7 +43,7 @@ def plot_losses(train_losses, val_losses):
 
 
 def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
-                train_args: TrainingArguments, patience: int=None, checkpoint_path: str="", load_checkpoint_path: str=None) -> AutoModel:
+                train_args: TrainingArguments, patience: int=None, save_checkpoint_path: str="", load_checkpoint_path: str=None) -> AutoModel:
     """Training and evaluation loop for the model with multi-GPU support.
 
     Args:
@@ -69,7 +68,7 @@ def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
         optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
         start_epoch = checkpoint.get('epoch', 0) + 1
         best_val_loss = checkpoint.get('best_val_loss', None)
-        print(f"Loaded checkpoint from {checkpoint_path}, starting at epoch {start_epoch}")
+        print(f"Loaded checkpoint from {load_checkpoint_path}, starting at epoch {start_epoch}")
 
     train_loader = DataLoader(train_dataset, batch_size=train_args.per_device_train_batch_size, shuffle=True,
                             pin_memory=True)
@@ -94,6 +93,7 @@ def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
             optimizer.zero_grad()
             batch = {k: v.to(device) for k, v in batch.items() if v is not None}
 
+            # output returns pred_coords, (geocell_topk, top_indices), embedding
             output = model(batch['embedding'], batch.get('labels'), batch.get('labels_clf'))
             loss = output['loss']
             loss.backward()
@@ -124,7 +124,7 @@ def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
             best_model_state = {k: v.cpu() for k, v in model.state_dict().items()}
             current_patience = 0
 
-            os.makedirs(checkpoint_path, exist_ok=True)  # creates dir if it doesn't exist
+            os.makedirs(save_checkpoint_path, exist_ok=True)  # creates dir if it doesn't exist
 
             # Save best model checkpoint
             torch.save({
@@ -132,7 +132,7 @@ def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
                 'optimizer_state_dict': optimizer.state_dict(),
                 'best_val_loss': best_val_loss,
                 'epoch': epoch
-            }, f"{checkpoint_path}/checkpoint_epoch{epoch+1}.pt")
+            }, f"{save_checkpoint_path}/checkpoint_epoch{epoch+1}.pt")
         else:
             current_patience += 1
 
@@ -146,3 +146,46 @@ def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
     # load best model and return
     model.load_state_dict(best_model_state)
     return model
+
+def finetune_on_embeddings(train_dataset: DatasetDict, val_dataset:DatasetDict,
+                           early_stopping: int=None, 
+                           train_args: TrainingArguments=TRAIN_ARGS) -> AutoModelForImageClassification:
+    """Finetunes a model on embeddings.
+
+    Args:
+        dataset (DatasetDict): dataset containing embeddings
+        early_stopping (int, optional): early stopping patience. Defaults to None.
+        train_args (TrainingArguments, optional): training arguments. Defaults to DEFAULT_TRAIN_ARGS.
+
+    Returns:
+        AutoModel: finetuned model.
+    """
+    # load geocells
+    with open("data/geocells.pt", "rb") as f:
+        data = pickle.load(f)
+    geocell_centroids = data["geocell_centroids"]
+    num_geocells = len(geocell_centroids)
+
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+    # initialize model
+    model = PigeonModel(num_geocells=num_geocells,
+                        geocell_centroids=geocell_centroids,
+                        smooth_labels=True,
+                        embedding_dim=768, # embedding dim for both b-32 and b-16 models
+                        device=device)
+
+    model.to(device)
+    print(model)
+
+    finetuned_model = train_model(model, train_dataset, val_dataset, train_args, early_stopping, save_checkpoint_path="saved_models/finetuned", load_checkpoint_path=None)
+    return finetuned_model
+
+if __name__ == "__main__":
+    early_stopping = 5 # hardcode parameter - if no val improvement after 5 epochs, stop to prevent overfitting
+
+    # Load dataset
+    train_dataset = load_from_disk("data/hf_geoguessr_finetune_processed_b32/train")
+    val_dataset = load_from_disk("data/hf_geoguessr_finetune_processed_b32/val")
+
+    finetune_on_embeddings(train_dataset,val_dataset, early_stopping=early_stopping, train_args = TRAIN_ARGS)

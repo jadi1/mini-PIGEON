@@ -22,8 +22,6 @@ def generate_label_cells_centroid(
 
     # assign to nearest geocell
     dists = haversine(point, geocell_centroids)
-    print(dists.shape)
-    print(dists[:5])
     geocell_id = torch.argmin(dists).item()
 
     label_dict = {
@@ -97,5 +95,5 @@ if __name__ == '__main__':
 
     # save processed splits back to disk
     for split, ds in processed_dataset.items():
-        ds.save_to_disk(f"{dataset_path}_processed/{split}")
+        ds.save_to_disk(f"{dataset_path}_processed_b16/{split}")
         print(f"Saved processed {split} split")

@@ -1,22 +1,16 @@
 import json
+import ast
 import numpy as np
 import pandas as pd
 import torch
 from torch import nn, Tensor
 from torch.nn.parameter import Parameter
-from typing import Dict, List, Tuple
-from tqdm import tqdm
-from concurrent.futures import ProcessPoolExecutor, as_completed
-from datasets import DatasetDict, Dataset, enable_progress_bar, disable_progress_bar, concatenate_datasets
-from config import PROTO_PATH, DATASET_PATH
-from models.layers import HedgeLayer
-from preprocessing.geo_utils import haversine
+from typing import Tuple
+from utils import haversine
 
 # Cluster refinement model
 
-class ProtoRefiner(nn.Module):
-    """Proto-Net refinement model
-    """
+class PigeonRefiner(nn.Module):
     def __init__(self, proto_csv, dataset_df, embeddings_npy: str, topk: int=5, max_refinement: int=1000,
                  temperature: float=1.6, device: str = 'cuda'):
         super().__init__()
@@ -37,6 +31,17 @@ class ProtoRefiner(nn.Module):
         # Group prototypes by geocell for fast lookup
         self.geocell_prototypes = {}
         for geocell_idx, group in self.proto_df.groupby('geocell_idx'):
+            group_records = []
+            for _, row in group.iterrows():
+                record = {
+                    'geocell_idx': row['geocell_idx'],
+                    'subcluster': row['subcluster'],
+                    'lat': row['lat'],
+                    'lng': row['lng'],
+                    'count': row['count'],
+                    'indices': json.loads(row['indices']) if isinstance(row['indices'], str) else row['indices']
+                }
+                group_records.append(record)
             self.geocell_prototypes[geocell_idx] = group.to_dict('records')
         
         # Temperature parameter
@@ -96,6 +101,9 @@ class ProtoRefiner(nn.Module):
                 # for every prototype
                 for proto in geocell_protos:
                     proto_indices = proto['indices']
+                    if isinstance(proto_indices, str):
+                        proto_indices = ast.literal_eval(proto_indices)  # converts string to list of ints
+                    proto_indices = torch.tensor(proto_indices, dtype=torch.long, device=self.device)
                     proto_embeddings = self.embeddings[proto_indices]
                     
                     # Distance to prototype
@@ -111,13 +119,13 @@ class ProtoRefiner(nn.Module):
                 if best_proto is not None:
                     lat, lng  = self._within_prototype_refinement(emb, best_proto)
                     top_preds.append([lat, lng])
-                    top_scores.append(-best_distance)
+                    top_scores.append(torch.tensor(-best_distance, device=self.device))
                 else:
                     top_preds.append([0.0, 0.0])
                     top_scores.append(torch.tensor(-100000.0, device=self.device))
 
             # Temperature softmax over cluster candidates
-            top_scores = torch.tensor(top_scores, device='cuda') # stack? for batch?
+            top_scores = torch.stack(top_scores)
             probs = self._temperature_softmax(top_scores)
 
             # Combine with initial geocell probabilities
@@ -133,8 +141,8 @@ class ProtoRefiner(nn.Module):
                 # Refinement too far, use original
                 best_idx = 0
             
-            refined_lats.append(top_preds[best_idx][1])
-            refined_lons.append(top_preds[best_idx][0])
+            refined_lats.append(top_preds[best_idx][0])
+            refined_lons.append(top_preds[best_idx][1])
             refined_geocells_list.append(candidates[best_idx].item())
 
         return (torch.tensor(refined_lats, device=self.device),
@@ -154,6 +162,10 @@ class ProtoRefiner(nn.Module):
             Tuple[float, float]: (lat, lng)
         """
         proto_indices = proto['indices']
+        if isinstance(proto_indices, str):
+            proto_indices = ast.literal_eval(proto_indices)  # converts string to list of ints
+
+        proto_indices = torch.tensor(proto_indices, dtype=torch.long, device=self.device)
         
         if len(proto_indices) == 1:
             return proto['lat'], proto['lng']
@@ -164,7 +176,7 @@ class ProtoRefiner(nn.Module):
         # Find closest sample
         distances = self._euclidian_distance(proto_embeddings, emb)
         best_idx_local = torch.argmin(distances).item()
-        best_global_idx = proto_indices[best_idx_local]
+        best_global_idx = proto_indices[best_idx_local].item()
         
         # Get coordinates
         best_sample = self.dataset_df.iloc[best_global_idx]
@@ -179,31 +191,3 @@ class ProtoRefiner(nn.Module):
         ex = torch.exp(input / self.temperature)
         sum = torch.sum(ex, axis=0)
         return ex / sum
-    
-if __name__ == "__main__":
-    # Load prototypes and dataset
-    prototypes_csv = "data/prototypes_from_geocells.csv"
-    df = pd.read_csv("data/metadata_with_geocells.csv", index_col=0)
-    
-    # Initialize refiner
-    refiner = ProtoRefiner(
-        prototypes_csv=prototypes_csv,
-        dataset_df=df,
-        topk=5,
-        temperature=1.6,
-        max_refinement=1000,
-        device='cuda'
-    )
-    
-    # Inference
-    test_embeddings = ...  # [B, D]
-    initial_preds = ...    # [B, 2]
-    candidate_cells = ...  # [B, K]
-    candidate_probs = ...  # [B, K]
-    
-    refined_lats, refined_lons, refined_geocells = refiner(
-        embedding=test_embeddings,
-        initial_preds=initial_preds,
-        candidate_cells=candidate_cells,
-        candidate_probs=candidate_probs
-    )

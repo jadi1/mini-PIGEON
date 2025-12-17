@@ -1,9 +1,5 @@
-[[Paper]](https://openaccess.thecvf.com/content/CVPR2024/html/Haas_PIGEON_Predicting_Image_Geolocations_CVPR_2024_paper.html) [[Website]](https://lukashaas.github.io/PIGEON-CVPR24/) [[Demo]](https://www.youtube.com/watch?v=ts5lPDV--cU) [[NPR News]](https://www.npr.org/2023/12/19/1219984002/artificial-intelligence-can-find-your-location-in-photos-worrying-privacy-expert)
+[[Original PIGEON Paper]](https://openaccess.thecvf.com/content/CVPR2024/html/Haas_PIGEON_Predicting_Image_Geolocations_CVPR_2024_paper.html) [[Website]](https://lukashaas.github.io/PIGEON-CVPR24/)
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pigeon-predicting-image-geolocations/photo-geolocation-estimation-on-gws15k)](https://paperswithcode.com/sota/photo-geolocation-estimation-on-gws15k?p=pigeon-predicting-image-geolocations)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pigeon-predicting-image-geolocations/photo-geolocation-estimation-on-im2gps3k)](https://paperswithcode.com/sota/photo-geolocation-estimation-on-im2gps3k?p=pigeon-predicting-image-geolocations)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pigeon-predicting-image-geolocations/photo-geolocation-estimation-on-yfcc26k)](https://paperswithcode.com/sota/photo-geolocation-estimation-on-yfcc26k?p=pigeon-predicting-image-geolocations)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/pigeon-predicting-image-geolocations/photo-geolocation-estimation-on-yfcc4k)](https://paperswithcode.com/sota/photo-geolocation-estimation-on-yfcc4k?p=pigeon-predicting-image-geolocations)
 
 # CVPR 2024 Highlight – PIGEON: Predicting Image Geolocations
 This repository contains the code for the CVPR 2024 paper highlight and demo *PIGEON: Predicting Image Geolocations*. The paper was authored by Lukas Haas, Michal Skreta, Silas Alberti, and Chelsea Finn at Stanford University.
