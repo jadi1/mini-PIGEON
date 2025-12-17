@@ -1,8 +1,10 @@
 data/images/
 data/gadm
 data/cropped_streetview_images/
-data/streetview_images/
+data/streetview_images
+data/geocells
 data/hf_**/
+saved_models/**
 **/*.pyc
 **/*.tar.gz
 **/.ipynb_checkpoints/
