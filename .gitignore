@@ -1,5 +1,7 @@
 data/images/
-data/streetview_outputs_cropped/
+data/gadm
+data/cropped_streetview_images/
+data/streetview_images/
 data/hf_**/
 **/*.pyc
 **/*.tar.gz
