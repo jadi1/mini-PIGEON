@@ -15,10 +15,9 @@ def create_hierarchical_geocells(csv_path, k1, k2, save_path = "data/geocells.pt
     - location_clusters: Dict {geocell_idx: Tensor(K2, 2)} - subclusters within each geocell
     - geocell_to_sublabels: Dict {geocell_idx: Array} - mapping of training points to subclusters
     """
-    # Read CSV
     df = pd.read_csv(csv_path)
     
-    # Filter only training points
+    # filter only training points
     train_df = df[df['selection'] == 'train']
     
     latitudes = train_df['lat'].values
@@ -49,7 +48,7 @@ def create_hierarchical_geocells(csv_path, k1, k2, save_path = "data/geocells.pt
         if k_sub == 0:
             continue # Skip if no points for sub-clustering
         if k_sub == 1:
-             # If there's only one point, it forms its own cluster
+             # if there's only one point, it forms its own cluster
             location_clusters[g] = torch.tensor([points_in_g[0]], dtype=torch.float)
             geocell_to_sublabels[g] =  {
                 'sublabels': np.array([0]),
@@ -57,18 +56,18 @@ def create_hierarchical_geocells(csv_path, k1, k2, save_path = "data/geocells.pt
             }
             continue
 
-        # Cluster within geocell
+        # cluster within geocell
         kmeans2 = KMeans(n_clusters=k_sub, random_state=SEED, n_init=5)
         sublabels = kmeans2.fit_predict(points_in_g)
 
-        # Store subcluster centroids
+        # store subcluster centroids
         location_clusters[g] = torch.tensor(kmeans2.cluster_centers_, dtype=torch.float)
         geocell_to_sublabels[g] = {
             'sublabels': sublabels,
             'indices': indices_in_g  # original indices
         }
  
-    # Save everything to file
+    # save everything to file
     with open(save_path, "wb") as f:
         pickle.dump({
             "geocell_centroids": geocell_centroids,
