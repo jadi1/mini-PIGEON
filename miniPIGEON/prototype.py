@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 from tqdm import tqdm
 import torch
-from preprocessing.geo_utils import haversine
 
 
 def generate_prototypes(df, geocell_to_sublabels):

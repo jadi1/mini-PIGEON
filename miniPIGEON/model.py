@@ -33,7 +33,7 @@ class PigeonModel(nn.Module):
         geocell_preds = torch.argmax(geocell_probs, dim=-1) # geocell index prediction for each sample
         pred_coords = self.geocell_centroids[geocell_preds] # select along dim 0 
 
-        # Get top 'num_candidates' geocell candidates
+        # get topk geocell candidates
         geocell_topk, top_indices = torch.topk(geocell_probs, k=5, dim=-1) # top 5 candidates!
 
         # serving mode - return predictions and embeddings for refinement
@@ -44,7 +44,7 @@ class PigeonModel(nn.Module):
         labels = labels.to(self.device)
         labels_clf = labels_clf.to(self.device)
 
-        # Soft labels based on distance
+        # smooth labels based on distance
         if self.smooth_labels:
             distances = haversine_matrix(labels, self.geocell_centroids)
             label_probs = smooth_labels(distances)
@@ -54,7 +54,6 @@ class PigeonModel(nn.Module):
         # classification loss (cross entropy)
         loss_clf = self.loss_fnc(logits, label_probs)
  
-        # Results
         return {
             "loss": loss_clf,
             "loss_clf": loss_clf,   # same, but separate in PIGEON paper

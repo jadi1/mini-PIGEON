@@ -8,27 +8,25 @@ from torch.nn.parameter import Parameter
 from typing import Tuple
 from utils import haversine
 
-# Cluster refinement model
 
 class PigeonRefiner(nn.Module):
     def __init__(self, proto_csv, dataset_df, embeddings_npy: str, topk: int=5, max_refinement: int=1000,
                  temperature: float=1.6, device: str = 'cuda'):
         super().__init__()
 
-        # Variables
         self.topk = topk
         self.max_refinement = max_refinement
         self.device = device
 
-        # Load prototypes
+        # load prototypes
         self.proto_df = pd.read_csv(proto_csv)
         self.dataset_df=dataset_df
 
-        # Load embeddings
+        # load embeddings
         embeddings = np.load(embeddings_npy)
         self.embeddings = torch.from_numpy(embeddings).to(device)
 
-        # Group prototypes by geocell for fast lookup
+        # group prototypes by geocell for fast lookup
         self.geocell_prototypes = {}
         for geocell_idx, group in self.proto_df.groupby('geocell_idx'):
             group_records = []
@@ -44,7 +42,7 @@ class PigeonRefiner(nn.Module):
                 group_records.append(record)
             self.geocell_prototypes[geocell_idx] = group.to_dict('records')
         
-        # Temperature parameter
+        # temperature parameter
         self.temperature = Parameter(torch.tensor(temperature), requires_grad=False)
 
 
@@ -71,7 +69,7 @@ class PigeonRefiner(nn.Module):
         refined_lons = []
         refined_geocells_list = []
 
-        # Loop over every data sample
+        # loop over every data sample
         for b in range(batch_size):
             emb = embedding[b]  # [D]
             candidates = candidate_cells[b]  # [K]
@@ -94,7 +92,7 @@ class PigeonRefiner(nn.Module):
                 # get prototypes for this geocell
                 geocell_protos = self.geocell_prototypes[geocell_id]
                 
-                # Find best prototype in this geocell
+                # find best prototype in this geocell
                 best_proto = None
                 best_distance = float('inf')
                 
@@ -115,7 +113,7 @@ class PigeonRefiner(nn.Module):
                     if dist_val < best_distance:
                         best_distance = dist_val
                         best_proto = proto
-                # Within best prototype, find best individual sample
+                # within best prototype, find best individual sample
                 if best_proto is not None:
                     lat, lng  = self._within_prototype_refinement(emb, best_proto)
                     top_preds.append([lat, lng])
@@ -124,11 +122,11 @@ class PigeonRefiner(nn.Module):
                     top_preds.append([0.0, 0.0])
                     top_scores.append(torch.tensor(-100000.0, device=self.device))
 
-            # Temperature softmax over cluster candidates
+            # temperature softmax over cluster candidates
             top_scores = torch.stack(top_scores)
             probs = self._temperature_softmax(top_scores)
 
-            # Combine with initial geocell probabilities
+            # combine with initial geocell probabilities
             final_probs = c_probs[:self.topk] * probs
             best_idx = torch.argmax(final_probs).item()
 
@@ -138,7 +136,7 @@ class PigeonRefiner(nn.Module):
             distance = haversine(initial_coord, refined_coord)[0].item()
             
             if distance > self.max_refinement:
-                # Refinement too far, use original
+                # refinement too far, use original
                 best_idx = 0
             
             refined_lats.append(top_preds[best_idx][0])
@@ -170,15 +168,15 @@ class PigeonRefiner(nn.Module):
         if len(proto_indices) == 1:
             return proto['lat'], proto['lng']
         
-        # Get embeddings for all samples in prototype
+        # get embeddings for all samples in prototype
         proto_embeddings = self.embeddings[proto_indices]
         
-        # Find closest sample
+        # find closest sample
         distances = self._euclidian_distance(proto_embeddings, emb)
         best_idx_local = torch.argmin(distances).item()
         best_global_idx = proto_indices[best_idx_local].item()
         
-        # Get coordinates
+        # get coordinates
         best_sample = self.dataset_df.iloc[best_global_idx]
         return best_sample['lat'], best_sample['lng']
     

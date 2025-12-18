@@ -78,7 +78,7 @@ def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
     current_patience = 0
     best_model_state = None
     if best_val_loss is not None:
-        # If resuming from checkpoint, start with the checkpoint’s model
+        # if resuming from checkpoint, start with the checkpoint’s model
         best_model_state = {k: v.to(device) for k, v in model.state_dict().items()}
 
     train_losses = []
@@ -101,11 +101,11 @@ def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
 
             running_loss += loss.item() * batch['embedding'].size(0)
 
-        # Average training loss
+        # average training loss
         train_loss = running_loss / len(train_loader.dataset)
         train_losses.append(train_loss)
 
-        # Validation
+        # validation
         model.eval()
         val_loss = 0.0
         with torch.no_grad():
@@ -126,7 +126,7 @@ def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
 
             os.makedirs(save_checkpoint_path, exist_ok=True)  # creates dir if it doesn't exist
 
-            # Save best model checkpoint
+            # save best model checkpoint
             torch.save({
                 'model_state_dict': model.state_dict(),
                 'optimizer_state_dict': optimizer.state_dict(),
@@ -136,7 +136,7 @@ def train_model(model: Any, train_dataset: DatasetDict, val_dataset:DatasetDict,
         else:
             current_patience += 1
 
-        # Early stopping
+        # early stopping
         if patience is not None and current_patience >= patience:
             print(f"Early stopping at epoch {epoch+1}")
             break
@@ -184,7 +184,7 @@ def finetune_on_embeddings(train_dataset: DatasetDict, val_dataset:DatasetDict,
 if __name__ == "__main__":
     early_stopping = 5 # hardcode parameter - if no val improvement after 5 epochs, stop to prevent overfitting
 
-    # Load dataset
+    # load dataset
     train_dataset = load_from_disk("data/hf_geoguessr_finetune_processed_b32/train")
     val_dataset = load_from_disk("data/hf_geoguessr_finetune_processed_b32/val")
 
