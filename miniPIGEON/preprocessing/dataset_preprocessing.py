@@ -5,7 +5,7 @@ from torch import Tensor
 from typing import Dict
 from datasets import DatasetDict
 from functools import partial
-from MY_OWN_PIPELINE.utils import haversine
+from miniPIGEON.utils import haversine
 from datasets import load_from_disk
 
 def generate_label_cells_centroid(
@@ -51,13 +51,12 @@ def load_geocells_centroid(path: str):
     location_clusters = data["location_clusters"]
     return geocell_centroids, location_clusters
 
-"""
-After running preprocess, each split is a hugging face dataset that contains
+
+# After running preprocess, each split is a hugging face dataset that contains
 #     "embedding": Tensor(1024)       # averaged panorama embedding
 #     "labels": Tensor([lat, lng])    # original coordinates
 #     "labels_clf": int                # geocell ID
 #     "labels_sub": int (optional)    # hierarchical subcluster ID
-""" 
 def preprocess(dataset_path: str, geocell_path: str) -> DatasetDict:
     """Preproccesses image dataset for vision input
 
@@ -76,7 +75,7 @@ def preprocess(dataset_path: str, geocell_path: str) -> DatasetDict:
 
     for split in splits:
         ds = load_from_disk(f"{dataset_path}/{split}")
-        embeddings = torch.from_numpy(np.load(f"data/embeddings_{split}.npy"))
+        embeddings = torch.from_numpy(np.load(f"data/embeddings_b16_singleimage/embeddings_{split}.npy"))
         
         ds = ds.map(partial(add_embeddings, emb_array=embeddings), with_indices=True)
         ds = ds.map(lambda x: generate_label_cells_centroid(x, geocell_centroids, location_clusters))
@@ -95,5 +94,5 @@ if __name__ == '__main__':
 
     # save processed splits back to disk
     for split, ds in processed_dataset.items():
-        ds.save_to_disk(f"{dataset_path}_processed_b16/{split}")
+        ds.save_to_disk(f"{dataset_path}_processed_b16_singleimage/{split}")
         print(f"Saved processed {split} split")

@@ -48,7 +48,7 @@ def create_dataset_split(df: pd.DataFrame, shuffle: bool=False,
         if not has_nan:
             valid_indices.append(i)
 
-    # Filter all columns to only valid rows
+    # filter all columns to only valid rows
     data_dict = {k: [v[i] for i in valid_indices] for k, v in data_dict.items()}
 
     dataset = Dataset.from_dict(data_dict).cast_column('image', Image())

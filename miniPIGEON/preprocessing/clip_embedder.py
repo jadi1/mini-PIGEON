@@ -1,5 +1,6 @@
 import torch
-from torch import nn, Tensor
+import random
+from torch import Tensor
 from transformers import CLIPProcessor, CLIPVisionModel
 from PIL import Image
 import numpy as np
@@ -7,6 +8,7 @@ from tqdm import tqdm
 from datasets import load_from_disk
 
 CLIP_MODEL = 'openai/clip-vit-base-patch16' 
+random.seed(42)
 
 class CLIPEmbedding(torch.nn.Module):
     def __init__(self, device: str='cuda', panorama: bool=False):
@@ -60,19 +62,19 @@ class CLIPEmbedding(torch.nn.Module):
             return cls_token_embedding
         
 
-def embed_dataset(dataset, embedder, batch_size=1):
+def embed_dataset(dataset, embedder):
     embeddings = []
     indices = []
 
     for example in tqdm(dataset):
-        if embedder.panorama:
-            imgs = [
+        imgs = [
                 example["image"],
                 example["image_2"],
                 example["image_3"],
                 example["image_4"],
             ]
-
+        
+        if embedder.panorama:
             img_embeds = []
             # first get all individual embeddings
             for img in imgs:
@@ -81,6 +83,11 @@ def embed_dataset(dataset, embedder, batch_size=1):
 
             # then average them all
             emb = torch.mean(torch.stack(img_embeds), dim=0)
+        else:
+            # choose a random index out of the 4 to get your singular embedding
+            randIndex = random.randint(0,3)
+            img=imgs[randIndex]
+            emb = embedder._get_embedding(img)
 
         embeddings.append(emb.cpu())
         indices.append(example["index"])
@@ -99,7 +106,7 @@ if __name__ == '__main__':
 
         # instantiate embedder
         device = "cuda" if torch.cuda.is_available() else "cpu"
-        embedder = CLIPEmbedding(device=device, panorama=True) 
+        embedder = CLIPEmbedding(device=device, panorama=False) 
 
         embeddings, indices = embed_dataset(dataset, embedder)
 
