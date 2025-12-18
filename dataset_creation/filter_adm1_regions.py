@@ -14,7 +14,7 @@ api_key = os.getenv("MAPS_API_KEY")
 regions = gpd.read_file("data/gadm/countries_adm1_geometries.gpkg") # in equal area coords, not lat/lng
 regions = regions.to_crs("EPSG:4326") # convert to lat/lng coords
 
-# Resume logic: load already-processed CSV if it exists
+# load already-processed CSV if it exists
 csv_file = "dataset_creation/filtered_adm1_progress.csv"
 if os.path.exists(csv_file):
     processed_df = pd.read_csv(csv_file)

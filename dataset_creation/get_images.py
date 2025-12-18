@@ -10,7 +10,7 @@ from io import BytesIO
 
 load_dotenv()
 
-# Ensure folder exists
+# ensure folder exists
 os.makedirs("data/streetview_images", exist_ok=True)
 
 def get_image(img_name, lat,lng, heading, width, height, api_key, folder):
@@ -18,11 +18,9 @@ def get_image(img_name, lat,lng, heading, width, height, api_key, folder):
     response = requests.get(url)
 
     if response.status_code == 200:
-        # Convert bytes to image
         img = Image.open(BytesIO(response.content))
         
         save_path = os.path.join(folder, f"{img_name}.jpg")
-        # Save if requested
         if save_path:
             img.save(save_path)
             print(f"Saved image to {save_path}")
@@ -80,7 +78,7 @@ def generate_images_from_coords(dataset_csv, start_idx, end_idx, api_key=os.gete
         lat = row["Latitude"]
         lng = row["Longitude"]
 
-        # Skip if already processed
+        # skip if already processed
         if (region, lat, lng) in processed:
             continue
 
@@ -104,5 +102,4 @@ def generate_images_from_coords(dataset_csv, start_idx, end_idx, api_key=os.gete
         # save to csv
         dataset_df.to_csv(dataset_csv, index=False)
 
-# Example usage
 generate_images_from_coords("data/img_dataset.csv", 10890, 12743) 

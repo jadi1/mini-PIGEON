@@ -2,7 +2,6 @@
 import geopandas as gpd
 import numpy as np
 import pandas as pd
-# import matplotlib.pyplot as plt
 
 regions = gpd.read_file("data/gadm/countries_adm1_geometries.gpkg")
 csv = pd.read_csv("dataset_creation/filtered_adm1_progress.csv")
@@ -12,13 +11,8 @@ csv_ok = csv[csv["Status"] == "OK"]
 regions_filtered = regions[regions["GID_1"].isin(csv_ok["GID_1"])]
 regions_filtered = regions_filtered.reset_index(drop=True)
 
-# Basic plot
-# regions_filtered.plot(edgecolor="black", linewidth=0.3)
-# plt.title("Filtered ADM1 Regions (Status = OK)")
-# plt.show()
-
-N = 10000 # total number of samples
-min_samples = 10 # min samples per region
+N = 24386 # total number of samples
+min_samples = 26 # min samples per region
 
 # sum the area for each country where status is ok
 region_areas = regions_filtered.geometry.area

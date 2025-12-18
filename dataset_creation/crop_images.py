@@ -17,25 +17,25 @@ def crop_to_square(image_path, output_path, size=224):
         with Image.open(image_path) as img:
             width, height = img.size
         
-            # Determine crop size (smallest dimension)
+            # determine crop size (smallest dimension)
             crop_size = min(width, height)
             
-            # Calculate crop coordinates to center the crop
+            # calculate crop coordinates to center the crop
             left = (width - crop_size) // 2
             top = (height - crop_size) // 2
             right = left + crop_size
             bottom = top + crop_size
             
-            # Crop to square
+            # crop to square
             img_cropped = img.crop((left, top, right, bottom))
             
-            # Resize to target size
+            # resize to target size
             img_resized = img_cropped.resize((size, size), Image.Resampling.LANCZOS)
             
-            # Ensure output directory exists
+            # ensure output directory exists
             os.makedirs(os.path.dirname(output_path), exist_ok=True)
             
-            # Save image
+            # save image
             img_resized.save(output_path, quality=95)
             return True
     except Exception as e:
@@ -55,11 +55,7 @@ def main(input_dir="streetview_images", output_dir="cropped_streetview_images", 
     input_path = Path(input_dir)
     output_path = Path(output_dir)
     
-    if not input_path.exists():
-        print(f"Error: Input directory '{input_dir}' does not exist")
-        return
-    
-    # Find all image files
+    # find all image files
     image_extensions = {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.webp'}
     image_files = []
     
@@ -77,14 +73,13 @@ def main(input_dir="streetview_images", output_dir="cropped_streetview_images", 
     success_count = 0
     fail_count = 0
     
-    # Process each image
+    # process each image
     for img_file in tqdm(image_files, desc="Processing images"):
-        # Calculate relative path and create output path
+        # calculate relative path and create output path
         relative_path = img_file.relative_to(input_path)
         output_img_path = output_path / relative_path
         
-        # Process image
-        # Skip if already processed
+        # process images, skip if already processed
         if output_img_path.exists():
             try:
                 with Image.open(output_img_path) as img:
@@ -94,7 +89,6 @@ def main(input_dir="streetview_images", output_dir="cropped_streetview_images", 
             except Exception:
                 pass  # corrupted output → reprocess
 
-        # Process image
         if crop_to_square(str(img_file), str(output_img_path), size):
             success_count += 1
         else:
