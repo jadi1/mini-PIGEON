@@ -22,3 +22,4 @@ serving/static/
 .tensorboard-info/*
 .vscode/*
 *.arrow
+.env
