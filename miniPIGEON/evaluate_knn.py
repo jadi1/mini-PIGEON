@@ -1,13 +1,12 @@
-import os
+# This file is only used to evaluate baselines (unfinetuned 
+# CLIP ViT-B/32 and CLIP ViT-B/16) using k-nearest neighbors algorithm, with k=5.
 import torch
 import pandas as pd
 import numpy as np
 import pickle
-from model import PigeonModel
 from tqdm import tqdm
 from transformers import TrainingArguments
 from datasets import load_from_disk
-from miniPIGEON.pigeonrefiner import PigeonRefiner
 from miniPIGEON.utils import haversine
 from torch.utils.data import DataLoader
 
@@ -18,29 +17,11 @@ EVAL_ARGS = TrainingArguments(
     seed=330
 )
 
-def evaluate_model_with_embeddings(model, test_dataset, test_embeddings_path,
-                   eval_args: TrainingArguments, refiner: PigeonRefiner=None, model_checkpoint_path="", save_path="results/eval_results.csv") -> dict:
-    """Evaluates model on evaluation data
+def evaluate_knn(k_neighbors, metadata_df, test_dataset, test_embeddings_path, train_embeddings_path,
+                   eval_args: TrainingArguments, save_path="results/eval_knn_results.csv") -> dict:
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-#     Returns:
-#         Dict with evaluation metrics:
-#       - loss: Test loss
-#       - accuracy_@1km: % predictions within 1km
-#       - accuracy_@25km: % predictions within 25km
-#       - accuracy_@200km: % predictions within 200km
-#       - accuracy_@750km: % predictions within 750km
-#       - median_error_km: Median error in km
-#       - mean_error_km: Mean error in km
-#     """
-    device = next(model.parameters()).device
-    
-    # Load checkpoint if provided
-    if model_checkpoint_path and os.path.isfile(model_checkpoint_path):
-        checkpoint = torch.load(model_checkpoint_path, map_location=device)
-        model.load_state_dict(checkpoint['model_state_dict'])
-        print(f"LOADED CHECKPOINT from {model_checkpoint_path}")
-
-    # load precomputed embeddings
+    # load test embeddings
     test_embeddings = torch.from_numpy(np.load(test_embeddings_path)).float().to(device)
 
     # create test dataloader
@@ -50,7 +31,6 @@ def evaluate_model_with_embeddings(model, test_dataset, test_embeddings_path,
     )
 
     results_list = []
-    model.eval()
     all_errors = []
     
     # metrics at different distance thresholds
@@ -58,49 +38,55 @@ def evaluate_model_with_embeddings(model, test_dataset, test_embeddings_path,
         1: 0,      # 1 km
         25: 0,     # 25 km 
         200: 0,    # 200 km 
-        750: 0,    # 750 km 
+        750: 0,    # 750 km
         2500: 0    # 2500 km
     }
     embedding_idx = 0 # track position in embeddings
+
+    # load train embeddings
+    train_embeddings = torch.from_numpy(np.load(train_embeddings_path)).float().to(device)
+
+    train_metadata =  metadata_df[metadata_df["selection"] == "train"].reset_index(drop=True)
+
+    # extract train coordinates
+    train_coords = torch.tensor(
+        train_metadata[["lat", "lng"]].values,
+        dtype=torch.float,
+        device=device
+    )
+
+    # normalize train embeddings
+    train_embeddings = torch.nn.functional.normalize(train_embeddings, dim=-1)
 
     with torch.no_grad():
         for batch in tqdm(test_loader, desc="Evaluating"):
             batch = {k: v.to(device) for k, v in batch.items() if v is not None}
             batch_size = batch['embedding'].size(0)
 
-            # get test embeddings for this batch
+            # get embeddings for this batch
             embeddings = test_embeddings[embedding_idx:embedding_idx + batch_size]
             embedding_idx += batch_size
 
-            # classify embeddings (skip forward through CLIP)
-            logits = model.classifier(embeddings)
-            
-            geocell_probs = torch.softmax(logits, dim=-1)
-            pred_coords = model.geocell_centroids[torch.argmax(geocell_probs, dim=-1)]
-            top_probs, top_indices = torch.topk(geocell_probs, k=5, dim=-1)
+            # normalize test embeddings
+            embeddings = torch.nn.functional.normalize(embeddings, dim=-1)
 
-            # refine with PigeonRefiner
-            if refiner is not None:
-                print("Refining coordinates...")
-                refined_lats, refined_lons, refined_geocells = refiner(
-                    embedding=embeddings,
-                    initial_preds=pred_coords,
-                    candidate_cells=top_indices,  # indices from topk
-                    candidate_probs=top_probs   # probs from topk
-                )
-                final_preds = torch.stack([refined_lats, refined_lons], dim=1)
-                final_geocells = refined_geocells
-            else:
-                print("No refinement, using direct coordinates")
-                final_preds = pred_coords
-                final_geocells = top_indices[:,0]
-            
-            # true coordinates
+            # compute cosine similarity between all train and test embeddings
+            similarities = embeddings @ train_embeddings.T
+
+            # get top-k neighbors
+            topk_vals, topk_idxs = torch.topk(similarities, k=k_neighbors, dim=1)
+            neighbor_coords = train_coords[topk_idxs] # get coords
+
+            # compute softmax to get weights
+            weights = torch.softmax(topk_vals, dim=1).unsqueeze(-1)
+
+            # get weighted average of coordinates
+            final_preds = (neighbor_coords * weights).sum(dim=1)
+
             true_coords = batch['labels'] 
             
             # compute errors
             errors = haversine(true_coords, final_preds) 
-            
             all_errors.extend(errors.cpu().numpy())
             
             # save per-sample info
@@ -111,7 +97,6 @@ def evaluate_model_with_embeddings(model, test_dataset, test_embeddings_path,
                     "pred_lat": final_preds[i, 0].item(),
                     "pred_lng": final_preds[i, 1].item(),
                     "true_geocell": batch['labels_clf'][i].item(),
-                    "pred_geocell": final_geocells[i].item(),
                     "error_km": errors[i].item()
                 }
 
@@ -142,6 +127,7 @@ def evaluate_model_with_embeddings(model, test_dataset, test_embeddings_path,
         "mean_error_km": float(np.mean(all_errors)),
         "std_error_km": float(np.std(all_errors)),
     }
+    
     return results
 
 if __name__ == "__main__":
@@ -150,46 +136,23 @@ if __name__ == "__main__":
     metadata_df = pd.read_csv("data/metadata_with_geocells.csv", index_col=0)
 
     # load test_dataset
-    test_dataset = load_from_disk("data/hf_geoguessr_finetune_processed_b16_singleimage/test")
+    test_dataset = load_from_disk("data/hf_geoguessr_finetune_processed_b16/test")
 
     # load embeddings
-    train_embeddings_path = "data/embeddings_b16_singleimage/embeddings_train.npy"
-    test_embeddings_path = "data/embeddings_b16_singleimage/embeddings_test.npy"
+    train_embeddings_path = "data/embeddings_b16/embeddings_train.npy"
+    test_embeddings_path = "data/embeddings_b16/embeddings_test.npy"
 
     # load geocells
     with open("data/geocells.pt", "rb") as f:
         data = pickle.load(f)
     geocell_centroids = data["geocell_centroids"]
     num_geocells = len(geocell_centroids)
-
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
-    # initialize model
-    model = PigeonModel(num_geocells=num_geocells,
-                        geocell_centroids=geocell_centroids,
-                        smooth_labels=True,
-                        embedding_dim=768, # embedding dim for both b-32 and b-16 models
-                        device=device)
-    
-    # initialize refiner
-    refiner = PigeonRefiner(
-        proto_csv=prototypes_csv,
-        dataset_df=metadata_df,
-        embeddings_npy=train_embeddings_path, # must be path to train embeddings
-        topk=5,
-        temperature=1.6,
-        max_refinement=1000,
-        device=device
-    )
-    
-    checkpoint_path = "saved_models/finetuned_b16_SINGLEIMAGE/checkpoint_epoch88.pt"
-
-    results = evaluate_model_with_embeddings(model=model,
+    results = evaluate_knn(k_neighbors=5, metadata_df=metadata_df,
                              test_dataset=test_dataset,
                              test_embeddings_path=test_embeddings_path,
+                             train_embeddings_path=train_embeddings_path,
                              eval_args=EVAL_ARGS,
-                             refiner=refiner,
-                             model_checkpoint_path=checkpoint_path,
-                             save_path="results/eval_results_b16_SINGLEIMAGE.csv")
+                             save_path="results/eval_results_b16_knn.csv")
     
     print(results)
